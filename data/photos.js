@@ -1096,7 +1096,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-025226-3169.jpg",
     "image": "images/2026-11-13/20261113-025226-3169.jpg",
     "large": "images/large/2026-11-13/20261113-025226-3169.jpg",
-    "doing": null
+    "doing": "working on website"
   },
   {
     "id": "20261113-031704-3927",
@@ -1105,7 +1105,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-031704-3927.jpg",
     "image": "images/2026-11-13/20261113-031704-3927.jpg",
     "large": "images/large/2026-11-13/20261113-031704-3927.jpg",
-    "doing": null
+    "doing": "finished work and going to bed!"
   },
   {
     "id": "20261113-111758-10e0",
@@ -1114,7 +1114,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-111758-10e0.jpg",
     "image": "images/2026-11-13/20261113-111758-10e0.jpg",
     "large": "images/large/2026-11-13/20261113-111758-10e0.jpg",
-    "doing": null
+    "doing": "playing guitar"
   },
   {
     "id": "20261113-113123-1314",
@@ -1123,7 +1123,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-113123-1314.jpg",
     "image": "images/2026-11-13/20261113-113123-1314.jpg",
     "large": "images/large/2026-11-13/20261113-113123-1314.jpg",
-    "doing": null
+    "doing": "playing guitar"
   },
   {
     "id": "20261113-115026-196f",
@@ -1132,7 +1132,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-115026-196f.jpg",
     "image": "images/2026-11-13/20261113-115026-196f.jpg",
     "large": "images/large/2026-11-13/20261113-115026-196f.jpg",
-    "doing": null
+    "doing": "laying down"
   },
   {
     "id": "20261113-120609-e554",
@@ -1141,7 +1141,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-120609-e554.jpg",
     "image": "images/2026-11-13/20261113-120609-e554.jpg",
     "large": "images/large/2026-11-13/20261113-120609-e554.jpg",
-    "doing": null
+    "doing": "laying down"
   },
   {
     "id": "20261113-122731-817e",
@@ -1150,7 +1150,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-122731-817e.jpg",
     "image": "images/2026-11-13/20261113-122731-817e.jpg",
     "large": "images/large/2026-11-13/20261113-122731-817e.jpg",
-    "doing": null
+    "doing": "laying down"
   },
   {
     "id": "20261113-134705-0c9a",
@@ -1159,7 +1159,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-134705-0c9a.jpg",
     "image": "images/2026-11-13/20261113-134705-0c9a.jpg",
     "large": "images/large/2026-11-13/20261113-134705-0c9a.jpg",
-    "doing": null
+    "doing": "playing guitar"
   },
   {
     "id": "20261113-143823-1f24",
@@ -1168,7 +1168,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-143823-1f24.jpg",
     "image": "images/2026-11-13/20261113-143823-1f24.jpg",
     "large": "images/large/2026-11-13/20261113-143823-1f24.jpg",
-    "doing": null
+    "doing": "layout editing"
   },
   {
     "id": "20261113-145044-280e",
@@ -1177,7 +1177,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-145044-280e.jpg",
     "image": "images/2026-11-13/20261113-145044-280e.jpg",
     "large": "images/large/2026-11-13/20261113-145044-280e.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261113-150158-b633",
@@ -1186,7 +1186,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-150158-b633.jpg",
     "image": "images/2026-11-13/20261113-150158-b633.jpg",
     "large": "images/large/2026-11-13/20261113-150158-b633.jpg",
-    "doing": null
+    "doing": "taking a break"
   },
   {
     "id": "20261113-151330-1e87",
@@ -1195,7 +1195,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-151330-1e87.jpg",
     "image": "images/2026-11-13/20261113-151330-1e87.jpg",
     "large": "images/large/2026-11-13/20261113-151330-1e87.jpg",
-    "doing": null
+    "doing": "layout designing"
   },
   {
     "id": "20261113-153143-71b9",
@@ -1204,7 +1204,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-153143-71b9.jpg",
     "image": "images/2026-11-13/20261113-153143-71b9.jpg",
     "large": "images/large/2026-11-13/20261113-153143-71b9.jpg",
-    "doing": null
+    "doing": "playing guitar"
   },
   {
     "id": "20261113-154552-8f86",
@@ -1213,7 +1213,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-154552-8f86.jpg",
     "image": "images/2026-11-13/20261113-154552-8f86.jpg",
     "large": "images/large/2026-11-13/20261113-154552-8f86.jpg",
-    "doing": null
+    "doing": "playing guitar"
   },
   {
     "id": "20261113-160028-50b5",
@@ -1222,7 +1222,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-160028-50b5.jpg",
     "image": "images/2026-11-13/20261113-160028-50b5.jpg",
     "large": "images/large/2026-11-13/20261113-160028-50b5.jpg",
-    "doing": null
+    "doing": "playing guitar"
   },
   {
     "id": "20261113-162558-3f70",
@@ -1231,7 +1231,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-162558-3f70.jpg",
     "image": "images/2026-11-13/20261113-162558-3f70.jpg",
     "large": "images/large/2026-11-13/20261113-162558-3f70.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261113-182000-f9ec",
@@ -1240,7 +1240,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-182000-f9ec.jpg",
     "image": "images/2026-11-13/20261113-182000-f9ec.jpg",
     "large": "images/large/2026-11-13/20261113-182000-f9ec.jpg",
-    "doing": null
+    "doing": "dinner and show"
   },
   {
     "id": "20261113-184627-5163",
@@ -1249,7 +1249,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-184627-5163.jpg",
     "image": "images/2026-11-13/20261113-184627-5163.jpg",
     "large": "images/large/2026-11-13/20261113-184627-5163.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261113-192016-1981",
@@ -1258,7 +1258,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-192016-1981.jpg",
     "image": "images/2026-11-13/20261113-192016-1981.jpg",
     "large": "images/large/2026-11-13/20261113-192016-1981.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261114-181240-86d6",
@@ -1267,7 +1267,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261114-181240-86d6.jpg",
     "image": "images/2026-11-15/20261114-181240-86d6.jpg",
     "large": "images/large/2026-11-15/20261114-181240-86d6.jpg",
-    "doing": null
+    "doing": "doing my hair"
   },
   {
     "id": "20261115-183350-6184",
@@ -1276,7 +1276,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-183350-6184.jpg",
     "image": "images/2026-11-15/20261115-183350-6184.jpg",
     "large": "images/large/2026-11-15/20261115-183350-6184.jpg",
-    "doing": null
+    "doing": "eating dinner"
   },
   {
     "id": "20261114-183532-f466",
@@ -1285,7 +1285,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261114-183532-f466.jpg",
     "image": "images/2026-11-15/20261114-183532-f466.jpg",
     "large": "images/large/2026-11-15/20261114-183532-f466.jpg",
-    "doing": null
+    "doing": "doing makeup"
   },
   {
     "id": "20261114-184650-b7ce",
@@ -1294,7 +1294,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261114-184650-b7ce.jpg",
     "image": "images/2026-11-15/20261114-184650-b7ce.jpg",
     "large": "images/large/2026-11-15/20261114-184650-b7ce.jpg",
-    "doing": null
+    "doing": "getting ready"
   },
   {
     "id": "20261115-190329-c333",
@@ -1303,7 +1303,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-190329-c333.jpg",
     "image": "images/2026-11-15/20261115-190329-c333.jpg",
     "large": "images/large/2026-11-15/20261115-190329-c333.jpg",
-    "doing": null
+    "doing": "watching a show"
   },
   {
     "id": "20261115-192257-6cdd",
@@ -1312,7 +1312,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-192257-6cdd.jpg",
     "image": "images/2026-11-15/20261115-192257-6cdd.jpg",
     "large": "images/large/2026-11-15/20261115-192257-6cdd.jpg",
-    "doing": null
+    "doing": "watching a show"
   },
   {
     "id": "20261115-194936-5c48",
@@ -1321,7 +1321,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-194936-5c48.jpg",
     "image": "images/2026-11-15/20261115-194936-5c48.jpg",
     "large": "images/large/2026-11-15/20261115-194936-5c48.jpg",
-    "doing": null
+    "doing": "watching show"
   },
   {
     "id": "20261115-201841-5062",
@@ -1330,7 +1330,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-201841-5062.jpg",
     "image": "images/2026-11-15/20261115-201841-5062.jpg",
     "large": "images/large/2026-11-15/20261115-201841-5062.jpg",
-    "doing": null
+    "doing": "watching show"
   },
   {
     "id": "20261115-203114-f2c7",
@@ -1339,7 +1339,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-203114-f2c7.jpg",
     "image": "images/2026-11-15/20261115-203114-f2c7.jpg",
     "large": "images/large/2026-11-15/20261115-203114-f2c7.jpg",
-    "doing": null
+    "doing": "watching a show"
   },
   {
     "id": "20261115-205243-adf3",
@@ -1348,7 +1348,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-205243-adf3.jpg",
     "image": "images/2026-11-15/20261115-205243-adf3.jpg",
     "large": "images/large/2026-11-15/20261115-205243-adf3.jpg",
-    "doing": null
+    "doing": "watching show"
   },
   {
     "id": "20261115-212242-96a2",
@@ -1357,7 +1357,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-212242-96a2.jpg",
     "image": "images/2026-11-15/20261115-212242-96a2.jpg",
     "large": "images/large/2026-11-15/20261115-212242-96a2.jpg",
-    "doing": null
+    "doing": "doing work n falling asleep"
   },
   {
     "id": "20261116-104057-967a",
@@ -1366,7 +1366,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-104057-967a.jpg",
     "image": "images/2026-11-16/20261116-104057-967a.jpg",
     "large": "images/large/2026-11-16/20261116-104057-967a.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-111626-b31c",
@@ -1375,7 +1375,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-111626-b31c.jpg",
     "image": "images/2026-11-16/20261116-111626-b31c.jpg",
     "large": "images/large/2026-11-16/20261116-111626-b31c.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-113926-10ae",
@@ -1384,7 +1384,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-113926-10ae.jpg",
     "image": "images/2026-11-16/20261116-113926-10ae.jpg",
     "large": "images/large/2026-11-16/20261116-113926-10ae.jpg",
-    "doing": null
+    "doing": "doig work"
   },
   {
     "id": "20261116-131126-6f55",
@@ -1393,7 +1393,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-131126-6f55.jpg",
     "image": "images/2026-11-16/20261116-131126-6f55.jpg",
     "large": "images/large/2026-11-16/20261116-131126-6f55.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-134835-d77a",
@@ -1402,7 +1402,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-134835-d77a.jpg",
     "image": "images/2026-11-16/20261116-134835-d77a.jpg",
     "large": "images/large/2026-11-16/20261116-134835-d77a.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-140335-6c09",
@@ -1411,7 +1411,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-140335-6c09.jpg",
     "image": "images/2026-11-16/20261116-140335-6c09.jpg",
     "large": "images/large/2026-11-16/20261116-140335-6c09.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-142025-196b",
@@ -1420,7 +1420,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-142025-196b.jpg",
     "image": "images/2026-11-16/20261116-142025-196b.jpg",
     "large": "images/large/2026-11-16/20261116-142025-196b.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-150708-8b4f",
@@ -1429,7 +1429,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-150708-8b4f.jpg",
     "image": "images/2026-11-16/20261116-150708-8b4f.jpg",
     "large": "images/large/2026-11-16/20261116-150708-8b4f.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-151852-eacc",
@@ -1438,7 +1438,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-151852-eacc.jpg",
     "image": "images/2026-11-16/20261116-151852-eacc.jpg",
     "large": "images/large/2026-11-16/20261116-151852-eacc.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-154252-b5e1",
@@ -1447,7 +1447,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-154252-b5e1.jpg",
     "image": "images/2026-11-16/20261116-154252-b5e1.jpg",
     "large": "images/large/2026-11-16/20261116-154252-b5e1.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-155941-912e",
@@ -1456,7 +1456,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-155941-912e.jpg",
     "image": "images/2026-11-16/20261116-155941-912e.jpg",
     "large": "images/large/2026-11-16/20261116-155941-912e.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-162947-608d",
@@ -1465,7 +1465,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-162947-608d.jpg",
     "image": "images/2026-11-16/20261116-162947-608d.jpg",
     "large": "images/large/2026-11-16/20261116-162947-608d.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-165258-8177",
@@ -1474,7 +1474,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-165258-8177.jpg",
     "image": "images/2026-11-16/20261116-165258-8177.jpg",
     "large": "images/large/2026-11-16/20261116-165258-8177.jpg",
-    "doing": null
+    "doing": "sodoku"
   },
   {
     "id": "20261116-170548-c2e4",
@@ -1483,7 +1483,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-170548-c2e4.jpg",
     "image": "images/2026-11-16/20261116-170548-c2e4.jpg",
     "large": "images/large/2026-11-16/20261116-170548-c2e4.jpg",
-    "doing": null
+    "doing": "on my phone"
   },
   {
     "id": "20261116-184542-338b",
@@ -1492,7 +1492,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-184542-338b.jpg",
     "image": "images/2026-11-16/20261116-184542-338b.jpg",
     "large": "images/large/2026-11-16/20261116-184542-338b.jpg",
-    "doing": null
+    "doing": "opened my computer"
   },
   {
     "id": "20261116-190443-6315",
@@ -1501,7 +1501,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-190443-6315.jpg",
     "image": "images/2026-11-16/20261116-190443-6315.jpg",
     "large": "images/large/2026-11-16/20261116-190443-6315.jpg",
-    "doing": null
+    "doing": "eating food"
   },
   {
     "id": "20261116-191607-77ab",
@@ -1510,7 +1510,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-191607-77ab.jpg",
     "image": "images/2026-11-16/20261116-191607-77ab.jpg",
     "large": "images/large/2026-11-16/20261116-191607-77ab.jpg",
-    "doing": null
+    "doing": "went to my room"
   },
   {
     "id": "20261116-194032-7051",
@@ -1519,7 +1519,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-194032-7051.jpg",
     "image": "images/2026-11-16/20261116-194032-7051.jpg",
     "large": "images/large/2026-11-16/20261116-194032-7051.jpg",
-    "doing": null
+    "doing": "on my phone"
   },
   {
     "id": "20261116-200906-6443",
@@ -1528,7 +1528,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-200906-6443.jpg",
     "image": "images/2026-11-16/20261116-200906-6443.jpg",
     "large": "images/large/2026-11-16/20261116-200906-6443.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-203622-3f0f",
@@ -1537,7 +1537,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-203622-3f0f.jpg",
     "image": "images/2026-11-16/20261116-203622-3f0f.jpg",
     "large": "images/large/2026-11-16/20261116-203622-3f0f.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-205511-edde",
@@ -1546,7 +1546,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-205511-edde.jpg",
     "image": "images/2026-11-16/20261116-205511-edde.jpg",
     "large": "images/large/2026-11-16/20261116-205511-edde.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-211705-c535",
@@ -1555,7 +1555,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-211705-c535.jpg",
     "image": "images/2026-11-16/20261116-211705-c535.jpg",
     "large": "images/large/2026-11-16/20261116-211705-c535.jpg",
-    "doing": null
+    "doing": "working on thesis"
   },
   {
     "id": "20261116-213803-2170",
@@ -1564,7 +1564,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-213803-2170.jpg",
     "image": "images/2026-11-16/20261116-213803-2170.jpg",
     "large": "images/large/2026-11-16/20261116-213803-2170.jpg",
-    "doing": null
+    "doing": "laying down"
   },
   {
     "id": "20261116-220357-fb31",
@@ -1573,7 +1573,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-220357-fb31.jpg",
     "image": "images/2026-11-16/20261116-220357-fb31.jpg",
     "large": "images/large/2026-11-16/20261116-220357-fb31.jpg",
-    "doing": null
+    "doing": "playing guitar"
   },
   {
     "id": "20261116-223448-dc41",
@@ -1582,7 +1582,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-223448-dc41.jpg",
     "image": "images/2026-11-16/20261116-223448-dc41.jpg",
     "large": "images/large/2026-11-16/20261116-223448-dc41.jpg",
-    "doing": null
+    "doing": "laying down"
   },
   {
     "id": "20261116-230056-5679",
@@ -1591,7 +1591,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-230056-5679.jpg",
     "image": "images/2026-11-16/20261116-230056-5679.jpg",
     "large": "images/large/2026-11-16/20261116-230056-5679.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-231930-60f4",
@@ -1600,7 +1600,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-231930-60f4.jpg",
     "image": "images/2026-11-16/20261116-231930-60f4.jpg",
     "large": "images/large/2026-11-16/20261116-231930-60f4.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261116-234656-cd05",
@@ -1609,7 +1609,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-234656-cd05.jpg",
     "image": "images/2026-11-16/20261116-234656-cd05.jpg",
     "large": "images/large/2026-11-16/20261116-234656-cd05.jpg",
-    "doing": null
+    "doing": "code edits"
   },
   {
     "id": "20261117-001451-6f09",
@@ -1618,7 +1618,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-001451-6f09.jpg",
     "image": "images/2026-11-17/20261117-001451-6f09.jpg",
     "large": "images/large/2026-11-17/20261117-001451-6f09.jpg",
-    "doing": null
+    "doing": "on my phone"
   },
   {
     "id": "20261117-003146-f976",
@@ -1627,7 +1627,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-003146-f976.jpg",
     "image": "images/2026-11-17/20261117-003146-f976.jpg",
     "large": "images/large/2026-11-17/20261117-003146-f976.jpg",
-    "doing": null
+    "doing": "on my phone"
   },
   {
     "id": "20261117-140847-97f5",
@@ -1636,7 +1636,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-140847-97f5.jpg",
     "image": "images/2026-11-17/20261117-140847-97f5.jpg",
     "large": "images/large/2026-11-17/20261117-140847-97f5.jpg",
-    "doing": null
+    "doing": "coding"
   },
   {
     "id": "20261117-143553-3dce",
@@ -1645,7 +1645,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-143553-3dce.jpg",
     "image": "images/2026-11-17/20261117-143553-3dce.jpg",
     "large": "images/large/2026-11-17/20261117-143553-3dce.jpg",
-    "doing": null
+    "doing": "eating"
   },
   {
     "id": "20261117-145437-84dd",
@@ -1654,7 +1654,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-145437-84dd.jpg",
     "image": "images/2026-11-17/20261117-145437-84dd.jpg",
     "large": "images/large/2026-11-17/20261117-145437-84dd.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261117-151958-4cfc",
@@ -1663,7 +1663,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-151958-4cfc.jpg",
     "image": "images/2026-11-17/20261117-151958-4cfc.jpg",
     "large": "images/large/2026-11-17/20261117-151958-4cfc.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261117-154822-d6df",
@@ -1672,7 +1672,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-154822-d6df.jpg",
     "image": "images/2026-11-17/20261117-154822-d6df.jpg",
     "large": "images/large/2026-11-17/20261117-154822-d6df.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261117-155916-68e6",
@@ -1681,7 +1681,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-155916-68e6.jpg",
     "image": "images/2026-11-17/20261117-155916-68e6.jpg",
     "large": "images/large/2026-11-17/20261117-155916-68e6.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261117-161121-a76d",
@@ -1690,7 +1690,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-161121-a76d.jpg",
     "image": "images/2026-11-17/20261117-161121-a76d.jpg",
     "large": "images/large/2026-11-17/20261117-161121-a76d.jpg",
-    "doing": null
+    "doing": "working"
   },
   {
     "id": "20261117-163307-77cc",
@@ -1699,7 +1699,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-163307-77cc.jpg",
     "image": "images/2026-11-17/20261117-163307-77cc.jpg",
     "large": "images/large/2026-11-17/20261117-163307-77cc.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261117-170220-bd71",
@@ -1708,7 +1708,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-170220-bd71.jpg",
     "image": "images/2026-11-17/20261117-170220-bd71.jpg",
     "large": "images/large/2026-11-17/20261117-170220-bd71.jpg",
-    "doing": null
+    "doing": "playing guitar"
   },
   {
     "id": "20261117-174224-f506",
@@ -1717,7 +1717,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-174224-f506.jpg",
     "image": "images/2026-11-17/20261117-174224-f506.jpg",
     "large": "images/large/2026-11-17/20261117-174224-f506.jpg",
-    "doing": null
+    "doing": "editing photos"
   },
   {
     "id": "20261117-175844-3333",
@@ -1726,7 +1726,7 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-175844-3333.jpg",
     "image": "images/2026-11-17/20261117-175844-3333.jpg",
     "large": "images/large/2026-11-17/20261117-175844-3333.jpg",
-    "doing": null
+    "doing": "doing work"
   },
   {
     "id": "20261117-181503-1c52",
@@ -1735,6 +1735,6 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-181503-1c52.jpg",
     "image": "images/2026-11-17/20261117-181503-1c52.jpg",
     "large": "images/large/2026-11-17/20261117-181503-1c52.jpg",
-    "doing": null
+    "doing": "doing work"
   }
 ];

@@ -16,16 +16,23 @@ You can also open `index.html` directly (double-click it). The photo data also c
 
 ## Add new photos
 
-1. Export the edited photo into a folder inside `photo_study_edits/` (the folder name doesn't matter). Name it `<image_id>.jpg`, the same as its row in `dataset/metadata.csv`.
-2. Re-run the build script:
+Rebuild: `python3 scripts/build_data.py`
 
-   ```sh
-   python3 scripts/build_data.py
-   ```
+The script reads its two inputs from `scripts/paths.json` (full paths; JSON strings, so spaces are fine):
+
+```json
+{
+  "metadata_csv": "/full/path/to/photo_study/data/metadata.csv",
+  "edits_dir": "/full/path/to/edited photos"
+}
+```
+
+Export each edited photo into any folder inside `edits_dir`, named `<image_id>.jpg` (the same as its row in the CSV), then rebuild. If either path is missing or wrong, the script says which one and stops without changing anything. Nothing reads `dataset/` any more; it is an old copy kept for reference.
 
 The script:
 - writes `data/photos.json` (and the same data as `data/photos.js`) with `id`, `date`, `time`, `thumb`, `image`, `large` and `doing`, plus `description`, `emotion`, `valence` and `arousal` when the CSV has a value for them (shown on the photo page; a dash otherwise). The CSV columns used for those four are set in `ANNOTATIONS` at the top of the script. `self_reported_emotion`, `context`, `reviewed`, `filename`, `path` and local paths are never written.
 - writes resized copies to `images/thumbs/<date>/` (350 px wide, archive), `images/<date>/` (830 px, home page photo) and `images/large/<date>/` (1472 px, photo page). It never touches the originals, and it skips copies that are already up to date at the right width. It uses macOS's built-in `sips`.
+- leaves out the photos listed in `EXCLUDE`, and shows photos from the dates in `MERGE_DATES` under another date (11/14 under 11/15), sorted by time.
 - prints the photo count per date, the rows left out because they have no edited photo yet, any edited photo with no CSV row, and any identical (duplicate) edited photos.
 
 A new date gets its own column on the home page automatically.
@@ -47,4 +54,4 @@ index.html  archive.html  info.html  styles.css  script.js
 data/photos.json  images/  assets/
 ```
 
-Don't upload `dataset/`, `photo_study_edits/`, `Test Söhne copy/` or `scripts/`. `dataset/` holds the raw CSV/JSON with all annotations, plus the colour originals.
+Don't upload `dataset/`, `photo_study_edits/`, `Test Söhne copy/` or `scripts/`. `dataset/` is an old copy of the raw CSV/JSON and colour originals, and `scripts/paths.json` holds local paths.
