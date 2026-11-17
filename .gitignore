@@ -1,0 +1,14 @@
+# Allow-list: only the files the live site needs are tracked.
+# Everything else (dataset/, photo_study_edits/, font folders, PRD, briefs, scripts/) stays local.
+/*
+!/.gitignore
+!/README.md
+!/index.html
+!/archive.html
+!/info.html
+!/styles.css
+!/script.js
+!/data/
+!/images/
+!/assets/
+.DS_Store

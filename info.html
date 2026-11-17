@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Info — Face Value</title>
+  <link rel="preload" href="assets/fonts/ABCDiatype-Medium-Trial.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="info" data-page="info">
+  <header class="site-header">
+    <a class="brand" href="index.html">Face Value</a>
+    <span class="clock" aria-hidden="true">00:00:00</span>
+    <nav class="nav" aria-label="Main">
+      <a href="archive.html">Archive</a>
+      <a href="info.html" aria-current="page">Info</a>
+    </nav>
+  </header>
+  <main class="info-page">
+    <h1 class="visually-hidden">Info</h1>
+    <nav class="index" aria-label="Index">
+      <button class="index__label btn-text" type="button" aria-controls="index-list">Index</button>
+      <ol class="index__list" id="index-list"></ol>
+    </nav>
+    <!-- Sections are rendered from INFO_SECTIONS at the top of script.js. -->
+    <div class="info-content" id="info-content"></div>
+  </main>
+</body>
+</html>

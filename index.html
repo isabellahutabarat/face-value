@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Face Value</title>
+  <link rel="preload" href="assets/fonts/ABCDiatype-Medium-Trial.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data/photos.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="home" data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html">Face Value</a>
+    <span class="clock" aria-hidden="true">00:00:00</span>
+    <nav class="nav" aria-label="Main">
+      <a href="archive.html">Archive</a>
+      <a href="info.html">Info</a>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Face Value</h1>
+    <section class="intro" aria-label="About the project">
+      <p>This website explores how facial expressions become data, and how systems of classification shape the way we interpret them. Using a series of self-portraits, this experiment examines how a single face can be categorized through different frameworks, including emotion labels, Facial Action Coding System (FACS) action units, and dimensions of valence and arousal. Each image is repeatedly interpreted and organized according to visible features, perceived emotions, and possible mental states.</p>
+      <p>By becoming both the subject and the person classifying the images, I consider the distance between what a face displays, what others perceive, and what a person actually experiences. The project questions how much can be understood from an expression, and what gets lost when it is turned into information.</p>
+    </section>
+    <div class="layout">
+      <nav class="index" aria-label="Index">
+        <button class="index__label btn-text" type="button" aria-controls="index-list">Index</button>
+        <ol class="index__list" id="index-list"></ol>
+      </nav>
+      <div class="timeline" id="timeline"></div>
+    </div>
+    <aside class="viewer" id="viewer" aria-label="Current photo">
+      <img class="viewer__img" id="viewer-img" alt="" width="830" height="467">
+      <div class="viewer__answer">
+        <p>What are you doing right now?</p>
+        <p id="viewer-answer">—</p>
+      </div>
+    </aside>
+  </main>
+
+  <div class="photo-page" id="photo-page" role="dialog" aria-modal="true" aria-labelledby="photo-page-title" hidden>
+    <div class="photo-page__bar">
+      <span id="photo-page-fraction"></span>
+      <button class="btn-text" type="button" id="photo-page-exit">Exit</button>
+    </div>
+    <div class="photo-page__body">
+      <h2 class="photo-page__title" id="photo-page-title"></h2>
+      <img class="photo-page__img" id="photo-page-img" alt="" width="1472" height="828">
+      <dl class="photo-page__info" id="photo-page-info"></dl>
+    </div>
+  </div>
+</body>
+</html>

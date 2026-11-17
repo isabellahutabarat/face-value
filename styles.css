@@ -1,0 +1,434 @@
+/* Face Value — shared styles. Measurements from the Figma "code" page (148:7540) at 1512 px wide.
+   All y values in comments are measured from the top of the page at 1512 px. */
+
+/* ABC Diatype Medium (see assets/fonts/README.txt). */
+@font-face {
+  font-family: "ABC Diatype";
+  src: url("assets/fonts/ABCDiatype-Medium-Trial.woff2") format("woff2"),
+       url("assets/fonts/ABCDiatype-Medium-Trial.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --text-secondary: #8b8b8b;         /* Index label, date headings, answer text, current Index entry */
+  --text-label: #191818;             /* labels on the photo page */
+  --placeholder: #eeeeee;            /* info page image placeholder */
+  --font: "ABC Diatype", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* One type size everywhere: 14/19, -2%. Fluid down to 12 px, never above 14 px. */
+  --fs: clamp(12px, 0.93vw, 14px);
+  --lh: calc(var(--fs) * 19 / 14);
+  --ls: -0.02em;
+
+  --margin: 13px;
+  --header-h: 48px;                  /* 10 px top + two 19 px lines */
+  --index-top: 422px;                /* "Index" label on home, archive and info */
+
+  /* 8-column grid: starts at x = 13 and runs to the right edge (13, 200, 388, 575, 762, 950, 1137, 1324).
+     100% resolves against the element that uses it. */
+  --col: calc((100% - var(--margin)) / 8);
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scrollbar-gutter: stable;          /* no layout shift when the photo page locks scrolling */
+}
+
+html.is-locked { overflow: hidden; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: var(--fs);
+  line-height: var(--lh);
+  letter-spacing: var(--ls);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+p, h1, h2, h3, ol, ul, dl, dd, figure { margin: 0; }
+
+h1, h2, h3 { font: inherit; }
+
+/* Plain text buttons: times, Index rows, thumbnails, Exit. */
+.btn-text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+:focus-visible { outline: 1px solid var(--text); outline-offset: 2px; }
+
+/* ---------- Header (all pages) ---------- */
+
+.site-header {
+  position: relative;
+  height: var(--header-h);
+  padding: 10px var(--margin) 0;
+}
+
+.brand,
+.clock { display: block; }
+
+.clock { font-variant-numeric: tabular-nums; }
+
+.nav {
+  position: absolute;
+  top: 10px;
+  left: calc(var(--margin) + var(--col) * 7);    /* "Archive" at column 8 (x ≈ 1324) */
+  right: var(--margin);                          /* "Info" ends at x = 1499 */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------- Shared 8-column layout + Index ---------- */
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding-left: var(--margin);
+}
+
+.index { grid-column: 1; min-width: 0; padding-right: 10px; }
+
+.index__label {
+  display: block;
+  margin-bottom: calc(28px - var(--lh));        /* list starts 28 px under the label (422 -> 450) */
+  color: var(--text-secondary);
+  cursor: default;
+}
+
+.index__list { padding: 0; list-style: none; }
+
+/* Collapsible Index on small screens (script.js sets data-collapsible). */
+.index[data-collapsible] .index__label { cursor: pointer; margin-bottom: 0; }
+.index[data-collapsible] .index__label[aria-expanded="false"] + .index__list { display: none; }
+.index[data-collapsible] .index__label[aria-expanded="true"]::after { content: " –"; }
+.index[data-collapsible] .index__label[aria-expanded="false"]::after { content: " +"; }
+.index[data-collapsible] .index__list { margin-top: 9px; }
+
+.index__row { display: block; }
+
+.index__row.is-current { color: var(--text-secondary); }
+
+/* ---------- Home ---------- */
+
+.intro {
+  width: calc(var(--col) * 3.36);               /* 629 px at 1512 */
+  min-height: calc(var(--index-top) - 97px);    /* Index starts at y = 422 unless the text is taller */
+  margin: calc(97px - var(--header-h)) 0 0 var(--margin);
+  padding-bottom: 38px;
+}
+
+.intro p + p { margin-top: var(--lh); }
+
+.timeline {
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-content: start;
+  row-gap: 60px;
+  padding-top: 1px;                             /* dates at y = 423, times from y = 451 */
+}
+
+.home .layout {
+  /* lets the last Index row reach the scroll reference line (y = 450) */
+  padding-bottom: max(120px, calc(100vh - 450px));
+}
+
+.day { min-width: 0; padding-right: 10px; }
+
+.day__date {
+  margin-bottom: calc(28px - var(--lh));
+  color: var(--text-secondary);
+}
+
+.day__times { padding: 0; list-style: none; }
+
+/* Static photo + answer, fixed top right (x = 1137, y = 101, 362 x 204). */
+.viewer {
+  position: fixed;
+  z-index: 10;
+  top: 101px;
+  left: calc(var(--margin) + var(--col) * 6);   /* column 7 */
+  right: var(--margin);
+}
+
+.viewer__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--bg);
+}
+
+/* White strip under the photo so the columns scrolling underneath don't show through. */
+.viewer__answer {
+  min-height: 50px;
+  padding-top: 6px;
+  background: var(--bg);
+  color: var(--text-secondary);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Archive ---------- */
+
+.archive .layout { margin-top: calc(var(--index-top) - var(--header-h)); padding-bottom: 120px; }
+
+.thumbs {
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-content: start;
+  row-gap: 18px;                                /* 136 px row pitch: 98 image + 1 + 19 caption + 18 */
+  padding: 32px 0 0;                            /* first row at y = 454 */
+  list-style: none;
+}
+
+.thumb { display: block; width: calc(100% - 12px); }   /* 175 px at 1512, ~12 px gap */
+
+.thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.thumb__cap { display: block; margin-top: 1px; }
+
+/* ---------- Info ---------- */
+
+.info-page { position: relative; padding-bottom: 120px; }
+
+/* Fixed in column 1, on the same line as the Index on home and archive (y = 422),
+   so it stays available while reading. */
+.info-page .index {
+  position: fixed;
+  z-index: 5;
+  top: var(--index-top);
+  left: var(--margin);
+  width: calc(var(--col) - 10px);
+  padding-right: 0;
+}
+
+/* Centred 550 px column (x = 481 to 1031 at 1512); never runs into the Index. */
+.info-content {
+  width: min(550px, calc(100% - 2 * (var(--margin) + var(--col))));
+  margin: calc(101px - var(--header-h)) auto 0;
+  text-align: center;
+}
+
+.info-section + .info-section { margin-top: 43px; }
+.info-section + .info-section--image-only { margin-top: 96px; }
+
+.info-text { text-align: left; }
+.info-text p + p { margin-top: var(--lh); }
+
+.info-figure { margin: 0 auto; }
+.info-figure--large  { width: calc(100% * 548 / 550); margin-bottom: 13px; }   /* 548 x 308 */
+.info-figure--medium { width: calc(100% * 415 / 550); margin-bottom: 23px; }   /* 415 x 233 */
+.info-figure--small  { width: calc(100% * 334 / 550); }                        /* 334 x 188 */
+
+.info-figure img,
+.info-figure__placeholder {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.info-figure__placeholder { background: var(--placeholder); }
+
+/* ---------- Photo page (overlay over home or archive) ---------- */
+
+.photo-page {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.photo-page[hidden] { display: none; }
+
+.photo-page__bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px var(--margin) 0;
+}
+
+.photo-page__body {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 0 0 80px var(--margin);
+}
+
+.photo-page__title {
+  grid-column: 1 / -1;
+  margin: calc(137px - 10px - var(--lh)) 0 calc(163px - 137px - var(--lh));   /* y = 137, photo at y = 163 */
+  padding-right: var(--margin);
+  text-align: center;
+}
+
+/* Columns 3–6: x = 388 to 1124, 736 x 414. */
+.photo-page__img {
+  grid-column: 3 / 7;
+  display: block;
+  width: calc(100% - 13px);
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.photo-page__info {
+  grid-column: 3 / 7;
+  display: grid;
+  grid-template-columns: calc((100% - 13px) / 4) 1fr;   /* label column 187 px, values from x = 575 */
+  margin-top: 7px;
+  padding-right: 13px;
+}
+
+.photo-page__info dt { color: var(--text-label); padding-right: 8px; }
+.photo-page__info dd { color: var(--text); overflow-wrap: anywhere; }
+
+/* ---------- Small screens ---------- */
+
+/* Index entries may break after the "/" when a column is too narrow for them. */
+@media (max-width: 1199px) {
+  .day__date { overflow-wrap: anywhere; }
+
+  /* Info: text starts at column 2 instead of being centred. */
+  .info-content {
+    width: min(550px, calc(100% - 2 * var(--margin) - var(--col)));
+    margin-left: calc(var(--margin) + var(--col));
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 699px) {
+  .nav {
+    left: auto;
+    gap: 16px;
+  }
+
+  /* Index: tap-to-open list at the top of the content. */
+  .layout { display: block; padding: 0 var(--margin); }
+
+  .layout .index {
+    width: auto;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  /* Home: header and photo stay put; everything else scrolls under them. */
+  .home .site-header {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+  }
+
+  /* White strip across the top; the photo itself is at most 362 px wide, on the right. */
+  .viewer {
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    padding: 0 var(--margin);
+    background: var(--bg);
+  }
+
+  .viewer__img,
+  .viewer__answer {
+    width: min(100%, 362px);
+    margin-left: auto;
+  }
+
+  .viewer__answer { min-height: 0; padding-bottom: 12px; }
+
+  /* Order under the photo: Index, project text, day columns. */
+  .home main {
+    display: flex;
+    flex-direction: column;
+    padding-top: calc(var(--header-h) + min(100vw - 2 * var(--margin), 362px) * 9 / 16 + 6px + 2 * var(--lh) + 12px + 16px);
+    padding-bottom: 100vh;   /* lets the last rows reach the scroll reference line */
+  }
+
+  .home .layout { display: contents; }
+  .home .index { order: -1; margin: 0 var(--margin) 24px; }
+  .home .timeline { margin: 0 var(--margin); }
+
+  .intro {
+    width: auto;
+    min-height: 0;
+    margin: 0 var(--margin);
+    padding-bottom: 32px;
+  }
+
+  .timeline { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
+
+  .archive .layout { margin-top: 32px; }
+  .thumbs { grid-template-columns: repeat(3, 1fr); row-gap: 12px; padding-top: 0; }
+  .thumb { width: calc(100% - 8px); }
+
+  /* Info: Index stays fixed in column 1, on the same line as the archive's Index. */
+  .info-page { padding: 32px 0 80px; }
+  .info-page .index {
+    top: calc(var(--header-h) + 32px);
+    width: calc(var(--col) - 4px);
+  }
+  .info-content {
+    width: calc(100% - 2 * var(--margin) - var(--col));
+    margin: 0 0 0 calc(var(--margin) + var(--col));
+  }
+
+  /* Photo page: full-width photo, labels stacked over values. */
+  .photo-page__body { display: block; padding: 0 var(--margin) 60px; }
+  .photo-page__title { margin: 40px 0 8px; padding-right: 0; }
+  .photo-page__img { width: 100%; }
+  .photo-page__info { display: block; margin-top: 12px; padding-right: 0; }
+  .photo-page__info dd + dt { margin-top: 10px; }
+}
+
+/* Phones: column 1 is too narrow for the info Index, so it becomes the tap-to-open list. */
+@media (max-width: 479px) {
+  .info-page { padding: 32px var(--margin) 80px; }
+  .info-page .index { position: static; width: auto; margin-bottom: 24px; }
+  .info-content { width: auto; margin: 0; }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
