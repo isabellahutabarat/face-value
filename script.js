@@ -434,10 +434,13 @@
 
     var hovered = -1;
 
-    // Current photo: the hovered thumbnail, else the first photo in the top visible row.
+    // Current photo: the hovered thumbnail, else the first photo in the top visible row
+    // (visible = below the sticky header).
+    var header = document.querySelector(".site-header");
     function topVisible() {
+      var top = header ? header.getBoundingClientRect().bottom : 0;
       for (var k = 0; k < thumbs.length; k++) {
-        if (thumbs[k].getBoundingClientRect().bottom > 0) return k;
+        if (thumbs[k].getBoundingClientRect().bottom > top) return k;
       }
       return 0;
     }

@@ -80,16 +80,19 @@ h1, h2, h3 { font: inherit; }
 
 /* ---------- Header (all pages) ---------- */
 
+/* Stays at the top while the page scrolls; white so content passes underneath it. */
 .site-header {
-  position: relative;
+  position: sticky;
+  z-index: 20;
+  top: 0;
   height: var(--header-h);
   padding: 10px var(--margin) 0;
+  background: var(--bg);
 }
 
+/* The clock uses the same digits as the times on the page (no tabular figures). */
 .brand,
 .clock { display: block; }
-
-.clock { font-variant-numeric: tabular-nums; }
 
 .nav {
   position: absolute;
@@ -239,6 +242,7 @@ h1, h2, h3 { font: inherit; }
   text-align: center;
 }
 
+.info-section { scroll-margin-top: calc(var(--header-h) + 16px); }   /* Index jumps land below the header */
 .info-section + .info-section { margin-top: 43px; }
 .info-section + .info-section--image-only { margin-top: 96px; }
 
