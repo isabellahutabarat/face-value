@@ -2788,5 +2788,31 @@ window.FACE_VALUE_PHOTOS = [
     "emotion": "Neutral",
     "valence": "-0.21",
     "arousal": "-0.10"
+  },
+  {
+    "id": "20261118-114805-f06e",
+    "date": "2026-11-18",
+    "time": "11:48:05",
+    "thumb": "images/thumbs/2026-11-18/20261118-114805-f06e.jpg",
+    "image": "images/2026-11-18/20261118-114805-f06e.jpg",
+    "large": "images/large/2026-11-18/20261118-114805-f06e.jpg",
+    "doing": "doing work",
+    "description": "This is a girl holding her hand to her face while sitting in a room.",
+    "emotion": "Sadness",
+    "valence": "-0.47",
+    "arousal": "-0.23"
+  },
+  {
+    "id": "20261118-120310-a23d",
+    "date": "2026-11-18",
+    "time": "12:03:10",
+    "thumb": "images/thumbs/2026-11-18/20261118-120310-a23d.jpg",
+    "image": "images/2026-11-18/20261118-120310-a23d.jpg",
+    "large": "images/large/2026-11-18/20261118-120310-a23d.jpg",
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera while holding her hand up to her face. She is standing in front of a reflective surface with a plain background.",
+    "emotion": "Sadness",
+    "valence": "-0.19",
+    "arousal": "-0.14"
   }
 ];
