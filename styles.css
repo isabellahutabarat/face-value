@@ -325,12 +325,16 @@ h1, h2, h3 { font: inherit; }
 .photo-page__info {
   grid-column: 3 / 7;
   display: grid;
-  grid-template-columns: calc((100% - 13px) / 4) 1fr;   /* label column 187 px, values from x = 575 */
+  /* Labels span grid columns 3–4; values start at grid column 5 (the photo's 3rd column, x ≈ 762). */
+  grid-template-columns: calc((100% + 13px) / 2) 1fr;
   margin-top: 7px;
   padding-right: 13px;
 }
 
-.photo-page__info dt { color: var(--text-label); padding-right: 8px; }
+.photo-page__info dt { color: var(--text-label); padding-right: 8px; white-space: nowrap; }
+@media (max-width: 699px) {
+  .photo-page__info dt { white-space: normal; }   /* too narrow for one line on phones */
+}
 .photo-page__info dd { color: var(--text); overflow-wrap: anywhere; }
 
 /* ---------- Small screens ---------- */
