@@ -2813,5 +2813,83 @@
     "emotion": "Sadness",
     "valence": "-0.19",
     "arousal": "-0.14"
+  },
+  {
+    "id": "20261118-122156-1ed9",
+    "date": "2026-11-18",
+    "time": "12:21:56",
+    "thumb": "images/thumbs/2026-11-18/20261118-122156-1ed9.jpg",
+    "image": "images/2026-11-18/20261118-122156-1ed9.jpg",
+    "large": "images/large/2026-11-18/20261118-122156-1ed9.jpg",
+    "doing": "doing work",
+    "description": "This is a girl sitting in a room, looking at the camera with a neutral expression. Another person is standing behind her, holding a painting.",
+    "emotion": "Sadness",
+    "valence": "-0.38",
+    "arousal": "-0.03"
+  },
+  {
+    "id": "20261118-123510-6234",
+    "date": "2026-11-18",
+    "time": "12:35:10",
+    "thumb": "images/thumbs/2026-11-18/20261118-123510-6234.jpg",
+    "image": "images/2026-11-18/20261118-123510-6234.jpg",
+    "large": "images/large/2026-11-18/20261118-123510-6234.jpg",
+    "doing": "sitting in lecture class",
+    "description": "This is a girl sitting at a laptop in a room, with another person visible in the background. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.40",
+    "arousal": "-0.14"
+  },
+  {
+    "id": "20261118-125520-0248",
+    "date": "2026-11-18",
+    "time": "12:55:20",
+    "thumb": "images/thumbs/2026-11-18/20261118-125520-0248.jpg",
+    "image": "images/2026-11-18/20261118-125520-0248.jpg",
+    "large": "images/large/2026-11-18/20261118-125520-0248.jpg",
+    "doing": "doing work",
+    "description": "This is a girl sitting at a desk in a room, with her hand resting on her chin. Another person is visible in the background.",
+    "emotion": "Sadness",
+    "valence": "-0.43",
+    "arousal": "-0.08"
+  },
+  {
+    "id": "20261118-131007-f63f",
+    "date": "2026-11-18",
+    "time": "13:10:07",
+    "thumb": "images/thumbs/2026-11-18/20261118-131007-f63f.jpg",
+    "image": "images/2026-11-18/20261118-131007-f63f.jpg",
+    "large": "images/large/2026-11-18/20261118-131007-f63f.jpg",
+    "doing": "sitting in my lecture",
+    "description": "This is a girl standing in a room, looking at the camera with a neutral expression. She is wearing a dark top and large hoop earrings.",
+    "emotion": "Neutral",
+    "valence": "-0.31",
+    "arousal": "0.08"
+  },
+  {
+    "id": "20261118-132248-7f6a",
+    "date": "2026-11-18",
+    "time": "13:22:48",
+    "thumb": "images/thumbs/2026-11-18/20261118-132248-7f6a.jpg",
+    "image": "images/2026-11-18/20261118-132248-7f6a.jpg",
+    "large": "images/large/2026-11-18/20261118-132248-7f6a.jpg",
+    "doing": "doing work",
+    "description": "This is a girl sitting at a table, looking at a laptop. Another person is sitting behind her, partially visible in the background.",
+    "emotion": "Neutral",
+    "valence": "-0.18",
+    "arousal": "0.06"
+  },
+  {
+    "id": "20261118-135733-fa9a",
+    "date": "2026-11-18",
+    "time": "13:57:33",
+    "thumb": "images/thumbs/2026-11-18/20261118-135733-fa9a.jpg",
+    "image": "images/2026-11-18/20261118-135733-fa9a.jpg",
+    "large": "images/large/2026-11-18/20261118-135733-fa9a.jpg",
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room with a window. They are wearing headphones and have their hair pulled back.",
+    "emotion": "Neutral",
+    "valence": "-0.26",
+    "arousal": "-0.13"
   }
 ]
