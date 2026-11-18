@@ -177,17 +177,21 @@
   /* ---------- Photo page (overlay over home or archive) ---------- */
 
   var INFO_ROWS = [
-    ["What are you doing right now?", "doing"],
-    ["AI Description:", "description"],
-    ["Emotion Classification:", "emotion"],
-    ["Valence levels:", "valence"],
-    ["Arousal levels:", "arousal"]
+    ["Emotion class:", "emotion"],
+    ["Valence level:", "valence"],
+    ["Arousal level:", "arousal"]
   ];
 
   function createPhotoPage(photos) {
     var root = document.getElementById("photo-page");
     var fraction = document.getElementById("photo-page-fraction");
-    var title = document.getElementById("photo-page-title");
+    var dateEl = document.getElementById("photo-page-date");
+    var timeEl = document.getElementById("photo-page-time");
+    var caption = document.getElementById("photo-page-caption");
+    var doing = document.getElementById("photo-page-doing");
+    var text = document.getElementById("photo-page-text");
+    var prev = document.getElementById("photo-page-prev");
+    var next = document.getElementById("photo-page-next");
     var img = document.getElementById("photo-page-img");
     var info = document.getElementById("photo-page-info");
     var exit = document.getElementById("photo-page-exit");
@@ -205,7 +209,12 @@
     function render(i) {
       var p = photos[i];
       fraction.textContent = (i + 1) + "/" + photos.length;
-      title.textContent = indexLabel(p);
+      dateEl.textContent = formatDate(p.date);
+      timeEl.textContent = p.time;
+      caption.textContent = value(p.description);
+      doing.textContent = value(p.doing);
+      prev.disabled = i === 0;
+      next.disabled = i === photos.length - 1;
       img.src = p.large || p.image;
       img.alt = altText(p);
       info.textContent = "";
@@ -220,22 +229,41 @@
       });
     }
 
-    // Fit the block (title, photo, info) in the window without ever scrolling. The block is
-    // grid columns 3-6 wide (full width on phones). If it is too tall for the window, only the
-    // photo shrinks (keeping 16:9, centred); the title and info table keep their size.
+    // Fit the block in the window without ever scrolling, on a 16-column grid (same margin
+    // and gutters as the 8-column grid): photo columns 4-11, text columns 12-13. On phones the
+    // text goes under a full-width photo. If the window is too short, only the photo shrinks
+    // (keeping 16:9); the text keeps its size. The arrows sit level with the photo's middle.
     var phone = window.matchMedia("(max-width: 699px)");
+    var GUTTER = 13;
     function fit() {
       if (openIndex === -1) return;
+      var margin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--margin")) || 13;
       var cs = getComputedStyle(body);
       var availH = body.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
-      var availW = body.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
-      var margin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--margin")) || 13;
-      var full = phone.matches ? availW : Math.min(availW, (root.clientWidth - margin) / 2 - 13);
-      content.style.width = Math.floor(full) + "px";
-      img.style.width = "100%";
-      var rest = content.offsetHeight - img.offsetHeight;        // title + info table
-      var w = Math.min(full, Math.max(64, (availH - rest) * 16 / 9));
-      img.style.width = Math.floor(w) + "px";
+      var W = root.clientWidth;
+      var col = (W - margin) / 16;                         // one column + gutter
+      root.style.setProperty("--pp-col", col + "px");
+      var w;
+      if (phone.matches) {
+        var full = W - 2 * margin;
+        text.style.width = full + "px";
+        text.style.minHeight = "";
+        img.style.width = full + "px";
+        var rest = content.offsetHeight - img.offsetHeight;   // text under the photo + gap
+        w = Math.min(full, (availH - rest) * 16 / 9);
+      } else {
+        var textW = Math.max(2 * col - GUTTER, 175);
+        var availW = W - 2 * 44;                            // keep clear of the arrows
+        text.style.width = textW + "px";
+        text.style.minHeight = "";
+        w = Math.min(8 * col - GUTTER, availW - GUTTER - textW, (availH - 9) * 16 / 9);
+      }
+      w = Math.floor(Math.max(64, w));
+      img.style.width = w + "px";
+      // The text column runs from 5 px above the photo to 4 px below it (as in Figma).
+      if (!phone.matches) text.style.minHeight = (w * 9 / 16 + 9) + "px";
+      var r = img.getBoundingClientRect();
+      root.style.setProperty("--pp-arrow-y", (r.top + r.height / 2) + "px");
     }
 
     var fitQueued = false;
@@ -255,33 +283,15 @@
       render(j);
     }
 
-    // Which way a click in the empty space goes: -1 previous (left of the content), 1 next
-    // (right of it), 0 nothing (on the content, or above/below it). On phones the content is
-    // nearly full width, so a tap above/below it counts too, by which half of the screen it is in.
-    function sideAt(x, target) {
-      if (content.contains(target)) return 0;
-      var r = content.getBoundingClientRect();
-      if (x < r.left) return -1;
-      if (x > r.right) return 1;
-      return phone.matches ? (x < root.clientWidth / 2 ? -1 : 1) : 0;
-    }
-    function canGo(step) {
-      var j = openIndex + step;
-      return step !== 0 && j >= 0 && j < photos.length;
-    }
+    prev.addEventListener("click", function () { go(-1); });
+    next.addEventListener("click", function () { go(1); });
 
-    body.addEventListener("mousemove", function (e) {
-      var side = sideAt(e.clientX, e.target);
-      var name = canGo(side) ? (side < 0 ? "prev" : "next") : "";
-      if (body.dataset.side !== name) body.dataset.side = name;
-    });
-    body.addEventListener("mouseleave", function () { body.dataset.side = ""; });
-
+    // A click anywhere except the photo/text, the arrows or Exit closes the photo page.
     var swipedAt = 0;
-    body.addEventListener("click", function (e) {
+    root.addEventListener("click", function (e) {
       if (Date.now() - swipedAt < 500) return;   // the tap that ended a swipe
-      var side = sideAt(e.clientX, e.target);
-      if (canGo(side)) go(side);
+      if (e.target.closest(".photo-page__content, .photo-page__arrow, #photo-page-exit")) return;
+      close();
     });
 
     // Touch: swipe left for next, right for previous (anywhere on the overlay).

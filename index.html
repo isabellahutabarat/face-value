@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Face Value</title>
   <link rel="preload" href="assets/fonts/ABCDiatype-Medium-Trial.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=19">
-  <script src="data/photos.js?v=19" defer></script>
-  <script src="script.js?v=19" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20">
+  <script src="data/photos.js?v=20" defer></script>
+  <script src="script.js?v=20" defer></script>
 </head>
 <body class="home" data-page="home">
   <header class="site-header">
@@ -47,11 +47,22 @@
     </div>
     <div class="photo-page__body" id="photo-page-body">
       <div class="photo-page__content" id="photo-page-content">
-        <h2 class="photo-page__title" id="photo-page-title"></h2>
         <img class="photo-page__img" id="photo-page-img" alt="" width="1472" height="828">
-        <dl class="photo-page__info" id="photo-page-info"></dl>
+        <div class="photo-page__text" id="photo-page-text">
+          <div>
+            <h2 class="photo-page__title" id="photo-page-title"><span class="photo-page__date" id="photo-page-date"></span> <span class="photo-page__time" id="photo-page-time"></span></h2>
+            <p class="photo-page__caption" id="photo-page-caption"></p>
+          </div>
+          <div>
+            <p class="photo-page__question">What are you doing right now?</p>
+            <p class="photo-page__doing" id="photo-page-doing"></p>
+            <dl class="photo-page__info" id="photo-page-info"></dl>
+          </div>
+        </div>
       </div>
     </div>
+    <button class="photo-page__arrow photo-page__arrow--prev" type="button" id="photo-page-prev" aria-label="Previous photo"></button>
+    <button class="photo-page__arrow photo-page__arrow--next" type="button" id="photo-page-next" aria-label="Next photo"></button>
   </div>
 </body>
 </html>

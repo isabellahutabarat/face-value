@@ -287,24 +287,27 @@ h1, h2, h3 { font: inherit; }
   position: fixed;
   z-index: 100;
   inset: 0;
-  overflow: hidden;                 /* never scrolls: the content is sized to fit (see fitPhotoPage) */
+  overflow: hidden;                 /* never scrolls: the content is sized to fit (see fit() in script.js) */
   overscroll-behavior: none;
   touch-action: pinch-zoom;         /* no panning/scrolling; horizontal swipes switch photos */
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .photo-page[hidden] { display: none; }
 
+/* Clicks on the empty parts of the bar fall through to the overlay (which closes it). */
 .photo-page__bar {
   position: relative;
-  z-index: 1;                       /* above the click areas */
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   padding: 10px var(--margin) 0;
+  pointer-events: none;
 }
+.photo-page__bar button { pointer-events: auto; }
 
-/* Whole viewport under the bar. The empty space left/right of the content is the
-   previous/next click area. Equal top and bottom padding keeps the block centred in the viewport. */
+/* Whole viewport; the content block is centred in it. A click anywhere outside the content,
+   the arrows and Exit closes the photo page. */
 .photo-page__body {
   position: absolute;
   inset: 0;
@@ -314,44 +317,93 @@ h1, h2, h3 { font: inherit; }
   padding: calc(var(--header-h) + 16px) var(--margin);
 }
 
-.photo-page__body[data-side="prev"] { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M15 5l-7 7 7 7' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='M15 5l-7 7 7 7' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E") 12 12, w-resize; }
-.photo-page__body[data-side="next"] { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M9 5l7 7-7 7' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='M9 5l7 7-7 7' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E") 12 12, e-resize; }
-
-/* Title, photo and info table as one block, grid columns 3–6 wide (736 px at 1512). When the
-   window is too short for everything, only the photo gets smaller (set in script.js). */
+/* 16-column grid (same margin and gutters as the 8-column grid). Photo: columns 4–11,
+   text: columns 12–13 (values from column 13). Widths are set in script.js from the window size. */
 .photo-page__content {
   flex: none;
-  width: calc((100vw - var(--margin)) / 2 - 13px);
-  max-width: 100%;
-  cursor: auto;
-}
-
-.photo-page__title {
-  margin: 0 0 calc(163px - 137px - var(--lh));   /* photo 7 px under the title line */
-  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
 }
 
 .photo-page__img {
+  flex: none;
   display: block;
-  width: 100%;
-  margin: 0 auto;
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
-.photo-page__info {
-  display: grid;
-  /* Labels span the photo's first two grid columns; values start at its 3rd (grid column 5). */
-  grid-template-columns: calc((100% + 13px) / 2) 1fr;
-  margin-top: 7px;
+/* Date, time and caption at the top (level with the photo's top); the answer and the
+   emotion data at the bottom (level with its bottom). */
+.photo-page__text {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -5px;
 }
 
-.photo-page__info dt { color: var(--text-label); padding-right: 8px; white-space: nowrap; }
-.photo-page__info dd { color: var(--text); overflow-wrap: anywhere; }
-@media (max-width: 699px) {
-  .photo-page__info dt { white-space: normal; }   /* too narrow for one line on phones */
+.photo-page__date,
+.photo-page__time { display: block; }
+.photo-page__date { color: var(--text-secondary); }
+
+.photo-page__caption { margin-top: 23px; }
+
+/* One line each, even where they run slightly past the two columns (as in Figma). */
+.photo-page__question { white-space: nowrap; }
+
+.photo-page__info {
+  display: grid;
+  grid-template-columns: minmax(var(--pp-col, 94px), max-content) 1fr;
+  margin-top: 43px;
 }
+.photo-page__info dt { color: var(--text); white-space: nowrap; }
+.photo-page__info dd { color: var(--text-label); overflow-wrap: anywhere; }
+
+/* Previous/next: the Figma chevron (assets/icons/arrow-next.svg), on the page margins,
+   level with the middle of the photo. The button is bigger than the icon so it is easy to hit. */
+.photo-page__arrow {
+  position: absolute;
+  z-index: 2;
+  top: var(--pp-arrow-y, 50%);
+  width: calc(8.36396px + 24px);
+  height: 44px;
+  margin: -22px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+}
+.photo-page__arrow--prev { left: calc(var(--margin) - 12px); }
+.photo-page__arrow--next { right: calc(var(--margin) - 12px); }
+
+.photo-page__arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 8.36396px;
+  height: 14.7279px;
+  margin-top: -7.36395px;
+  background: currentColor;
+  -webkit-mask: url("assets/icons/arrow-next.svg") center / 100% 100% no-repeat;
+  mask: url("assets/icons/arrow-next.svg") center / 100% 100% no-repeat;
+  transition: transform 0.12s ease, color 0.12s ease;
+}
+.photo-page__arrow--prev::before { transform: scaleX(-1); }
+
+/* Hover: grey. Pressed: nudges 2 px in its direction. At the first/last photo: faded. */
+@media (hover: hover) {
+  .photo-page__arrow:hover { color: var(--text-secondary); }
+}
+.photo-page__arrow--next:active::before { transform: translateX(2px); }
+.photo-page__arrow--prev:active::before { transform: scaleX(-1) translateX(2px); }
+.photo-page__arrow:disabled { color: var(--text); opacity: 0.2; cursor: default; }
+.photo-page__arrow:disabled::before { transform: none; }
+.photo-page__arrow--prev:disabled::before { transform: scaleX(-1); }
+.photo-page__arrow:focus-visible { outline-offset: -8px; }
 
 /* ---------- Small screens ---------- */
 
@@ -444,11 +496,12 @@ h1, h2, h3 { font: inherit; }
     margin: 0 0 0 calc(var(--margin) + var(--col));
   }
 
-  /* Photo page: full-width photo, labels stacked over values (still centred, never scrolls). */
-  .photo-page__content { width: 100%; }
-  .photo-page__title { margin: 0 0 8px; }
-  .photo-page__info { display: block; margin-top: 12px; }
-  .photo-page__info dd + dt { margin-top: 10px; }
+  /* Photo page: full-width photo with the text under it (still centred, never scrolls). */
+  .photo-page__content { flex-direction: column; gap: 12px; }
+  .photo-page__text { margin-top: 0; }
+  .photo-page__caption { margin-top: 12px; }
+  .photo-page__question { margin-top: 12px; white-space: normal; }
+  .photo-page__info { margin-top: 12px; }
 }
 
 /* Phones: column 1 is too narrow for the info Index, so it becomes the tap-to-open list. */
