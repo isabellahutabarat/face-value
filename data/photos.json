@@ -2722,5 +2722,70 @@
     "emotion": "Anger",
     "valence": "-0.46",
     "arousal": "0.18"
+  },
+  {
+    "id": "20261118-102546-a996",
+    "date": "2026-11-18",
+    "time": "10:25:46",
+    "thumb": "images/thumbs/2026-11-18/20261118-102546-a996.jpg",
+    "image": "images/2026-11-18/20261118-102546-a996.jpg",
+    "large": "images/large/2026-11-18/20261118-102546-a996.jpg",
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room. They are wearing headphones and appear to be listening to something.",
+    "emotion": "Anger",
+    "valence": "-0.42",
+    "arousal": "0.02"
+  },
+  {
+    "id": "20261118-104334-59bd",
+    "date": "2026-11-18",
+    "time": "10:43:34",
+    "thumb": "images/thumbs/2026-11-18/20261118-104334-59bd.jpg",
+    "image": "images/2026-11-18/20261118-104334-59bd.jpg",
+    "large": "images/large/2026-11-18/20261118-104334-59bd.jpg",
+    "doing": "editing layouts for website",
+    "description": "This is a person looking at the camera from a dark room. They are positioned in front of a wall with a window and a light fixture visible in the background.",
+    "emotion": "Sadness",
+    "valence": "-0.36",
+    "arousal": "-0.12"
+  },
+  {
+    "id": "20261118-110251-20a1",
+    "date": "2026-11-18",
+    "time": "11:02:51",
+    "thumb": "images/thumbs/2026-11-18/20261118-110251-20a1.jpg",
+    "image": "images/2026-11-18/20261118-110251-20a1.jpg",
+    "large": "images/large/2026-11-18/20261118-110251-20a1.jpg",
+    "doing": "texting my friend",
+    "description": "This is a person sitting in a room with their eyes closed. They are looking down at a surface in front of them.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "-0.26"
+  },
+  {
+    "id": "20261118-111407-cbe4",
+    "date": "2026-11-18",
+    "time": "11:14:07",
+    "thumb": "images/thumbs/2026-11-18/20261118-111407-cbe4.jpg",
+    "image": "images/2026-11-18/20261118-111407-cbe4.jpg",
+    "large": "images/large/2026-11-18/20261118-111407-cbe4.jpg",
+    "doing": "doing work",
+    "description": "This is a girl sitting in a room with a window behind her, wearing headphones and looking directly at the camera. She is holding one hand up to her ear.",
+    "emotion": "Contempt",
+    "valence": "-0.19",
+    "arousal": "0.06"
+  },
+  {
+    "id": "20261118-112800-a7c0",
+    "date": "2026-11-18",
+    "time": "11:28:00",
+    "thumb": "images/thumbs/2026-11-18/20261118-112800-a7c0.jpg",
+    "image": "images/2026-11-18/20261118-112800-a7c0.jpg",
+    "large": "images/large/2026-11-18/20261118-112800-a7c0.jpg",
+    "doing": "doing work",
+    "description": "They are leaning forward with a scarf covering their neck.",
+    "emotion": "Neutral",
+    "valence": "-0.21",
+    "arousal": "-0.10"
   }
 ]
