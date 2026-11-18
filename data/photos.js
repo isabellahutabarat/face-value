@@ -1261,6 +1261,15 @@ window.FACE_VALUE_PHOTOS = [
     "doing": "doing work"
   },
   {
+    "id": "20261117-134533-524d",
+    "date": "2026-11-14",
+    "time": "13:45:33",
+    "thumb": "images/thumbs/2026-11-14/20261117-134533-524d.jpg",
+    "image": "images/2026-11-14/20261117-134533-524d.jpg",
+    "large": "images/large/2026-11-14/20261117-134533-524d.jpg",
+    "doing": "doing work"
+  },
+  {
     "id": "20261114-181240-86d6",
     "date": "2026-11-14",
     "time": "18:12:40",
