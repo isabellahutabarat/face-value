@@ -1657,6 +1657,19 @@ window.FACE_VALUE_PHOTOS = [
     "arousal": "-0.05"
   },
   {
+    "id": "20261113-141435-5a3a",
+    "date": "2026-11-13",
+    "time": "14:14:35",
+    "thumb": "images/thumbs/2026-11-13/20261113-141435-5a3a.jpg",
+    "image": "images/2026-11-13/20261113-141435-5a3a.jpg",
+    "large": "images/large/2026-11-13/20261113-141435-5a3a.jpg",
+    "doing": "going on my phone",
+    "description": "This is a person lying in bed against a wall. They are looking down with their eyes closed.",
+    "emotion": "Neutral",
+    "valence": "-0.09",
+    "arousal": "-0.27"
+  },
+  {
     "id": "20261113-143823-1f24",
     "date": "2026-11-13",
     "time": "14:38:23",
@@ -2684,6 +2697,19 @@ window.FACE_VALUE_PHOTOS = [
     "emotion": "Sadness",
     "valence": "-0.60",
     "arousal": "0.01"
+  },
+  {
+    "id": "20261118-095335-b554",
+    "date": "2026-11-18",
+    "time": "09:53:35",
+    "thumb": "images/thumbs/2026-11-18/20261118-095335-b554.jpg",
+    "image": "images/2026-11-18/20261118-095335-b554.jpg",
+    "large": "images/large/2026-11-18/20261118-095335-b554.jpg",
+    "doing": "doing work",
+    "description": "This is a girl sitting in a chair, wearing headphones and looking at the camera. She is leaning forward slightly with her arms resting on the chair’s armrest.",
+    "emotion": "Anger",
+    "valence": "-0.42",
+    "arousal": "0.14"
   },
   {
     "id": "20261118-101131-5d67",
