@@ -2891,5 +2891,18 @@
     "emotion": "Neutral",
     "valence": "-0.26",
     "arousal": "-0.13"
+  },
+  {
+    "id": "20261118-141253-cc9a",
+    "date": "2026-11-18",
+    "time": "14:12:53",
+    "thumb": "images/thumbs/2026-11-18/20261118-141253-cc9a.jpg",
+    "image": "images/2026-11-18/20261118-141253-cc9a.jpg",
+    "large": "images/large/2026-11-18/20261118-141253-cc9a.jpg",
+    "doing": "looking at my website",
+    "description": "This is a girl sitting at a desk in a room with overhead lighting. She is looking slightly to the side with her hands resting on the surface.",
+    "emotion": "Neutral",
+    "valence": "0.11",
+    "arousal": "-0.12"
   }
 ]
