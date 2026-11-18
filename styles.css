@@ -25,7 +25,7 @@
   --ls: -0.02em;
 
   --margin: 13px;
-  --header-h: 48px;                  /* 10 px top + two 19 px lines */
+  --header-h: calc(10px + var(--lh)); /* 10 px top + one line */
   --index-top: 422px;                /* "Index" label on home, archive and info */
 
   /* 8-column grid: starts at x = 13 and runs to the right edge (13, 200, 388, 575, 762, 950, 1137, 1324).
@@ -80,19 +80,34 @@ h1, h2, h3 { font: inherit; }
 
 /* ---------- Header (all pages) ---------- */
 
-/* Stays at the top while the page scrolls; white so content passes underneath it. */
+/* One line, stays at the top while the page scrolls. Only the items have a white box,
+   so the page shows through between them. The bar itself lets clicks pass through. */
 .site-header {
   position: sticky;
   z-index: 20;
   top: 0;
   height: var(--header-h);
   padding: 10px var(--margin) 0;
-  background: var(--bg);
+  pointer-events: none;
 }
 
-/* The clock uses the same digits as the times on the page (no tabular figures). */
 .brand,
-.clock { display: block; }
+.clock,
+.nav a {
+  pointer-events: auto;
+  background: var(--bg);
+  box-shadow: 0 0 0 4px var(--bg);   /* white box a little larger than the text, no layout shift */
+}
+
+.brand { display: inline-block; }
+
+/* Column 2 on every page; never closer than a small gap to "Face Value" on narrow screens.
+   Same digits as the times on the page (no tabular figures). */
+.clock {
+  position: absolute;
+  top: 10px;
+  left: max(calc(var(--margin) + var(--col)), calc(var(--margin) + 6em));
+}
 
 .nav {
   position: absolute;
@@ -354,7 +369,6 @@ h1, h2, h3 { font: inherit; }
     top: 0;
     left: 0;
     right: 0;
-    background: var(--bg);
   }
 
   /* White strip across the top; the photo itself is at most 362 px wide, on the right. */
