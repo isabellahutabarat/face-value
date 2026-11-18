@@ -2905,5 +2905,44 @@ window.FACE_VALUE_PHOTOS = [
     "emotion": "Neutral",
     "valence": "0.11",
     "arousal": "-0.12"
+  },
+  {
+    "id": "20261118-142555-4bad",
+    "date": "2026-11-18",
+    "time": "14:25:55",
+    "thumb": "images/thumbs/2026-11-18/20261118-142555-4bad.jpg",
+    "image": "images/2026-11-18/20261118-142555-4bad.jpg",
+    "large": "images/large/2026-11-18/20261118-142555-4bad.jpg",
+    "doing": "texting my friend",
+    "description": "This is a person looking at the camera in a room with a window. They are standing with their hands near their face and wearing large earrings.",
+    "emotion": "Sadness",
+    "valence": "-0.29",
+    "arousal": "-0.17"
+  },
+  {
+    "id": "20261118-144521-de66",
+    "date": "2026-11-18",
+    "time": "14:45:21",
+    "thumb": "images/thumbs/2026-11-18/20261118-144521-de66.jpg",
+    "image": "images/2026-11-18/20261118-144521-de66.jpg",
+    "large": "images/large/2026-11-18/20261118-144521-de66.jpg",
+    "doing": "talking with my friend",
+    "description": "This is a girl standing in a room with a high ceiling and fluorescent lights. She is looking to the side with a slight expression on her face.",
+    "emotion": "Neutral",
+    "valence": "-0.14",
+    "arousal": "-0.04"
+  },
+  {
+    "id": "20261118-150347-ef38",
+    "date": "2026-11-18",
+    "time": "15:03:47",
+    "thumb": "images/thumbs/2026-11-18/20261118-150347-ef38.jpg",
+    "image": "images/2026-11-18/20261118-150347-ef38.jpg",
+    "large": "images/large/2026-11-18/20261118-150347-ef38.jpg",
+    "doing": "doing work",
+    "description": "This is a girl looking out of a window in a room. She is leaning against a wall with her eyes closed.",
+    "emotion": "Neutral",
+    "valence": "0.01",
+    "arousal": "-0.17"
   }
 ];
