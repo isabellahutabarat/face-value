@@ -32,7 +32,7 @@ Export each edited photo into any folder inside `edits_dir`, named `<image_id>.j
 The script:
 - writes `data/photos.json` (and the same data as `data/photos.js`) with `id`, `date`, `time`, `thumb`, `image`, `large` and `doing`, plus `description`, `emotion`, `valence` and `arousal` when the CSV has a value for them (shown on the photo page; a dash otherwise). The CSV columns used for those four are set in `ANNOTATIONS` at the top of the script. `self_reported_emotion`, `context`, `reviewed`, `filename`, `path` and local paths are never written.
 - writes resized copies to `images/thumbs/<date>/` (350 px wide, archive), `images/<date>/` (830 px, home page photo) and `images/large/<date>/` (1472 px, photo page). It never touches the originals, and it skips copies that are already up to date at the right width. It uses macOS's built-in `sips`.
-- leaves out the photos listed in `EXCLUDE`, and shows photos from the dates in `MERGE_DATES` under another date (11/14 under 11/15), sorted by time.
+- leaves out the photos listed in `EXCLUDE`, and can show one date's photos under another date via `MERGE_DATES` (empty now), sorted by time.
 - prints the photo count per date, the rows left out because they have no edited photo yet, any edited photo with no CSV row, and any identical (duplicate) edited photos.
 
 A new date gets its own column on the home page automatically.

@@ -1262,12 +1262,30 @@ window.FACE_VALUE_PHOTOS = [
   },
   {
     "id": "20261114-181240-86d6",
-    "date": "2026-11-15",
+    "date": "2026-11-14",
     "time": "18:12:40",
-    "thumb": "images/thumbs/2026-11-15/20261114-181240-86d6.jpg",
-    "image": "images/2026-11-15/20261114-181240-86d6.jpg",
-    "large": "images/large/2026-11-15/20261114-181240-86d6.jpg",
+    "thumb": "images/thumbs/2026-11-14/20261114-181240-86d6.jpg",
+    "image": "images/2026-11-14/20261114-181240-86d6.jpg",
+    "large": "images/large/2026-11-14/20261114-181240-86d6.jpg",
     "doing": "doing my hair"
+  },
+  {
+    "id": "20261114-183532-f466",
+    "date": "2026-11-14",
+    "time": "18:35:32",
+    "thumb": "images/thumbs/2026-11-14/20261114-183532-f466.jpg",
+    "image": "images/2026-11-14/20261114-183532-f466.jpg",
+    "large": "images/large/2026-11-14/20261114-183532-f466.jpg",
+    "doing": "doing makeup"
+  },
+  {
+    "id": "20261114-184650-b7ce",
+    "date": "2026-11-14",
+    "time": "18:46:50",
+    "thumb": "images/thumbs/2026-11-14/20261114-184650-b7ce.jpg",
+    "image": "images/2026-11-14/20261114-184650-b7ce.jpg",
+    "large": "images/large/2026-11-14/20261114-184650-b7ce.jpg",
+    "doing": "getting ready"
   },
   {
     "id": "20261115-183350-6184",
@@ -1277,24 +1295,6 @@ window.FACE_VALUE_PHOTOS = [
     "image": "images/2026-11-15/20261115-183350-6184.jpg",
     "large": "images/large/2026-11-15/20261115-183350-6184.jpg",
     "doing": "eating dinner"
-  },
-  {
-    "id": "20261114-183532-f466",
-    "date": "2026-11-15",
-    "time": "18:35:32",
-    "thumb": "images/thumbs/2026-11-15/20261114-183532-f466.jpg",
-    "image": "images/2026-11-15/20261114-183532-f466.jpg",
-    "large": "images/large/2026-11-15/20261114-183532-f466.jpg",
-    "doing": "doing makeup"
-  },
-  {
-    "id": "20261114-184650-b7ce",
-    "date": "2026-11-15",
-    "time": "18:46:50",
-    "thumb": "images/thumbs/2026-11-15/20261114-184650-b7ce.jpg",
-    "image": "images/2026-11-15/20261114-184650-b7ce.jpg",
-    "large": "images/large/2026-11-15/20261114-184650-b7ce.jpg",
-    "doing": "getting ready"
   },
   {
     "id": "20261115-190329-c333",
