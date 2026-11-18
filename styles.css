@@ -42,7 +42,8 @@ html {
   scrollbar-gutter: stable;          /* no layout shift when the photo page locks scrolling */
 }
 
-html.is-locked { overflow: hidden; }
+html.is-locked,
+html.is-locked body { overflow: hidden; overscroll-behavior: none; }
 
 body {
   margin: 0;
@@ -286,56 +287,71 @@ h1, h2, h3 { font: inherit; }
   position: fixed;
   z-index: 100;
   inset: 0;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  overflow: hidden;                 /* never scrolls: the content is sized to fit (see fitPhotoPage) */
+  overscroll-behavior: none;
+  touch-action: pinch-zoom;         /* no panning/scrolling; horizontal swipes switch photos */
   background: rgba(255, 255, 255, 0.9);
 }
 
 .photo-page[hidden] { display: none; }
 
 .photo-page__bar {
+  position: relative;
+  z-index: 1;                       /* above the click areas */
   display: flex;
   justify-content: space-between;
   padding: 10px var(--margin) 0;
 }
 
+/* Whole viewport under the bar. The empty space left/right of the content is the
+   previous/next click area. Equal top and bottom padding keeps the block centred in the viewport. */
 .photo-page__body {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  padding: 0 0 80px var(--margin);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--header-h) + 16px) var(--margin);
+}
+
+.photo-page__body[data-side="prev"] { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M15 5l-7 7 7 7' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='M15 5l-7 7 7 7' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E") 12 12, w-resize; }
+.photo-page__body[data-side="next"] { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M9 5l7 7-7 7' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='M9 5l7 7-7 7' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E") 12 12, e-resize; }
+
+/* Title, photo and info table as one block, grid columns 3–6 wide (736 px at 1512). When the
+   window is too short for everything, only the photo gets smaller (set in script.js). */
+.photo-page__content {
+  flex: none;
+  width: calc((100vw - var(--margin)) / 2 - 13px);
+  max-width: 100%;
+  cursor: auto;
 }
 
 .photo-page__title {
-  grid-column: 1 / -1;
-  margin: calc(137px - 10px - var(--lh)) 0 calc(163px - 137px - var(--lh));   /* y = 137, photo at y = 163 */
-  padding-right: var(--margin);
+  margin: 0 0 calc(163px - 137px - var(--lh));   /* photo 7 px under the title line */
   text-align: center;
 }
 
-/* Columns 3–6: x = 388 to 1124, 736 x 414. */
 .photo-page__img {
-  grid-column: 3 / 7;
   display: block;
-  width: calc(100% - 13px);
+  width: 100%;
+  margin: 0 auto;
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
 .photo-page__info {
-  grid-column: 3 / 7;
   display: grid;
-  /* Labels span grid columns 3–4; values start at grid column 5 (the photo's 3rd column, x ≈ 762). */
+  /* Labels span the photo's first two grid columns; values start at its 3rd (grid column 5). */
   grid-template-columns: calc((100% + 13px) / 2) 1fr;
   margin-top: 7px;
-  padding-right: 13px;
 }
 
 .photo-page__info dt { color: var(--text-label); padding-right: 8px; white-space: nowrap; }
+.photo-page__info dd { color: var(--text); overflow-wrap: anywhere; }
 @media (max-width: 699px) {
   .photo-page__info dt { white-space: normal; }   /* too narrow for one line on phones */
 }
-.photo-page__info dd { color: var(--text); overflow-wrap: anywhere; }
 
 /* ---------- Small screens ---------- */
 
@@ -428,11 +444,10 @@ h1, h2, h3 { font: inherit; }
     margin: 0 0 0 calc(var(--margin) + var(--col));
   }
 
-  /* Photo page: full-width photo, labels stacked over values. */
-  .photo-page__body { display: block; padding: 0 var(--margin) 60px; }
-  .photo-page__title { margin: 40px 0 8px; padding-right: 0; }
-  .photo-page__img { width: 100%; }
-  .photo-page__info { display: block; margin-top: 12px; padding-right: 0; }
+  /* Photo page: full-width photo, labels stacked over values (still centred, never scrolls). */
+  .photo-page__content { width: 100%; }
+  .photo-page__title { margin: 0 0 8px; }
+  .photo-page__info { display: block; margin-top: 12px; }
   .photo-page__info dd + dt { margin-top: 10px; }
 }
 

@@ -191,6 +191,8 @@
     var img = document.getElementById("photo-page-img");
     var info = document.getElementById("photo-page-info");
     var exit = document.getElementById("photo-page-exit");
+    var body = document.getElementById("photo-page-body");
+    var content = document.getElementById("photo-page-content");
     var behind = [document.querySelector(".site-header"), document.querySelector("main")];
     var byId = {};
     photos.forEach(function (p, i) { byId[p.id] = i; });
@@ -211,7 +213,94 @@
         info.appendChild(el("dt", null, row[0]));
         info.appendChild(el("dd", null, value(p[row[1]])));
       });
+      fit();
+      // Preload the neighbours so previous/next switch instantly.
+      [i - 1, i + 1].forEach(function (j) {
+        if (photos[j]) new Image().src = photos[j].large || photos[j].image;
+      });
     }
+
+    // Fit the block (title, photo, info) in the window without ever scrolling. The block is
+    // grid columns 3-6 wide (full width on phones). If it is too tall for the window, only the
+    // photo shrinks (keeping 16:9, centred); the title and info table keep their size.
+    var phone = window.matchMedia("(max-width: 699px)");
+    function fit() {
+      if (openIndex === -1) return;
+      var cs = getComputedStyle(body);
+      var availH = body.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+      var availW = body.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+      var margin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--margin")) || 13;
+      var full = phone.matches ? availW : Math.min(availW, (root.clientWidth - margin) / 2 - 13);
+      content.style.width = Math.floor(full) + "px";
+      img.style.width = "100%";
+      var rest = content.offsetHeight - img.offsetHeight;        // title + info table
+      var w = Math.min(full, Math.max(64, (availH - rest) * 16 / 9));
+      img.style.width = Math.floor(w) + "px";
+    }
+
+    var fitQueued = false;
+    window.addEventListener("resize", function () {
+      if (fitQueued) return;
+      fitQueued = true;
+      requestAnimationFrame(function () { fitQueued = false; fit(); });
+    });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+
+    // Previous/next, in dataset order (the same order as the fraction). Stops at both ends.
+    function go(step) {
+      var j = openIndex + step;
+      if (openIndex === -1 || j < 0 || j >= photos.length) return;
+      openIndex = j;
+      history.replaceState({ photo: photos[j].id }, "", "#photo=" + encodeURIComponent(photos[j].id));
+      render(j);
+    }
+
+    // Which way a click in the empty space goes: -1 previous (left of the content), 1 next
+    // (right of it), 0 nothing (on the content, or above/below it). On phones the content is
+    // nearly full width, so a tap above/below it counts too, by which half of the screen it is in.
+    function sideAt(x, target) {
+      if (content.contains(target)) return 0;
+      var r = content.getBoundingClientRect();
+      if (x < r.left) return -1;
+      if (x > r.right) return 1;
+      return phone.matches ? (x < root.clientWidth / 2 ? -1 : 1) : 0;
+    }
+    function canGo(step) {
+      var j = openIndex + step;
+      return step !== 0 && j >= 0 && j < photos.length;
+    }
+
+    body.addEventListener("mousemove", function (e) {
+      var side = sideAt(e.clientX, e.target);
+      var name = canGo(side) ? (side < 0 ? "prev" : "next") : "";
+      if (body.dataset.side !== name) body.dataset.side = name;
+    });
+    body.addEventListener("mouseleave", function () { body.dataset.side = ""; });
+
+    var swipedAt = 0;
+    body.addEventListener("click", function (e) {
+      if (Date.now() - swipedAt < 500) return;   // the tap that ended a swipe
+      var side = sideAt(e.clientX, e.target);
+      if (canGo(side)) go(side);
+    });
+
+    // Touch: swipe left for next, right for previous (anywhere on the overlay).
+    var touch = null;
+    root.addEventListener("touchstart", function (e) {
+      touch = e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null;
+    }, { passive: true });
+    root.addEventListener("touchend", function (e) {
+      if (!touch || e.changedTouches.length !== 1) return;
+      var dx = e.changedTouches[0].clientX - touch.x;
+      var dy = e.changedTouches[0].clientY - touch.y;
+      touch = null;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        swipedAt = Date.now();
+        go(dx < 0 ? 1 : -1);
+      }
+    }, { passive: true });
+    // Nothing behind the overlay scrolls while it is open.
+    root.addEventListener("wheel", function (e) { e.preventDefault(); }, { passive: false });
 
     function show(i) {
       if (openIndex === -1) {
@@ -220,9 +309,8 @@
         behind.forEach(function (b) { if (b) b.inert = true; });
       }
       openIndex = i;
-      render(i);
       root.hidden = false;
-      root.scrollTop = 0;
+      render(i);
       exit.focus({ preventScroll: true });
     }
 
@@ -270,7 +358,10 @@
 
     exit.addEventListener("click", close);
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && openIndex !== -1) { e.preventDefault(); close(); }
+      if (openIndex === -1) return;
+      if (e.key === "Escape") { e.preventDefault(); close(); }
+      else if (e.key === "ArrowLeft") { e.preventDefault(); go(-1); }
+      else if (e.key === "ArrowRight") { e.preventDefault(); go(1); }
     });
 
     // A link to a photo opens it straight away.
