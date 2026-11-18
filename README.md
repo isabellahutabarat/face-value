@@ -37,6 +37,40 @@ The script:
 
 A new date gets its own column on the home page automatically.
 
+## AI annotations (description, emotion, valence, arousal)
+
+`scripts/ai_annotate.py` makes the four AI fields on the photo page. It runs entirely on this Mac: no photo is sent anywhere. It analyses the **colour originals** in `originals_dir` (a third key in `scripts/paths.json`), never the edited black-and-white photos, and writes a separate file, `ai_annotations.csv`, next to `metadata.csv`. It never touches `metadata.csv` (the capture app owns it) or your own columns (`activity`, `self_reported_emotion`, and so on).
+
+| Column | What it is |
+|---|---|
+| `ai_description` | One or two sentences from a local vision model in Ollama, `gemma3:4b` (set by `DESCRIPTION_MODEL` at the top of the script). |
+| `ai_emotion_classification` | One of Anger, Contempt, Disgust, Fear, Happiness, Neutral, Sadness, Surprise (HSEmotion `enet_b0_8_va_mtl` on the face found by OpenCV's YuNet detector). |
+| `valence`, `arousal` | From the same HSEmotion model, rounded to 2 decimals. The model was trained on AffectNet, where both run from **-1 to 1** (valence: negative to positive; arousal: calm to excited). The raw outputs aren't clamped, so a value can occasionally be slightly outside that range. |
+| `ai_status` | `ok`; `no_face` (no face found, so the three emotion fields are empty); or `error` (retried on the next run). |
+| `ai_description_model`, `ai_emotion_model`, `ai_run_at` | Which models made the row, and when. |
+
+### One-time setup
+
+1. Install Ollama: download it from <https://ollama.com/download>, drag it to Applications and open it once. It runs in the menu bar.
+2. Download the vision model (about 3.3 GB, once):  `ollama pull gemma3:4b`. If you change `DESCRIPTION_MODEL`, pull that model instead.
+3. In Terminal, in this folder, make a Python environment and install the packages:
+   ```sh
+   /usr/bin/python3 -m venv .venv
+   .venv/bin/pip install -r scripts/requirements-ai.txt
+   ```
+   `timm` is pinned to 0.9.16 on purpose: the HSEmotion model files don't work with timm 1.x. On first use, HSEmotion downloads its model (about 16 MB) into `~/.hsemotion/`. The face detector model is already in `scripts/models/`.
+
+### Every time there are new photos
+
+```sh
+.venv/bin/python scripts/ai_annotate.py            # only photos not done yet
+python3 scripts/build_data.py                      # merge into data/photos.json
+```
+
+Add `--limit 3` to try just a few. The script saves after every photo, so you can stop it with Ctrl+C and run it again later to carry on. Ollama must be open while it runs.
+
+`build_data.py` copies `ai_description` → `description`, `ai_emotion_classification` → `emotion`, `valence` → `valence` and `arousal` → `arousal` (see `AI_FIELDS` at the top of the script). A field that's empty is left out, and the photo page shows a dash.
+
 ## Font
 
 The site uses ABC Diatype Medium from `assets/fonts/` (`ABCDiatype-Medium-Trial.woff2`, with `.woff` as a fallback). These are Dinamo's trial files, so check that the trial licence covers publishing. If the font can't load, the site falls back to Helvetica Neue / Helvetica / Arial.

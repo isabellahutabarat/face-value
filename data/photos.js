@@ -7,7 +7,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-012639-609a.jpg",
     "image": "images/2026-11-09/20261109-012639-609a.jpg",
     "large": "images/large/2026-11-09/20261109-012639-609a.jpg",
-    "doing": "going on tiktok"
+    "doing": "going on tiktok",
+    "description": "This is a person looking at the camera in a room. They are standing with their hands near their face, and a window is visible in the background.",
+    "emotion": "Neutral",
+    "valence": "-0.08",
+    "arousal": "-0.07"
   },
   {
     "id": "20261109-110805-9305",
@@ -16,7 +20,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-110805-9305.jpg",
     "image": "images/2026-11-09/20261109-110805-9305.jpg",
     "large": "images/large/2026-11-09/20261109-110805-9305.jpg",
-    "doing": "getting ready for work"
+    "doing": "getting ready for work",
+    "description": "This is a girl holding her hand to her face in a room with windows.",
+    "emotion": "Sadness",
+    "valence": "-0.50",
+    "arousal": "-0.21"
   },
   {
     "id": "20261109-112831-9c4f",
@@ -25,7 +33,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-112831-9c4f.jpg",
     "image": "images/2026-11-09/20261109-112831-9c4f.jpg",
     "large": "images/large/2026-11-09/20261109-112831-9c4f.jpg",
-    "doing": "getting ready for a meeting"
+    "doing": "getting ready for a meeting",
+    "description": "This is a girl looking at the camera while holding her hand to her face. She is standing in a room with a window and a mirror behind her.",
+    "emotion": "Neutral",
+    "valence": "-0.14",
+    "arousal": "-0.10"
   },
   {
     "id": "20261109-115422-1b3d",
@@ -34,7 +46,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-115422-1b3d.jpg",
     "image": "images/2026-11-09/20261109-115422-1b3d.jpg",
     "large": "images/large/2026-11-09/20261109-115422-1b3d.jpg",
-    "doing": "chatting for work"
+    "doing": "chatting for work",
+    "description": "This is a person looking at the camera from inside a room. They are standing with their hands near their face, with a window visible in the background.",
+    "emotion": "Neutral",
+    "valence": "-0.20",
+    "arousal": "-0.21"
   },
   {
     "id": "20261109-120503-3ae2",
@@ -43,7 +59,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-120503-3ae2.jpg",
     "image": "images/2026-11-09/20261109-120503-3ae2.jpg",
     "large": "images/large/2026-11-09/20261109-120503-3ae2.jpg",
-    "doing": "working"
+    "doing": "working",
+    "description": "This is a girl looking at the camera from inside a room with a window. She is sitting at a surface with a device in front of her.",
+    "emotion": "Disgust",
+    "valence": "-0.32",
+    "arousal": "0.08"
   },
   {
     "id": "20261109-121747-d45d",
@@ -52,7 +72,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-121747-d45d.jpg",
     "image": "images/2026-11-09/20261109-121747-d45d.jpg",
     "large": "images/large/2026-11-09/20261109-121747-d45d.jpg",
-    "doing": "procrastinating"
+    "doing": "procrastinating",
+    "description": "This is a girl sitting in a chair in a room with windows. She is looking down with her hands resting on the arms of the chair.",
+    "emotion": "Sadness",
+    "valence": "-0.49",
+    "arousal": "-0.33"
   },
   {
     "id": "20261109-123720-1289",
@@ -61,7 +85,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-123720-1289.jpg",
     "image": "images/2026-11-09/20261109-123720-1289.jpg",
     "large": "images/large/2026-11-09/20261109-123720-1289.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room.",
+    "emotion": "Sadness",
+    "valence": "-0.36",
+    "arousal": "-0.16"
   },
   {
     "id": "20261109-125721-6da7",
@@ -70,7 +98,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-125721-6da7.jpg",
     "image": "images/2026-11-09/20261109-125721-6da7.jpg",
     "large": "images/large/2026-11-09/20261109-125721-6da7.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar on a table in a room.",
+    "emotion": "Sadness",
+    "valence": "-0.15",
+    "arousal": "-0.24"
   },
   {
     "id": "20261109-133905-f716",
@@ -79,7 +111,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-133905-f716.jpg",
     "image": "images/2026-11-09/20261109-133905-f716.jpg",
     "large": "images/large/2026-11-09/20261109-133905-f716.jpg",
-    "doing": "eating"
+    "doing": "eating",
+    "description": "This is a girl sitting at a desk with her eyes closed, wearing headphones and a necklace. She is positioned in front of a window with blinds.",
+    "emotion": "Sadness",
+    "valence": "-0.37",
+    "arousal": "-0.10"
   },
   {
     "id": "20261109-140719-d70b",
@@ -88,7 +124,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-140719-d70b.jpg",
     "image": "images/2026-11-09/20261109-140719-d70b.jpg",
     "large": "images/large/2026-11-09/20261109-140719-d70b.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a chair in a room, looking at the camera. She is positioned in front of a window with light streaming in.",
+    "emotion": "Happiness",
+    "valence": "0.31",
+    "arousal": "-0.08"
   },
   {
     "id": "20261109-143455-495f",
@@ -97,7 +137,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-143455-495f.jpg",
     "image": "images/2026-11-09/20261109-143455-495f.jpg",
     "large": "images/large/2026-11-09/20261109-143455-495f.jpg",
-    "doing": "working"
+    "doing": "working",
+    "description": "This is a person sitting at a table, looking at a device. They are positioned in front of a window with blinds."
   },
   {
     "id": "20261109-145651-ec03",
@@ -106,7 +147,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-145651-ec03.jpg",
     "image": "images/2026-11-09/20261109-145651-ec03.jpg",
     "large": "images/large/2026-11-09/20261109-145651-ec03.jpg",
-    "doing": "setting up invoices"
+    "doing": "setting up invoices",
+    "description": "This is a girl looking into a mirror in a room. She is positioned in front of a window with blinds and a light fixture above.",
+    "emotion": "Sadness",
+    "valence": "-0.33",
+    "arousal": "-0.19"
   },
   {
     "id": "20261109-150720-8681",
@@ -115,7 +160,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-150720-8681.jpg",
     "image": "images/2026-11-09/20261109-150720-8681.jpg",
     "large": "images/large/2026-11-09/20261109-150720-8681.jpg",
-    "doing": "researching"
+    "doing": "researching",
+    "description": "This is a girl looking at herself in a mirror in a room. She is touching her face with her hand.",
+    "emotion": "Sadness",
+    "valence": "-0.29",
+    "arousal": "-0.25"
   },
   {
     "id": "20261109-152747-1ca0",
@@ -124,7 +173,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-152747-1ca0.jpg",
     "image": "images/2026-11-09/20261109-152747-1ca0.jpg",
     "large": "images/large/2026-11-09/20261109-152747-1ca0.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room. They are standing with their head and shoulders visible, with a window and ceiling in the background.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "0.06"
   },
   {
     "id": "20261109-154924-a56e",
@@ -133,7 +186,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-154924-a56e.jpg",
     "image": "images/2026-11-09/20261109-154924-a56e.jpg",
     "large": "images/large/2026-11-09/20261109-154924-a56e.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a room with her hand on her forehead. She is looking towards the right side of the frame.",
+    "emotion": "Sadness",
+    "valence": "-0.39",
+    "arousal": "-0.13"
   },
   {
     "id": "20261109-161904-2b06",
@@ -142,7 +199,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-161904-2b06.jpg",
     "image": "images/2026-11-09/20261109-161904-2b06.jpg",
     "large": "images/large/2026-11-09/20261109-161904-2b06.jpg",
-    "doing": "workinggg"
+    "doing": "workinggg",
+    "description": "This is a girl looking at the camera in a room. She is standing with her hands in front of her face, with a window and ceiling visible in the background.",
+    "emotion": "Neutral",
+    "valence": "-0.27",
+    "arousal": "-0.11"
   },
   {
     "id": "20261109-163457-297b",
@@ -151,7 +212,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-163457-297b.jpg",
     "image": "images/2026-11-09/20261109-163457-297b.jpg",
     "large": "images/large/2026-11-09/20261109-163457-297b.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting on a chair and holding a guitar in front of her.",
+    "emotion": "Sadness",
+    "valence": "-0.47",
+    "arousal": "0.09"
   },
   {
     "id": "20261109-165246-ee95",
@@ -160,7 +225,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-165246-ee95.jpg",
     "image": "images/2026-11-09/20261109-165246-ee95.jpg",
     "large": "images/large/2026-11-09/20261109-165246-ee95.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl holding a microphone and appears to be speaking from inside a room. She is looking directly at the camera with her hand near her mouth.",
+    "emotion": "Neutral",
+    "valence": "-0.35",
+    "arousal": "-0.28"
   },
   {
     "id": "20261109-170942-4fcf",
@@ -169,7 +238,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-170942-4fcf.jpg",
     "image": "images/2026-11-09/20261109-170942-4fcf.jpg",
     "large": "images/large/2026-11-09/20261109-170942-4fcf.jpg",
-    "doing": "working"
+    "doing": "working",
+    "description": "This is a girl sitting in a room, looking at the camera with a slight smile. She is sitting on a dark surface with a toy beside her.",
+    "emotion": "Happiness",
+    "valence": "0.48",
+    "arousal": "-0.05"
   },
   {
     "id": "20261109-172749-5a94",
@@ -178,7 +251,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-172749-5a94.jpg",
     "image": "images/2026-11-09/20261109-172749-5a94.jpg",
     "large": "images/large/2026-11-09/20261109-172749-5a94.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera with a slightly pursed mouth, positioned in front of a wall. They are partially obscured by a dark object in the foreground.",
+    "emotion": "Neutral",
+    "valence": "-0.23",
+    "arousal": "-0.07"
   },
   {
     "id": "20261109-183857-fe91",
@@ -187,7 +264,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-183857-fe91.jpg",
     "image": "images/2026-11-09/20261109-183857-fe91.jpg",
     "large": "images/large/2026-11-09/20261109-183857-fe91.jpg",
-    "doing": "watching daisy jones and the six"
+    "doing": "watching daisy jones and the six",
+    "description": "This is a girl looking at the camera from behind a window. She is wearing a shirt and has long, dark hair.",
+    "emotion": "Neutral",
+    "valence": "-0.13",
+    "arousal": "-0.27"
   },
   {
     "id": "20261109-190814-119c",
@@ -196,7 +277,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-190814-119c.jpg",
     "image": "images/2026-11-09/20261109-190814-119c.jpg",
     "large": "images/large/2026-11-09/20261109-190814-119c.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting with her eyes closed and appears to be holding the instrument while her fingers are on the strings.",
+    "emotion": "Neutral",
+    "valence": "-0.24",
+    "arousal": "-0.19"
   },
   {
     "id": "20261109-193656-0de3",
@@ -205,7 +290,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-193656-0de3.jpg",
     "image": "images/2026-11-09/20261109-193656-0de3.jpg",
     "large": "images/large/2026-11-09/20261109-193656-0de3.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a person playing guitar in a room. They are seated with the instrument resting on their lap.",
+    "emotion": "Sadness",
+    "valence": "-0.47",
+    "arousal": "-0.14"
   },
   {
     "id": "20261109-195542-5630",
@@ -214,7 +303,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-195542-5630.jpg",
     "image": "images/2026-11-09/20261109-195542-5630.jpg",
     "large": "images/large/2026-11-09/20261109-195542-5630.jpg",
-    "doing": "rotting"
+    "doing": "rotting",
+    "description": "This is a girl lying down against a wall in a room. She has her eyes closed and her head resting on what appears to be a pillow.",
+    "emotion": "Sadness",
+    "valence": "-0.25",
+    "arousal": "-0.16"
   },
   {
     "id": "20261109-201411-b29d",
@@ -223,7 +316,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-201411-b29d.jpg",
     "image": "images/2026-11-09/20261109-201411-b29d.jpg",
     "large": "images/large/2026-11-09/20261109-201411-b29d.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a person lying in bed with two pillows. They are looking directly at the camera.",
+    "emotion": "Contempt",
+    "valence": "-0.20",
+    "arousal": "-0.01"
   },
   {
     "id": "20261109-203718-6cd8",
@@ -232,7 +329,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-203718-6cd8.jpg",
     "image": "images/2026-11-09/20261109-203718-6cd8.jpg",
     "large": "images/large/2026-11-09/20261109-203718-6cd8.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a person lying on a bed in a room. They are looking at the camera with a slight smile.",
+    "emotion": "Happiness",
+    "valence": "0.78",
+    "arousal": "-0.03"
   },
   {
     "id": "20261109-222219-8b4a",
@@ -241,7 +342,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-222219-8b4a.jpg",
     "image": "images/2026-11-09/20261109-222219-8b4a.jpg",
     "large": "images/large/2026-11-09/20261109-222219-8b4a.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a girl sitting on a bed with a towel on her head. She is looking down with her eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.20",
+    "arousal": "-0.29"
   },
   {
     "id": "20261109-223716-31a7",
@@ -250,7 +355,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-223716-31a7.jpg",
     "image": "images/2026-11-09/20261109-223716-31a7.jpg",
     "large": "images/large/2026-11-09/20261109-223716-31a7.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a girl lying on a bed in a room, wearing a towel on her head. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Anger",
+    "valence": "-0.42",
+    "arousal": "0.08"
   },
   {
     "id": "20261109-224756-13e1",
@@ -259,7 +368,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-224756-13e1.jpg",
     "image": "images/2026-11-09/20261109-224756-13e1.jpg",
     "large": "images/large/2026-11-09/20261109-224756-13e1.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a person lying on a bed in a room. They are looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.49",
+    "arousal": "-0.04"
   },
   {
     "id": "20261109-230525-e1bd",
@@ -268,7 +381,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-230525-e1bd.jpg",
     "image": "images/2026-11-09/20261109-230525-e1bd.jpg",
     "large": "images/large/2026-11-09/20261109-230525-e1bd.jpg",
-    "doing": "texting"
+    "doing": "texting",
+    "description": "This is a person lying on a bed with a pillow. They are looking towards the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.48",
+    "arousal": "-0.22"
   },
   {
     "id": "20261109-232741-f25d",
@@ -277,7 +394,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-232741-f25d.jpg",
     "image": "images/2026-11-09/20261109-232741-f25d.jpg",
     "large": "images/large/2026-11-09/20261109-232741-f25d.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying in bed, with their hand resting on the head of another person who is lying beside them.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "-0.15"
   },
   {
     "id": "20261109-235019-60a2",
@@ -286,7 +407,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-09/20261109-235019-60a2.jpg",
     "image": "images/2026-11-09/20261109-235019-60a2.jpg",
     "large": "images/large/2026-11-09/20261109-235019-60a2.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying on a bed in a room. They are looking down with their hand resting on their head.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "-0.21"
   },
   {
     "id": "20261110-001857-9ba3",
@@ -295,7 +420,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-001857-9ba3.jpg",
     "image": "images/2026-11-10/20261110-001857-9ba3.jpg",
     "large": "images/large/2026-11-10/20261110-001857-9ba3.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a bed in a room. She is resting her head on a pillow with her arm resting on the bed beside her.",
+    "emotion": "Neutral",
+    "valence": "-0.12",
+    "arousal": "-0.14"
   },
   {
     "id": "20261110-002931-67d6",
@@ -304,7 +433,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-002931-67d6.jpg",
     "image": "images/2026-11-10/20261110-002931-67d6.jpg",
     "large": "images/large/2026-11-10/20261110-002931-67d6.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying on a bed in a room, with their eyes closed and hand resting on their head. A pillow is positioned next to their head.",
+    "emotion": "Sadness",
+    "valence": "-0.70",
+    "arousal": "-0.10"
   },
   {
     "id": "20261110-004646-49bd",
@@ -313,7 +446,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-004646-49bd.jpg",
     "image": "images/2026-11-10/20261110-004646-49bd.jpg",
     "large": "images/large/2026-11-10/20261110-004646-49bd.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a bed. She is holding her arm up and looking downwards.",
+    "emotion": "Neutral",
+    "valence": "-0.24",
+    "arousal": "-0.27"
   },
   {
     "id": "20261110-010922-48bb",
@@ -322,7 +459,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-010922-48bb.jpg",
     "image": "images/2026-11-10/20261110-010922-48bb.jpg",
     "large": "images/large/2026-11-10/20261110-010922-48bb.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying on a bed with pillows in a room. They have their hands covering their mouth and nose.",
+    "emotion": "Neutral",
+    "valence": "-0.28",
+    "arousal": "-0.24"
   },
   {
     "id": "20261110-120356-fa30",
@@ -331,7 +472,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-120356-fa30.jpg",
     "image": "images/2026-11-10/20261110-120356-fa30.jpg",
     "large": "images/large/2026-11-10/20261110-120356-fa30.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room. They are holding a piece of fabric to their face with one hand.",
+    "emotion": "Neutral",
+    "valence": "-0.31",
+    "arousal": "-0.08"
   },
   {
     "id": "20261110-122851-0046",
@@ -340,7 +485,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-122851-0046.jpg",
     "image": "images/2026-11-10/20261110-122851-0046.jpg",
     "large": "images/large/2026-11-10/20261110-122851-0046.jpg",
-    "doing": "laying down"
+    "doing": "laying down",
+    "description": "This is a person playing a guitar on a wall in a room. They are holding the instrument with both hands and appear to be strumming the strings."
   },
   {
     "id": "20261110-131241-b058",
@@ -349,7 +495,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-131241-b058.jpg",
     "image": "images/2026-11-10/20261110-131241-b058.jpg",
     "large": "images/large/2026-11-10/20261110-131241-b058.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person taking a photograph of themselves in a room. They are looking at the camera with a slight smile.",
+    "emotion": "Surprise",
+    "valence": "-0.09",
+    "arousal": "-0.00"
   },
   {
     "id": "20261110-133716-be30",
@@ -358,7 +508,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-133716-be30.jpg",
     "image": "images/2026-11-10/20261110-133716-be30.jpg",
     "large": "images/large/2026-11-10/20261110-133716-be30.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera while sitting in a room. She is positioned in front of a wall with several framed pictures and a lamp.",
+    "emotion": "Sadness",
+    "valence": "-0.35",
+    "arousal": "-0.18"
   },
   {
     "id": "20261110-135139-a01a",
@@ -367,7 +521,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-135139-a01a.jpg",
     "image": "images/2026-11-10/20261110-135139-a01a.jpg",
     "large": "images/large/2026-11-10/20261110-135139-a01a.jpg",
-    "doing": "going on my phone"
+    "doing": "going on my phone",
+    "description": "This is a girl with her eyes closed, sitting in a room with a dark background. She is sitting on a dark surface with a chair behind her and a doorway visible in the background.",
+    "emotion": "Sadness",
+    "valence": "-0.41",
+    "arousal": "-0.37"
   },
   {
     "id": "20261110-140721-7d76",
@@ -376,7 +534,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-140721-7d76.jpg",
     "image": "images/2026-11-10/20261110-140721-7d76.jpg",
     "large": "images/large/2026-11-10/20261110-140721-7d76.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person sitting at a table in a room, with a wreath displayed on the wall behind them. They are looking at a small framed picture on the table."
   },
   {
     "id": "20261110-142727-e43f",
@@ -385,7 +544,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-142727-e43f.jpg",
     "image": "images/2026-11-10/20261110-142727-e43f.jpg",
     "large": "images/large/2026-11-10/20261110-142727-e43f.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room. They are holding a floral crown in their hair.",
+    "emotion": "Neutral",
+    "valence": "-0.27",
+    "arousal": "-0.17"
   },
   {
     "id": "20261110-144606-17c7",
@@ -394,7 +557,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-144606-17c7.jpg",
     "image": "images/2026-11-10/20261110-144606-17c7.jpg",
     "large": "images/large/2026-11-10/20261110-144606-17c7.jpg",
-    "doing": "linkedi"
+    "doing": "linkedi",
+    "description": "This is a person standing in a room, looking towards the camera with their eyes open. They are positioned in front of a wall with various decorative items.",
+    "emotion": "Neutral",
+    "valence": "0.00",
+    "arousal": "-0.11"
   },
   {
     "id": "20261110-152526-07c8",
@@ -403,7 +570,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-152526-07c8.jpg",
     "image": "images/2026-11-10/20261110-152526-07c8.jpg",
     "large": "images/large/2026-11-10/20261110-152526-07c8.jpg",
-    "doing": "eating lunch"
+    "doing": "eating lunch",
+    "description": "This is a girl sitting at a desk in a room, looking down at a laptop screen. She is wearing a shirt and has her hair down around her face.",
+    "emotion": "Sadness",
+    "valence": "-0.39",
+    "arousal": "-0.19"
   },
   {
     "id": "20261110-153546-3ac3",
@@ -412,7 +583,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-153546-3ac3.jpg",
     "image": "images/2026-11-10/20261110-153546-3ac3.jpg",
     "large": "images/large/2026-11-10/20261110-153546-3ac3.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a girl sitting on a surface, leaning her head on her hand, in a room. There is a lamp and other objects visible in the background.",
+    "emotion": "Sadness",
+    "valence": "-0.31",
+    "arousal": "-0.19"
   },
   {
     "id": "20261110-154812-efc7",
@@ -421,7 +596,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-154812-efc7.jpg",
     "image": "images/2026-11-10/20261110-154812-efc7.jpg",
     "large": "images/large/2026-11-10/20261110-154812-efc7.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a girl sitting in a room, leaning her head on her hand. She is wearing a long-sleeved shirt and looking downwards.",
+    "emotion": "Neutral",
+    "valence": "-0.41",
+    "arousal": "-0.03"
   },
   {
     "id": "20261110-160219-f34a",
@@ -430,7 +609,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-160219-f34a.jpg",
     "image": "images/2026-11-10/20261110-160219-f34a.jpg",
     "large": "images/large/2026-11-10/20261110-160219-f34a.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a girl sitting in a room, leaning her head on her hand. She is looking downwards with her eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.41",
+    "arousal": "-0.05"
   },
   {
     "id": "20261110-161837-2da8",
@@ -439,7 +622,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-161837-2da8.jpg",
     "image": "images/2026-11-10/20261110-161837-2da8.jpg",
     "large": "images/large/2026-11-10/20261110-161837-2da8.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting with her guitar and looking upwards.",
+    "emotion": "Sadness",
+    "valence": "-0.39",
+    "arousal": "-0.15"
   },
   {
     "id": "20261110-163835-16b5",
@@ -448,7 +635,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-163835-16b5.jpg",
     "image": "images/2026-11-10/20261110-163835-16b5.jpg",
     "large": "images/large/2026-11-10/20261110-163835-16b5.jpg",
-    "doing": "learning a song"
+    "doing": "learning a song",
+    "description": "This is a girl playing guitar in her room. She is sitting with the guitar on her lap and looking directly at the camera.",
+    "emotion": "Neutral",
+    "valence": "-0.17",
+    "arousal": "-0.15"
   },
   {
     "id": "20261110-170447-db99",
@@ -457,7 +648,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-170447-db99.jpg",
     "image": "images/2026-11-10/20261110-170447-db99.jpg",
     "large": "images/large/2026-11-10/20261110-170447-db99.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting at a window with a guitar in front of her.",
+    "emotion": "Neutral",
+    "valence": "-0.04",
+    "arousal": "-0.21"
   },
   {
     "id": "20261110-172950-74f5",
@@ -466,7 +661,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-172950-74f5.jpg",
     "image": "images/2026-11-10/20261110-172950-74f5.jpg",
     "large": "images/large/2026-11-10/20261110-172950-74f5.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room.",
+    "emotion": "Neutral",
+    "valence": "0.06",
+    "arousal": "-0.16"
   },
   {
     "id": "20261110-174610-c01d",
@@ -475,7 +674,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-174610-c01d.jpg",
     "image": "images/2026-11-10/20261110-174610-c01d.jpg",
     "large": "images/large/2026-11-10/20261110-174610-c01d.jpg",
-    "doing": "on my phone"
+    "doing": "on my phone",
+    "description": "This is a girl holding a phone up to her face in a room. She is looking at the screen with her eyes closed.",
+    "emotion": "Neutral",
+    "valence": "-0.17",
+    "arousal": "0.11"
   },
   {
     "id": "20261110-180907-9737",
@@ -484,7 +687,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-180907-9737.jpg",
     "image": "images/2026-11-10/20261110-180907-9737.jpg",
     "large": "images/large/2026-11-10/20261110-180907-9737.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting on a bed with a guitar in front of her, looking directly at the camera.",
+    "emotion": "Sadness",
+    "valence": "-0.41",
+    "arousal": "-0.27"
   },
   {
     "id": "20261110-183926-5468",
@@ -493,7 +700,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-183926-5468.jpg",
     "image": "images/2026-11-10/20261110-183926-5468.jpg",
     "large": "images/large/2026-11-10/20261110-183926-5468.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a bed in a room, with her head resting on a pillow. She is looking towards the camera with her eyes closed.",
+    "emotion": "Neutral",
+    "valence": "-0.19",
+    "arousal": "-0.32"
   },
   {
     "id": "20261110-213738-d605",
@@ -502,7 +713,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-213738-d605.jpg",
     "image": "images/2026-11-10/20261110-213738-d605.jpg",
     "large": "images/large/2026-11-10/20261110-213738-d605.jpg",
-    "doing": "doing homework"
+    "doing": "doing homework",
+    "description": "This is a girl resting her head on a pillow in a room. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.42",
+    "arousal": "-0.04"
   },
   {
     "id": "20261110-220434-55bc",
@@ -511,7 +726,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-220434-55bc.jpg",
     "image": "images/2026-11-10/20261110-220434-55bc.jpg",
     "large": "images/large/2026-11-10/20261110-220434-55bc.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a bed with a pillow, holding an object in her hand.",
+    "emotion": "Neutral",
+    "valence": "-0.19",
+    "arousal": "-0.10"
   },
   {
     "id": "20261110-222919-d1be",
@@ -520,7 +739,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-222919-d1be.jpg",
     "image": "images/2026-11-10/20261110-222919-d1be.jpg",
     "large": "images/large/2026-11-10/20261110-222919-d1be.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying down with their head supported by a pillow in a room. They are looking upwards at the ceiling.",
+    "emotion": "Surprise",
+    "valence": "-0.06",
+    "arousal": "0.25"
   },
   {
     "id": "20261110-231528-7741",
@@ -529,7 +752,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-231528-7741.jpg",
     "image": "images/2026-11-10/20261110-231528-7741.jpg",
     "large": "images/large/2026-11-10/20261110-231528-7741.jpg",
-    "doing": "watching new girl"
+    "doing": "watching new girl",
+    "description": "This is a girl sitting at a surface, looking at the camera with a slight smile. She is wearing a robe and appears to be in a room with a door behind her.",
+    "emotion": "Happiness",
+    "valence": "0.76",
+    "arousal": "-0.06"
   },
   {
     "id": "20261110-233829-b2cd",
@@ -538,7 +765,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-233829-b2cd.jpg",
     "image": "images/2026-11-10/20261110-233829-b2cd.jpg",
     "large": "images/large/2026-11-10/20261110-233829-b2cd.jpg",
-    "doing": "watching new girl"
+    "doing": "watching new girl",
+    "description": "This is a girl lying on a bed with a large stuffed animal. She has her eyes closed and is resting her head on a pillow.",
+    "emotion": "Happiness",
+    "valence": "0.67",
+    "arousal": "-0.15"
   },
   {
     "id": "20261110-235523-ae70",
@@ -547,7 +778,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-10/20261110-235523-ae70.jpg",
     "image": "images/2026-11-10/20261110-235523-ae70.jpg",
     "large": "images/large/2026-11-10/20261110-235523-ae70.jpg",
-    "doing": "going through my desk"
+    "doing": "going through my desk",
+    "description": "This is a girl sitting at a table in a room, carefully examining a box of items. She is holding a pen and appears to be looking at the contents of the box.",
+    "emotion": "Sadness",
+    "valence": "-0.38",
+    "arousal": "-0.40"
   },
   {
     "id": "20261111-001609-025a",
@@ -556,7 +791,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-001609-025a.jpg",
     "image": "images/2026-11-11/20261111-001609-025a.jpg",
     "large": "images/large/2026-11-11/20261111-001609-025a.jpg",
-    "doing": "doing lashes"
+    "doing": "doing lashes",
+    "description": "This is a person sitting at a table in a room, looking down at something in their hands. They have a towel draped over their shoulders and their hair is pulled back.",
+    "emotion": "Sadness",
+    "valence": "-0.35",
+    "arousal": "-0.13"
   },
   {
     "id": "20261111-003017-a23d",
@@ -565,7 +804,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-003017-a23d.jpg",
     "image": "images/2026-11-11/20261111-003017-a23d.jpg",
     "large": "images/large/2026-11-11/20261111-003017-a23d.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a room with her eyes closed. She is looking down at something in front of her.",
+    "emotion": "Contempt",
+    "valence": "-0.15",
+    "arousal": "0.03"
   },
   {
     "id": "20261111-010001-13e0",
@@ -574,7 +817,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-010001-13e0.jpg",
     "image": "images/2026-11-11/20261111-010001-13e0.jpg",
     "large": "images/large/2026-11-11/20261111-010001-13e0.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person sitting in a chair in a room, looking at the camera. They are wearing a top and have long, wavy hair.",
+    "emotion": "Neutral",
+    "valence": "-0.13",
+    "arousal": "-0.09"
   },
   {
     "id": "20261111-013651-c4aa",
@@ -583,7 +830,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-013651-c4aa.jpg",
     "image": "images/2026-11-11/20261111-013651-c4aa.jpg",
     "large": "images/large/2026-11-11/20261111-013651-c4aa.jpg",
-    "doing": "watching new girl"
+    "doing": "watching new girl",
+    "description": "This is a person lying in bed, covered by a blanket.",
+    "emotion": "Neutral",
+    "valence": "-0.19",
+    "arousal": "0.24"
   },
   {
     "id": "20261111-020659-6e3f",
@@ -592,7 +843,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-020659-6e3f.jpg",
     "image": "images/2026-11-11/20261111-020659-6e3f.jpg",
     "large": "images/large/2026-11-11/20261111-020659-6e3f.jpg",
-    "doing": "watching new girl"
+    "doing": "watching new girl",
+    "description": "This is a person lying in bed in a dark room, with a covering over their head."
   },
   {
     "id": "20261111-101032-dbf7",
@@ -601,7 +853,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-101032-dbf7.jpg",
     "image": "images/2026-11-11/20261111-101032-dbf7.jpg",
     "large": "images/large/2026-11-11/20261111-101032-dbf7.jpg",
-    "doing": "eating breakfast"
+    "doing": "eating breakfast",
+    "description": "This is a person standing near a window with blinds, looking upwards. They are holding a pair of headphones around their neck and have their mouth open.",
+    "emotion": "Surprise",
+    "valence": "0.16",
+    "arousal": "0.17"
   },
   {
     "id": "20261111-104747-0ba4",
@@ -610,7 +866,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-104747-0ba4.jpg",
     "image": "images/2026-11-11/20261111-104747-0ba4.jpg",
     "large": "images/large/2026-11-11/20261111-104747-0ba4.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room.",
+    "emotion": "Sadness",
+    "valence": "-0.41",
+    "arousal": "-0.07"
   },
   {
     "id": "20261111-111705-4d9f",
@@ -619,7 +879,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-111705-4d9f.jpg",
     "image": "images/2026-11-11/20261111-111705-4d9f.jpg",
     "large": "images/large/2026-11-11/20261111-111705-4d9f.jpg",
-    "doing": "going on my phone"
+    "doing": "going on my phone",
+    "description": "This is a girl sitting on a surface near a window with blinds. She has her eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.23",
+    "arousal": "-0.34"
   },
   {
     "id": "20261111-114405-cbdb",
@@ -628,7 +892,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-114405-cbdb.jpg",
     "image": "images/2026-11-11/20261111-114405-cbdb.jpg",
     "large": "images/large/2026-11-11/20261111-114405-cbdb.jpg",
-    "doing": "on my phone"
+    "doing": "on my phone",
+    "description": "This is a girl lying in bed, holding a phone in her hands. She is looking down at the device while partially covered by a blanket.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "-0.11"
   },
   {
     "id": "20261111-125451-e492",
@@ -637,7 +905,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-125451-e492.jpg",
     "image": "images/2026-11-11/20261111-125451-e492.jpg",
     "large": "images/large/2026-11-11/20261111-125451-e492.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a room with a window behind her, wearing a blanket. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "-0.25",
+    "arousal": "-0.01"
   },
   {
     "id": "20261111-132347-4c9c",
@@ -646,7 +918,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-132347-4c9c.jpg",
     "image": "images/2026-11-11/20261111-132347-4c9c.jpg",
     "large": "images/large/2026-11-11/20261111-132347-4c9c.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a room, looking at the camera. She is sitting on a bed with a dark background visible behind her.",
+    "emotion": "Sadness",
+    "valence": "-0.29",
+    "arousal": "-0.04"
   },
   {
     "id": "20261111-133425-26c0",
@@ -655,7 +931,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-133425-26c0.jpg",
     "image": "images/2026-11-11/20261111-133425-26c0.jpg",
     "large": "images/large/2026-11-11/20261111-133425-26c0.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera in a room with windows. She is sitting in front of a dark surface with a window behind her.",
+    "emotion": "Sadness",
+    "valence": "-0.37",
+    "arousal": "-0.12"
   },
   {
     "id": "20261111-135149-bf61",
@@ -664,7 +944,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-135149-bf61.jpg",
     "image": "images/2026-11-11/20261111-135149-bf61.jpg",
     "large": "images/large/2026-11-11/20261111-135149-bf61.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera in a room. She is sitting in a chair with a mirror behind her.",
+    "emotion": "Neutral",
+    "valence": "0.23",
+    "arousal": "-0.10"
   },
   {
     "id": "20261111-140839-5dea",
@@ -673,7 +957,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-140839-5dea.jpg",
     "image": "images/2026-11-11/20261111-140839-5dea.jpg",
     "large": "images/large/2026-11-11/20261111-140839-5dea.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a chair in a room, looking at a reflective surface. She is holding her hands in front of her face.",
+    "emotion": "Sadness",
+    "valence": "-0.17",
+    "arousal": "-0.29"
   },
   {
     "id": "20261111-143617-e391",
@@ -682,7 +970,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-143617-e391.jpg",
     "image": "images/2026-11-11/20261111-143617-e391.jpg",
     "large": "images/large/2026-11-11/20261111-143617-e391.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking into a mirror in a room. They are holding a hand up to their face with their other hand.",
+    "emotion": "Sadness",
+    "valence": "-0.48",
+    "arousal": "-0.30"
   },
   {
     "id": "20261111-145411-ebf7",
@@ -691,7 +983,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-145411-ebf7.jpg",
     "image": "images/2026-11-11/20261111-145411-ebf7.jpg",
     "large": "images/large/2026-11-11/20261111-145411-ebf7.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person sitting in front of a mirror in a room. They are looking directly at the camera with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "-0.33",
+    "arousal": "-0.14"
   },
   {
     "id": "20261111-150934-c854",
@@ -700,7 +996,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-150934-c854.jpg",
     "image": "images/2026-11-11/20261111-150934-c854.jpg",
     "large": "images/large/2026-11-11/20261111-150934-c854.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera in a room. She is reflected in a mirror and appears to be standing near a window.",
+    "emotion": "Sadness",
+    "valence": "-0.33",
+    "arousal": "-0.25"
   },
   {
     "id": "20261111-152848-18c7",
@@ -709,7 +1009,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-152848-18c7.jpg",
     "image": "images/2026-11-11/20261111-152848-18c7.jpg",
     "large": "images/large/2026-11-11/20261111-152848-18c7.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera in a room with a window and a mirror. She is standing near a light fixture and a wall with clocks.",
+    "emotion": "Neutral",
+    "valence": "-0.37",
+    "arousal": "-0.23"
   },
   {
     "id": "20261111-154212-6e40",
@@ -718,7 +1022,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-154212-6e40.jpg",
     "image": "images/2026-11-11/20261111-154212-6e40.jpg",
     "large": "images/large/2026-11-11/20261111-154212-6e40.jpg",
-    "doing": "working"
+    "doing": "working",
+    "description": "This is a person looking at the camera in a room with a window and a mirror. They are standing in front of a dark surface, with a light shining on their face.",
+    "emotion": "Neutral",
+    "valence": "-0.08",
+    "arousal": "0.01"
   },
   {
     "id": "20261111-160548-c924",
@@ -727,7 +1035,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-160548-c924.jpg",
     "image": "images/2026-11-11/20261111-160548-c924.jpg",
     "large": "images/large/2026-11-11/20261111-160548-c924.jpg",
-    "doing": "eating"
+    "doing": "eating",
+    "description": "This is a girl eating from a spoon while standing near a window. She is holding a spoon with food in it and appears to be eating.",
+    "emotion": "Surprise",
+    "valence": "-0.03",
+    "arousal": "0.14"
   },
   {
     "id": "20261111-161819-0aba",
@@ -736,7 +1048,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-161819-0aba.jpg",
     "image": "images/2026-11-11/20261111-161819-0aba.jpg",
     "large": "images/large/2026-11-11/20261111-161819-0aba.jpg",
-    "doing": "dinner and newgirl"
+    "doing": "dinner and newgirl",
+    "description": "This is a girl holding a tissue in front of a window. She is looking at the camera with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "0.11",
+    "arousal": "-0.12"
   },
   {
     "id": "20261111-164748-d265",
@@ -745,7 +1061,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-164748-d265.jpg",
     "image": "images/2026-11-11/20261111-164748-d265.jpg",
     "large": "images/large/2026-11-11/20261111-164748-d265.jpg",
-    "doing": "eating"
+    "doing": "eating",
+    "description": "This is a girl sitting in a chair by a window. She is looking down with her eyes closed.",
+    "emotion": "Happiness",
+    "valence": "0.42",
+    "arousal": "-0.17"
   },
   {
     "id": "20261111-171147-e5f0",
@@ -754,7 +1074,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-171147-e5f0.jpg",
     "image": "images/2026-11-11/20261111-171147-e5f0.jpg",
     "large": "images/large/2026-11-11/20261111-171147-e5f0.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl holding her hand up to her mouth in a room. She is looking at the camera with a window and a clock visible behind her.",
+    "emotion": "Neutral",
+    "valence": "-0.14",
+    "arousal": "-0.26"
   },
   {
     "id": "20261111-172242-c50c",
@@ -763,7 +1087,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-172242-c50c.jpg",
     "image": "images/2026-11-11/20261111-172242-c50c.jpg",
     "large": "images/large/2026-11-11/20261111-172242-c50c.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera in a room. She is sitting in a chair with a window behind her.",
+    "emotion": "Neutral",
+    "valence": "-0.35",
+    "arousal": "-0.04"
   },
   {
     "id": "20261111-174321-2cae",
@@ -772,7 +1100,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-174321-2cae.jpg",
     "image": "images/2026-11-11/20261111-174321-2cae.jpg",
     "large": "images/large/2026-11-11/20261111-174321-2cae.jpg",
-    "doing": "playing guiitar"
+    "doing": "playing guiitar",
+    "description": "This is a person standing in front of a mirror in a room, looking towards the camera. They are holding their hands up to their cheeks.",
+    "emotion": "Neutral",
+    "valence": "0.20",
+    "arousal": "-0.10"
   },
   {
     "id": "20261111-175654-4d6c",
@@ -781,7 +1113,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-175654-4d6c.jpg",
     "image": "images/2026-11-11/20261111-175654-4d6c.jpg",
     "large": "images/large/2026-11-11/20261111-175654-4d6c.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl looking at the camera in a room with a window. She is standing in front of a mirror with a dark background behind her.",
+    "emotion": "Neutral",
+    "valence": "-0.18",
+    "arousal": "-0.07"
   },
   {
     "id": "20261111-181610-9839",
@@ -790,7 +1126,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-181610-9839.jpg",
     "image": "images/2026-11-11/20261111-181610-9839.jpg",
     "large": "images/large/2026-11-11/20261111-181610-9839.jpg",
-    "doing": "guitar"
+    "doing": "guitar",
+    "description": "This is a girl looking at the camera in a room with windows and a mirror. She is standing with her arms slightly raised and her mouth open.",
+    "emotion": "Neutral",
+    "valence": "-0.01",
+    "arousal": "-0.03"
   },
   {
     "id": "20261111-184446-8186",
@@ -799,7 +1139,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-184446-8186.jpg",
     "image": "images/2026-11-11/20261111-184446-8186.jpg",
     "large": "images/large/2026-11-11/20261111-184446-8186.jpg",
-    "doing": "plyaing guitar"
+    "doing": "plyaing guitar",
+    "description": "This is a girl sitting at a table in a room, with her eyes closed. She is leaning slightly to the side with her head resting on what appears to be a table or surface.",
+    "emotion": "Sadness",
+    "valence": "-0.21",
+    "arousal": "-0.24"
   },
   {
     "id": "20261111-194347-7a11",
@@ -808,7 +1152,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-194347-7a11.jpg",
     "image": "images/2026-11-11/20261111-194347-7a11.jpg",
     "large": "images/large/2026-11-11/20261111-194347-7a11.jpg",
-    "doing": "laying down"
+    "doing": "laying down",
+    "description": "This is a person lying on a bed, looking upwards at a window blind. They are leaning their head on what appears to be a pillow.",
+    "emotion": "Neutral",
+    "valence": "-0.18",
+    "arousal": "-0.02"
   },
   {
     "id": "20261111-201057-2775",
@@ -817,7 +1165,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-201057-2775.jpg",
     "image": "images/2026-11-11/20261111-201057-2775.jpg",
     "large": "images/large/2026-11-11/20261111-201057-2775.jpg",
-    "doing": "laying down"
+    "doing": "laying down",
+    "description": "This is a person lying on a bed with a pillow, looking upwards. They are resting their head on their hand.",
+    "emotion": "Sadness",
+    "valence": "-0.27",
+    "arousal": "0.03"
   },
   {
     "id": "20261111-203317-270e",
@@ -826,7 +1178,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-203317-270e.jpg",
     "image": "images/2026-11-11/20261111-203317-270e.jpg",
     "large": "images/large/2026-11-11/20261111-203317-270e.jpg",
-    "doing": "editing photos"
+    "doing": "editing photos",
+    "description": "This is a girl lying on a bed in a room with a window. She has her eyes closed and her mouth is slightly open.",
+    "emotion": "Sadness",
+    "valence": "-0.27",
+    "arousal": "-0.29"
   },
   {
     "id": "20261111-205820-1529",
@@ -835,7 +1191,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-205820-1529.jpg",
     "image": "images/2026-11-11/20261111-205820-1529.jpg",
     "large": "images/large/2026-11-11/20261111-205820-1529.jpg",
-    "doing": "editing photos"
+    "doing": "editing photos",
+    "description": "This is a person looking at the camera from near a window. They are leaning against a wall with a pillow behind them.",
+    "emotion": "Sadness",
+    "valence": "-0.31",
+    "arousal": "-0.06"
   },
   {
     "id": "20261111-211252-5284",
@@ -844,7 +1204,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-211252-5284.jpg",
     "image": "images/2026-11-11/20261111-211252-5284.jpg",
     "large": "images/large/2026-11-11/20261111-211252-5284.jpg",
-    "doing": null
+    "doing": null,
+    "description": "This is a girl lying on a bed in a room with a window. She is looking towards the camera with a slight smile.",
+    "emotion": "Contempt",
+    "valence": "0.15",
+    "arousal": "-0.13"
   },
   {
     "id": "20261111-214244-0031",
@@ -853,7 +1217,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-214244-0031.jpg",
     "image": "images/2026-11-11/20261111-214244-0031.jpg",
     "large": "images/large/2026-11-11/20261111-214244-0031.jpg",
-    "doing": "figma prototypes"
+    "doing": "figma prototypes",
+    "description": "This is a person looking at the camera from near a window. They are standing in front of a wall with blinds.",
+    "emotion": "Sadness",
+    "valence": "-0.33",
+    "arousal": "-0.30"
   },
   {
     "id": "20261111-215646-989b",
@@ -862,7 +1230,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-11/20261111-215646-989b.jpg",
     "image": "images/2026-11-11/20261111-215646-989b.jpg",
     "large": "images/large/2026-11-11/20261111-215646-989b.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person sitting in a room with a window and a wall behind them. They are looking towards the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.43",
+    "arousal": "-0.30"
   },
   {
     "id": "20261112-001001-4901",
@@ -871,7 +1243,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-001001-4901.jpg",
     "image": "images/2026-11-12/20261112-001001-4901.jpg",
     "large": "images/large/2026-11-12/20261112-001001-4901.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in bed with her head on a pillow. She is looking towards the camera with her eyes open.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "-0.10"
   },
   {
     "id": "20261112-002504-280a",
@@ -880,7 +1256,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-002504-280a.jpg",
     "image": "images/2026-11-12/20261112-002504-280a.jpg",
     "large": "images/large/2026-11-12/20261112-002504-280a.jpg",
-    "doing": "writing a proposal"
+    "doing": "writing a proposal",
+    "description": "This is a person sitting in a chair against a wall. They are looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.34",
+    "arousal": "-0.17"
   },
   {
     "id": "20261112-005059-c5f4",
@@ -889,7 +1269,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-005059-c5f4.jpg",
     "image": "images/2026-11-12/20261112-005059-c5f4.jpg",
     "large": "images/large/2026-11-12/20261112-005059-c5f4.jpg",
-    "doing": "writing"
+    "doing": "writing",
+    "description": "This is a person looking at the camera from inside a room. They are standing with their head tilted upwards, facing the camera.",
+    "emotion": "Neutral",
+    "valence": "-0.12",
+    "arousal": "-0.24"
   },
   {
     "id": "20261112-010700-cc28",
@@ -898,7 +1282,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-010700-cc28.jpg",
     "image": "images/2026-11-12/20261112-010700-cc28.jpg",
     "large": "images/large/2026-11-12/20261112-010700-cc28.jpg",
-    "doing": "finishing work"
+    "doing": "finishing work",
+    "description": "This is a girl sitting in a room, leaning her head on a pillow. She is looking downwards with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.38",
+    "arousal": "-0.11"
   },
   {
     "id": "20261112-012543-5693",
@@ -907,7 +1295,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-012543-5693.jpg",
     "image": "images/2026-11-12/20261112-012543-5693.jpg",
     "large": "images/large/2026-11-12/20261112-012543-5693.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a chair, looking at a screen. She is resting her chin on her hand.",
+    "emotion": "Neutral",
+    "valence": "-0.34",
+    "arousal": "-0.18"
   },
   {
     "id": "20261112-014041-074e",
@@ -916,7 +1308,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-014041-074e.jpg",
     "image": "images/2026-11-12/20261112-014041-074e.jpg",
     "large": "images/large/2026-11-12/20261112-014041-074e.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying down against a wall with their arm raised, looking towards the side. A window is visible in the background.",
+    "emotion": "Neutral",
+    "valence": "0.04",
+    "arousal": "-0.05"
   },
   {
     "id": "20261112-123946-730b",
@@ -925,7 +1321,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-123946-730b.jpg",
     "image": "images/2026-11-12/20261112-123946-730b.jpg",
     "large": "images/large/2026-11-12/20261112-123946-730b.jpg",
-    "doing": "in class"
+    "doing": "in class",
+    "description": "This is a person looking upwards in a room with a ceiling. They are positioned in front of a dark surface with a box mounted on the wall.",
+    "emotion": "Sadness",
+    "valence": "-0.41",
+    "arousal": "-0.26"
   },
   {
     "id": "20261112-125139-2241",
@@ -934,7 +1334,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-125139-2241.jpg",
     "image": "images/2026-11-12/20261112-125139-2241.jpg",
     "large": "images/large/2026-11-12/20261112-125139-2241.jpg",
-    "doing": "in class"
+    "doing": "in class",
+    "description": "This is a girl looking upwards in a room. She is leaning forward with her head tilted and appears to be gazing at the ceiling.",
+    "emotion": "Neutral",
+    "valence": "-0.03",
+    "arousal": "0.03"
   },
   {
     "id": "20261112-131137-8a3f",
@@ -943,7 +1347,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-131137-8a3f.jpg",
     "image": "images/2026-11-12/20261112-131137-8a3f.jpg",
     "large": "images/large/2026-11-12/20261112-131137-8a3f.jpg",
-    "doing": "in class"
+    "doing": "in class",
+    "description": "This is a girl looking upwards in a room with a ceiling.",
+    "emotion": "Sadness",
+    "valence": "-0.32",
+    "arousal": "0.07"
   },
   {
     "id": "20261112-143906-9976",
@@ -952,7 +1360,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-143906-9976.jpg",
     "image": "images/2026-11-12/20261112-143906-9976.jpg",
     "large": "images/large/2026-11-12/20261112-143906-9976.jpg",
-    "doing": "eating a snack"
+    "doing": "eating a snack",
+    "description": "This is a person with their eyes closed, with headphones around their neck, standing against a background.",
+    "emotion": "Sadness",
+    "valence": "-0.41",
+    "arousal": "-0.27"
   },
   {
     "id": "20261112-150133-532c",
@@ -961,7 +1373,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-150133-532c.jpg",
     "image": "images/2026-11-12/20261112-150133-532c.jpg",
     "large": "images/large/2026-11-12/20261112-150133-532c.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl holding her hand up to her forehead in a room. She is wearing headphones and looking slightly to the side.",
+    "emotion": "Sadness",
+    "valence": "-0.55",
+    "arousal": "-0.43"
   },
   {
     "id": "20261112-152012-bee1",
@@ -970,7 +1386,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-152012-bee1.jpg",
     "image": "images/2026-11-12/20261112-152012-bee1.jpg",
     "large": "images/large/2026-11-12/20261112-152012-bee1.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera with their eyes closed. They are standing in front of a wall with a dark background."
   },
   {
     "id": "20261112-153836-9e25",
@@ -979,7 +1396,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-153836-9e25.jpg",
     "image": "images/2026-11-12/20261112-153836-9e25.jpg",
     "large": "images/large/2026-11-12/20261112-153836-9e25.jpg",
-    "doing": "working on layouts"
+    "doing": "working on layouts",
+    "description": "This is a person looking at the camera against a plain background. They are wearing earrings and have their hair down.",
+    "emotion": "Sadness",
+    "valence": "-0.43",
+    "arousal": "-0.19"
   },
   {
     "id": "20261112-160855-40b2",
@@ -988,7 +1409,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-160855-40b2.jpg",
     "image": "images/2026-11-12/20261112-160855-40b2.jpg",
     "large": "images/large/2026-11-12/20261112-160855-40b2.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in front of a wall, looking directly at the camera. She is wearing a top and has her hair flowing around her face.",
+    "emotion": "Neutral",
+    "valence": "0.06",
+    "arousal": "-0.17"
   },
   {
     "id": "20261112-192142-bc58",
@@ -997,7 +1422,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-192142-bc58.jpg",
     "image": "images/2026-11-12/20261112-192142-bc58.jpg",
     "large": "images/large/2026-11-12/20261112-192142-bc58.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl looking upwards with her hand near her mouth, in a dark room.",
+    "emotion": "Surprise",
+    "valence": "0.21",
+    "arousal": "0.57"
   },
   {
     "id": "20261112-211147-cd71",
@@ -1006,7 +1435,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-211147-cd71.jpg",
     "image": "images/2026-11-12/20261112-211147-cd71.jpg",
     "large": "images/large/2026-11-12/20261112-211147-cd71.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room.",
+    "emotion": "Sadness",
+    "valence": "-0.50",
+    "arousal": "-0.03"
   },
   {
     "id": "20261112-212529-2ac2",
@@ -1015,7 +1448,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-212529-2ac2.jpg",
     "image": "images/2026-11-12/20261112-212529-2ac2.jpg",
     "large": "images/large/2026-11-12/20261112-212529-2ac2.jpg",
-    "doing": "making a guitar arrangement"
+    "doing": "making a guitar arrangement",
+    "description": "This is a girl playing guitar in her room. She is sitting at a table and holding a guitar in front of her.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "-0.19"
   },
   {
     "id": "20261112-213737-9a74",
@@ -1024,7 +1461,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-213737-9a74.jpg",
     "image": "images/2026-11-12/20261112-213737-9a74.jpg",
     "large": "images/large/2026-11-12/20261112-213737-9a74.jpg",
-    "doing": "arrangementsss"
+    "doing": "arrangementsss",
+    "description": "This is a person playing guitar in a room. They are holding the instrument and looking down at it.",
+    "emotion": "Sadness",
+    "valence": "-0.29",
+    "arousal": "-0.15"
   },
   {
     "id": "20261112-225609-b541",
@@ -1033,7 +1474,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-225609-b541.jpg",
     "image": "images/2026-11-12/20261112-225609-b541.jpg",
     "large": "images/large/2026-11-12/20261112-225609-b541.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a person playing guitar while sitting on a couch in a room. They are holding the instrument with their hands and have their eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.26",
+    "arousal": "-0.21"
   },
   {
     "id": "20261112-232527-9d4f",
@@ -1042,7 +1487,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-232527-9d4f.jpg",
     "image": "images/2026-11-12/20261112-232527-9d4f.jpg",
     "large": "images/large/2026-11-12/20261112-232527-9d4f.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a person playing a guitar while sitting on a wall in a room. They are looking down at the instrument.",
+    "emotion": "Sadness",
+    "valence": "-0.40",
+    "arousal": "-0.08"
   },
   {
     "id": "20261112-234710-ef7a",
@@ -1051,7 +1500,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-234710-ef7a.jpg",
     "image": "images/2026-11-12/20261112-234710-ef7a.jpg",
     "large": "images/large/2026-11-12/20261112-234710-ef7a.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting with her eyes closed while holding the instrument.",
+    "emotion": "Neutral",
+    "valence": "-0.16",
+    "arousal": "-0.19"
   },
   {
     "id": "20261112-235818-6898",
@@ -1060,7 +1513,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-12/20261112-235818-6898.jpg",
     "image": "images/2026-11-12/20261112-235818-6898.jpg",
     "large": "images/large/2026-11-12/20261112-235818-6898.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl leaning against a wall with a guitar in her room. She is looking upwards with her eyes closed.",
+    "emotion": "Neutral",
+    "valence": "-0.33",
+    "arousal": "-0.11"
   },
   {
     "id": "20261113-001401-41b1",
@@ -1069,7 +1526,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-001401-41b1.jpg",
     "image": "images/2026-11-13/20261113-001401-41b1.jpg",
     "large": "images/large/2026-11-13/20261113-001401-41b1.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting with her back to the window and holding a guitar in both hands.",
+    "emotion": "Sadness",
+    "valence": "-0.53",
+    "arousal": "-0.31"
   },
   {
     "id": "20261113-003005-a2fd",
@@ -1078,7 +1539,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-003005-a2fd.jpg",
     "image": "images/2026-11-13/20261113-003005-a2fd.jpg",
     "large": "images/large/2026-11-13/20261113-003005-a2fd.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting on a surface with a guitar resting on her lap.",
+    "emotion": "Sadness",
+    "valence": "-0.23",
+    "arousal": "-0.28"
   },
   {
     "id": "20261113-022349-d92c",
@@ -1087,7 +1552,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-022349-d92c.jpg",
     "image": "images/2026-11-13/20261113-022349-d92c.jpg",
     "large": "images/large/2026-11-13/20261113-022349-d92c.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying on a bed in a room. They are wearing glasses and looking towards the camera."
   },
   {
     "id": "20261113-025226-3169",
@@ -1096,7 +1562,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-025226-3169.jpg",
     "image": "images/2026-11-13/20261113-025226-3169.jpg",
     "large": "images/large/2026-11-13/20261113-025226-3169.jpg",
-    "doing": "working on website"
+    "doing": "working on website",
+    "description": "This is a person lying on a bed in a room. They are looking down with their eyes closed.",
+    "emotion": "Neutral",
+    "valence": "-0.29",
+    "arousal": "-0.22"
   },
   {
     "id": "20261113-031704-3927",
@@ -1105,7 +1575,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-031704-3927.jpg",
     "image": "images/2026-11-13/20261113-031704-3927.jpg",
     "large": "images/large/2026-11-13/20261113-031704-3927.jpg",
-    "doing": "finished work and going to bed!"
+    "doing": "finished work and going to bed!",
+    "description": "This is a person lying on a bed in a room with a window. They are looking towards the camera with their glasses on.",
+    "emotion": "Contempt",
+    "valence": "-0.15",
+    "arousal": "0.16"
   },
   {
     "id": "20261113-111758-10e0",
@@ -1114,7 +1588,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-111758-10e0.jpg",
     "image": "images/2026-11-13/20261113-111758-10e0.jpg",
     "large": "images/large/2026-11-13/20261113-111758-10e0.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting at a window with a guitar in front of her, and her eyes are closed.",
+    "emotion": "Sadness",
+    "valence": "-0.33",
+    "arousal": "-0.31"
   },
   {
     "id": "20261113-113123-1314",
@@ -1123,7 +1601,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-113123-1314.jpg",
     "image": "images/2026-11-13/20261113-113123-1314.jpg",
     "large": "images/large/2026-11-13/20261113-113123-1314.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room. She is sitting with her guitar on her lap, looking directly at the camera.",
+    "emotion": "Sadness",
+    "valence": "-0.37",
+    "arousal": "-0.09"
   },
   {
     "id": "20261113-115026-196f",
@@ -1132,7 +1614,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-115026-196f.jpg",
     "image": "images/2026-11-13/20261113-115026-196f.jpg",
     "large": "images/large/2026-11-13/20261113-115026-196f.jpg",
-    "doing": "laying down"
+    "doing": "laying down",
+    "description": "This is a person lying in bed, holding a phone and covered with a blanket. They are looking at the phone while resting their head on a pillow.",
+    "emotion": "Neutral",
+    "valence": "0.02",
+    "arousal": "-0.04"
   },
   {
     "id": "20261113-120609-e554",
@@ -1141,7 +1627,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-120609-e554.jpg",
     "image": "images/2026-11-13/20261113-120609-e554.jpg",
     "large": "images/large/2026-11-13/20261113-120609-e554.jpg",
-    "doing": "laying down"
+    "doing": "laying down",
+    "description": "This is a girl lying in bed with a phone and blanket. She is looking at the phone while covered by a blanket.",
+    "emotion": "Happiness",
+    "valence": "0.13",
+    "arousal": "-0.12"
   },
   {
     "id": "20261113-122731-817e",
@@ -1150,7 +1640,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-122731-817e.jpg",
     "image": "images/2026-11-13/20261113-122731-817e.jpg",
     "large": "images/large/2026-11-13/20261113-122731-817e.jpg",
-    "doing": "laying down"
+    "doing": "laying down",
+    "description": "This is a girl lying in bed with a blanket. She is looking towards the camera with her eyes closed."
   },
   {
     "id": "20261113-134705-0c9a",
@@ -1159,7 +1650,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-134705-0c9a.jpg",
     "image": "images/2026-11-13/20261113-134705-0c9a.jpg",
     "large": "images/large/2026-11-13/20261113-134705-0c9a.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing a guitar in her room. She is sitting on a surface with a window behind her and is holding the instrument with her hands.",
+    "emotion": "Disgust",
+    "valence": "-0.37",
+    "arousal": "-0.05"
   },
   {
     "id": "20261113-143823-1f24",
@@ -1168,7 +1663,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-143823-1f24.jpg",
     "image": "images/2026-11-13/20261113-143823-1f24.jpg",
     "large": "images/large/2026-11-13/20261113-143823-1f24.jpg",
-    "doing": "layout editing"
+    "doing": "layout editing",
+    "description": "This is a person lying on a bed in a room. They are looking down with their eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.38",
+    "arousal": "-0.23"
   },
   {
     "id": "20261113-145044-280e",
@@ -1177,7 +1676,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-145044-280e.jpg",
     "image": "images/2026-11-13/20261113-145044-280e.jpg",
     "large": "images/large/2026-11-13/20261113-145044-280e.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a bed in a room. She is looking towards the camera with her eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.31",
+    "arousal": "-0.19"
   },
   {
     "id": "20261113-150158-b633",
@@ -1186,7 +1689,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-150158-b633.jpg",
     "image": "images/2026-11-13/20261113-150158-b633.jpg",
     "large": "images/large/2026-11-13/20261113-150158-b633.jpg",
-    "doing": "taking a break"
+    "doing": "taking a break",
+    "description": "This is a person lying on a bed with a blanket. They are looking down with their eyes closed.",
+    "emotion": "Surprise",
+    "valence": "-0.04",
+    "arousal": "0.11"
   },
   {
     "id": "20261113-151330-1e87",
@@ -1195,7 +1702,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-151330-1e87.jpg",
     "image": "images/2026-11-13/20261113-151330-1e87.jpg",
     "large": "images/large/2026-11-13/20261113-151330-1e87.jpg",
-    "doing": "layout designing"
+    "doing": "layout designing",
+    "description": "This is a girl sitting in a room with a wall behind her. She is looking towards the camera with a neutral expression.",
+    "emotion": "Contempt",
+    "valence": "-0.10",
+    "arousal": "-0.02"
   },
   {
     "id": "20261113-153143-71b9",
@@ -1204,7 +1715,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-153143-71b9.jpg",
     "image": "images/2026-11-13/20261113-153143-71b9.jpg",
     "large": "images/large/2026-11-13/20261113-153143-71b9.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl sitting on a couch in a room, looking at the camera with an open mouth. She is positioned in front of a shelf and a window.",
+    "emotion": "Sadness",
+    "valence": "-0.25",
+    "arousal": "-0.10"
   },
   {
     "id": "20261113-154552-8f86",
@@ -1213,7 +1728,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-154552-8f86.jpg",
     "image": "images/2026-11-13/20261113-154552-8f86.jpg",
     "large": "images/large/2026-11-13/20261113-154552-8f86.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl sitting on a couch in a room, looking upwards. She is holding a phone in her hand.",
+    "emotion": "Sadness",
+    "valence": "-0.49",
+    "arousal": "0.08"
   },
   {
     "id": "20261113-160028-50b5",
@@ -1222,7 +1741,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-160028-50b5.jpg",
     "image": "images/2026-11-13/20261113-160028-50b5.jpg",
     "large": "images/large/2026-11-13/20261113-160028-50b5.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl sitting on a couch in a room, looking down at something in her hands. She has her eyes closed and appears to be resting her head on her hand.",
+    "emotion": "Sadness",
+    "valence": "-0.32",
+    "arousal": "-0.22"
   },
   {
     "id": "20261113-162558-3f70",
@@ -1231,7 +1754,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-162558-3f70.jpg",
     "image": "images/2026-11-13/20261113-162558-3f70.jpg",
     "large": "images/large/2026-11-13/20261113-162558-3f70.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a bed in a room. She is looking towards the camera with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "-0.30",
+    "arousal": "-0.23"
   },
   {
     "id": "20261113-182000-f9ec",
@@ -1240,7 +1767,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-182000-f9ec.jpg",
     "image": "images/2026-11-13/20261113-182000-f9ec.jpg",
     "large": "images/large/2026-11-13/20261113-182000-f9ec.jpg",
-    "doing": "dinner and show"
+    "doing": "dinner and show",
+    "description": "This is a person standing in front of a window, wearing a towel around their head. They are looking down at the camera.",
+    "emotion": "Sadness",
+    "valence": "-0.11",
+    "arousal": "-0.10"
   },
   {
     "id": "20261113-184627-5163",
@@ -1249,7 +1780,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-184627-5163.jpg",
     "image": "images/2026-11-13/20261113-184627-5163.jpg",
     "large": "images/large/2026-11-13/20261113-184627-5163.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying in bed with their eyes closed, wearing a hooded sweatshirt. They are positioned in front of a window with blinds.",
+    "emotion": "Sadness",
+    "valence": "-0.14",
+    "arousal": "-0.29"
   },
   {
     "id": "20261113-192016-1981",
@@ -1258,7 +1793,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-13/20261113-192016-1981.jpg",
     "image": "images/2026-11-13/20261113-192016-1981.jpg",
     "large": "images/large/2026-11-13/20261113-192016-1981.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person sitting in a bed with a hooded sweatshirt, looking towards the right. They are holding a pillow with their hand.",
+    "emotion": "Neutral",
+    "valence": "-0.35",
+    "arousal": "-0.12"
   },
   {
     "id": "20261117-134533-524d",
@@ -1267,7 +1806,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-14/20261117-134533-524d.jpg",
     "image": "images/2026-11-14/20261117-134533-524d.jpg",
     "large": "images/large/2026-11-14/20261117-134533-524d.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person standing in a room, looking at a wall decorated with various pictures and a wreath. They are positioned in front of a light fixture and a piece of furniture.",
+    "emotion": "Fear",
+    "valence": "-0.07",
+    "arousal": "0.14"
   },
   {
     "id": "20261114-181240-86d6",
@@ -1276,7 +1819,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-14/20261114-181240-86d6.jpg",
     "image": "images/2026-11-14/20261114-181240-86d6.jpg",
     "large": "images/large/2026-11-14/20261114-181240-86d6.jpg",
-    "doing": "doing my hair"
+    "doing": "doing my hair",
+    "description": "This is a girl with wet hair, standing in a room and twisting her hair around her head. She is looking down at her hands.",
+    "emotion": "Sadness",
+    "valence": "-0.61",
+    "arousal": "-0.44"
   },
   {
     "id": "20261114-183532-f466",
@@ -1285,7 +1832,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-14/20261114-183532-f466.jpg",
     "image": "images/2026-11-14/20261114-183532-f466.jpg",
     "large": "images/large/2026-11-14/20261114-183532-f466.jpg",
-    "doing": "doing makeup"
+    "doing": "doing makeup",
+    "description": "This is a person sitting in a room, with their head leaning against a window. They are holding a dark blanket over their shoulders."
   },
   {
     "id": "20261114-184650-b7ce",
@@ -1294,7 +1842,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-14/20261114-184650-b7ce.jpg",
     "image": "images/2026-11-14/20261114-184650-b7ce.jpg",
     "large": "images/large/2026-11-14/20261114-184650-b7ce.jpg",
-    "doing": "getting ready"
+    "doing": "getting ready",
+    "description": "This is a girl standing in a room, looking at the camera. She is wearing a top and appears to be indoors.",
+    "emotion": "Neutral",
+    "valence": "-0.36",
+    "arousal": "-0.15"
   },
   {
     "id": "20261115-183350-6184",
@@ -1303,7 +1855,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-183350-6184.jpg",
     "image": "images/2026-11-15/20261115-183350-6184.jpg",
     "large": "images/large/2026-11-15/20261115-183350-6184.jpg",
-    "doing": "eating dinner"
+    "doing": "eating dinner",
+    "description": "This is a person eating from a bowl with a spoon while sitting in a room. They are looking at the bowl and holding it with their right hand.",
+    "emotion": "Neutral",
+    "valence": "-0.19",
+    "arousal": "-0.15"
   },
   {
     "id": "20261115-190329-c333",
@@ -1312,7 +1868,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-190329-c333.jpg",
     "image": "images/2026-11-15/20261115-190329-c333.jpg",
     "large": "images/large/2026-11-15/20261115-190329-c333.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a person looking at the camera while wearing a hooded sweatshirt. They are positioned in an area with a dark background and some visible wooden structures.",
+    "emotion": "Anger",
+    "valence": "0.02",
+    "arousal": "0.17"
   },
   {
     "id": "20261115-192257-6cdd",
@@ -1321,7 +1881,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-192257-6cdd.jpg",
     "image": "images/2026-11-15/20261115-192257-6cdd.jpg",
     "large": "images/large/2026-11-15/20261115-192257-6cdd.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "This is a person sitting in bed, holding a pillow to their face. They are looking towards the camera with their eyes closed.",
+    "emotion": "Neutral",
+    "valence": "-0.36",
+    "arousal": "-0.16"
   },
   {
     "id": "20261115-194936-5c48",
@@ -1330,7 +1894,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-194936-5c48.jpg",
     "image": "images/2026-11-15/20261115-194936-5c48.jpg",
     "large": "images/large/2026-11-15/20261115-194936-5c48.jpg",
-    "doing": "watching show"
+    "doing": "watching show",
+    "description": "This is a person sleeping in bed. They are lying down with their eyes closed and a pillow under their head.",
+    "emotion": "Sadness",
+    "valence": "-0.18",
+    "arousal": "-0.08"
   },
   {
     "id": "20261115-201841-5062",
@@ -1339,7 +1907,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-201841-5062.jpg",
     "image": "images/2026-11-15/20261115-201841-5062.jpg",
     "large": "images/large/2026-11-15/20261115-201841-5062.jpg",
-    "doing": "watching show"
+    "doing": "watching show",
+    "description": "This is a person lying on a bed with pillows. They are wearing a hooded sweatshirt and looking towards the camera.",
+    "emotion": "Neutral",
+    "valence": "-0.26",
+    "arousal": "-0.21"
   },
   {
     "id": "20261115-203114-f2c7",
@@ -1348,7 +1920,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-203114-f2c7.jpg",
     "image": "images/2026-11-15/20261115-203114-f2c7.jpg",
     "large": "images/large/2026-11-15/20261115-203114-f2c7.jpg",
-    "doing": "watching a show"
+    "doing": "watching a show",
+    "description": "She is leaning against a large stuffed toy.",
+    "emotion": "Happiness",
+    "valence": "0.37",
+    "arousal": "-0.13"
   },
   {
     "id": "20261115-205243-adf3",
@@ -1357,7 +1933,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-205243-adf3.jpg",
     "image": "images/2026-11-15/20261115-205243-adf3.jpg",
     "large": "images/large/2026-11-15/20261115-205243-adf3.jpg",
-    "doing": "watching show"
+    "doing": "watching show",
+    "description": "This is a person lying down with their eyes closed in a room. They are holding a stuffed animal against their head.",
+    "emotion": "Surprise",
+    "valence": "0.17",
+    "arousal": "0.29"
   },
   {
     "id": "20261115-212242-96a2",
@@ -1366,7 +1946,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-15/20261115-212242-96a2.jpg",
     "image": "images/2026-11-15/20261115-212242-96a2.jpg",
     "large": "images/large/2026-11-15/20261115-212242-96a2.jpg",
-    "doing": "doing work n falling asleep"
+    "doing": "doing work n falling asleep",
+    "description": "This is a person lying on a bed in a room. They are looking down with their eyes closed.",
+    "emotion": "Surprise",
+    "valence": "0.01",
+    "arousal": "0.21"
   },
   {
     "id": "20261116-104057-967a",
@@ -1375,7 +1959,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-104057-967a.jpg",
     "image": "images/2026-11-16/20261116-104057-967a.jpg",
     "large": "images/large/2026-11-16/20261116-104057-967a.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at a dark screen in a room. They are holding a device in their hands and wearing glasses.",
+    "emotion": "Surprise",
+    "valence": "-0.06",
+    "arousal": "0.33"
   },
   {
     "id": "20261116-111626-b31c",
@@ -1384,7 +1972,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-111626-b31c.jpg",
     "image": "images/2026-11-16/20261116-111626-b31c.jpg",
     "large": "images/large/2026-11-16/20261116-111626-b31c.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person holding a phone in their room. They are looking at the screen while holding a plush toy in the other hand."
   },
   {
     "id": "20261116-113926-10ae",
@@ -1393,7 +1982,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-113926-10ae.jpg",
     "image": "images/2026-11-16/20261116-113926-10ae.jpg",
     "large": "images/large/2026-11-16/20261116-113926-10ae.jpg",
-    "doing": "doig work"
+    "doing": "doig work",
+    "description": "This is a person lying in bed, holding a phone in their hand. They are looking down at the screen."
   },
   {
     "id": "20261116-131126-6f55",
@@ -1402,7 +1992,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-131126-6f55.jpg",
     "image": "images/2026-11-16/20261116-131126-6f55.jpg",
     "large": "images/large/2026-11-16/20261116-131126-6f55.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room. They are standing with their hands in front of their face.",
+    "emotion": "Sadness",
+    "valence": "-0.39",
+    "arousal": "-0.07"
   },
   {
     "id": "20261116-134835-d77a",
@@ -1411,7 +2005,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-134835-d77a.jpg",
     "image": "images/2026-11-16/20261116-134835-d77a.jpg",
     "large": "images/large/2026-11-16/20261116-134835-d77a.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room. They are standing with their hands in front of them, near a wall with a light fixture and a picture.",
+    "emotion": "Neutral",
+    "valence": "-0.29",
+    "arousal": "0.05"
   },
   {
     "id": "20261116-140335-6c09",
@@ -1420,7 +2018,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-140335-6c09.jpg",
     "image": "images/2026-11-16/20261116-140335-6c09.jpg",
     "large": "images/large/2026-11-16/20261116-140335-6c09.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera in a room. She is holding a phone up to her face.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "-0.25"
   },
   {
     "id": "20261116-142025-196b",
@@ -1429,7 +2031,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-142025-196b.jpg",
     "image": "images/2026-11-16/20261116-142025-196b.jpg",
     "large": "images/large/2026-11-16/20261116-142025-196b.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room. They are holding something small in their hand, with dark hair framing their face."
   },
   {
     "id": "20261116-150708-8b4f",
@@ -1438,7 +2041,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-150708-8b4f.jpg",
     "image": "images/2026-11-16/20261116-150708-8b4f.jpg",
     "large": "images/large/2026-11-16/20261116-150708-8b4f.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a room, looking at the camera. She is sitting at a table with various items on it.",
+    "emotion": "Neutral",
+    "valence": "-0.02",
+    "arousal": "-0.08"
   },
   {
     "id": "20261116-151852-eacc",
@@ -1447,7 +2054,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-151852-eacc.jpg",
     "image": "images/2026-11-16/20261116-151852-eacc.jpg",
     "large": "images/large/2026-11-16/20261116-151852-eacc.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera in a room. She is standing with her hands near her face, and a dark background is visible behind her.",
+    "emotion": "Neutral",
+    "valence": "-0.09",
+    "arousal": "-0.14"
   },
   {
     "id": "20261116-154252-b5e1",
@@ -1456,7 +2067,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-154252-b5e1.jpg",
     "image": "images/2026-11-16/20261116-154252-b5e1.jpg",
     "large": "images/large/2026-11-16/20261116-154252-b5e1.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying on a sofa. They are looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.35",
+    "arousal": "-0.18"
   },
   {
     "id": "20261116-155941-912e",
@@ -1465,7 +2080,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-155941-912e.jpg",
     "image": "images/2026-11-16/20261116-155941-912e.jpg",
     "large": "images/large/2026-11-16/20261116-155941-912e.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person lying on a bed in a room. They are looking downwards with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "0.06"
   },
   {
     "id": "20261116-162947-608d",
@@ -1474,7 +2093,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-162947-608d.jpg",
     "image": "images/2026-11-16/20261116-162947-608d.jpg",
     "large": "images/large/2026-11-16/20261116-162947-608d.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting on a couch, looking down at a device. She has her eyes closed and her hair is resting on the surface beside her.",
+    "emotion": "Sadness",
+    "valence": "-0.29",
+    "arousal": "-0.29"
   },
   {
     "id": "20261116-165258-8177",
@@ -1483,7 +2106,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-165258-8177.jpg",
     "image": "images/2026-11-16/20261116-165258-8177.jpg",
     "large": "images/large/2026-11-16/20261116-165258-8177.jpg",
-    "doing": "sodoku"
+    "doing": "sodoku",
+    "description": "This is a person holding a phone up to their eye in a dark room. They are looking at the screen with their eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.44",
+    "arousal": "0.03"
   },
   {
     "id": "20261116-170548-c2e4",
@@ -1492,7 +2119,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-170548-c2e4.jpg",
     "image": "images/2026-11-16/20261116-170548-c2e4.jpg",
     "large": "images/large/2026-11-16/20261116-170548-c2e4.jpg",
-    "doing": "on my phone"
+    "doing": "on my phone",
+    "description": "This is a person holding a phone up to their face while lying in a bed. They are looking at the screen with their eyes closed.",
+    "emotion": "Neutral",
+    "valence": "0.01",
+    "arousal": "-0.07"
   },
   {
     "id": "20261116-184542-338b",
@@ -1501,7 +2132,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-184542-338b.jpg",
     "image": "images/2026-11-16/20261116-184542-338b.jpg",
     "large": "images/large/2026-11-16/20261116-184542-338b.jpg",
-    "doing": "opened my computer"
+    "doing": "opened my computer",
+    "description": "This is a girl sitting on a bed in a room, with her arms resting on her legs.",
+    "emotion": "Sadness",
+    "valence": "-0.47",
+    "arousal": "-0.14"
   },
   {
     "id": "20261116-190443-6315",
@@ -1510,7 +2145,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-190443-6315.jpg",
     "image": "images/2026-11-16/20261116-190443-6315.jpg",
     "large": "images/large/2026-11-16/20261116-190443-6315.jpg",
-    "doing": "eating food"
+    "doing": "eating food",
+    "description": "This is a girl eating pizza while sitting at a table in a room. She is holding a slice of pizza in her hand and looking towards the camera.",
+    "emotion": "Neutral",
+    "valence": "-0.24",
+    "arousal": "-0.20"
   },
   {
     "id": "20261116-191607-77ab",
@@ -1519,7 +2158,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-191607-77ab.jpg",
     "image": "images/2026-11-16/20261116-191607-77ab.jpg",
     "large": "images/large/2026-11-16/20261116-191607-77ab.jpg",
-    "doing": "went to my room"
+    "doing": "went to my room",
+    "description": "This is a person looking up at a ceiling. They are holding their head in their hands."
   },
   {
     "id": "20261116-194032-7051",
@@ -1528,7 +2168,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-194032-7051.jpg",
     "image": "images/2026-11-16/20261116-194032-7051.jpg",
     "large": "images/large/2026-11-16/20261116-194032-7051.jpg",
-    "doing": "on my phone"
+    "doing": "on my phone",
+    "description": "This is a girl holding a phone up to her face, taking a selfie in a room. She is leaning against a surface with a wall behind her.",
+    "emotion": "Neutral",
+    "valence": "-0.37",
+    "arousal": "-0.02"
   },
   {
     "id": "20261116-200906-6443",
@@ -1537,7 +2181,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-200906-6443.jpg",
     "image": "images/2026-11-16/20261116-200906-6443.jpg",
     "large": "images/large/2026-11-16/20261116-200906-6443.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a room, holding her hand up to her face. She is leaning forward with her eyes closed.",
+    "emotion": "Neutral",
+    "valence": "-0.15",
+    "arousal": "-0.04"
   },
   {
     "id": "20261116-203622-3f0f",
@@ -1546,7 +2194,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-203622-3f0f.jpg",
     "image": "images/2026-11-16/20261116-203622-3f0f.jpg",
     "large": "images/large/2026-11-16/20261116-203622-3f0f.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl resting her head on a pillow in a room. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.31",
+    "arousal": "-0.23"
   },
   {
     "id": "20261116-205511-edde",
@@ -1555,7 +2207,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-205511-edde.jpg",
     "image": "images/2026-11-16/20261116-205511-edde.jpg",
     "large": "images/large/2026-11-16/20261116-205511-edde.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a bed with pillows in her room. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "-0.20",
+    "arousal": "-0.07"
   },
   {
     "id": "20261116-211705-c535",
@@ -1564,7 +2220,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-211705-c535.jpg",
     "image": "images/2026-11-16/20261116-211705-c535.jpg",
     "large": "images/large/2026-11-16/20261116-211705-c535.jpg",
-    "doing": "working on thesis"
+    "doing": "working on thesis",
+    "description": "This is a girl lying on a bed in a room, holding her hand to her forehead.",
+    "emotion": "Neutral",
+    "valence": "-0.28",
+    "arousal": "-0.03"
   },
   {
     "id": "20261116-213803-2170",
@@ -1573,7 +2233,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-213803-2170.jpg",
     "image": "images/2026-11-16/20261116-213803-2170.jpg",
     "large": "images/large/2026-11-16/20261116-213803-2170.jpg",
-    "doing": "laying down"
+    "doing": "laying down",
+    "description": "This is a person lying on a bed, holding a remote control in their hand. They are wrapped in a blanket and resting on a pillow."
   },
   {
     "id": "20261116-220357-fb31",
@@ -1582,7 +2243,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-220357-fb31.jpg",
     "image": "images/2026-11-16/20261116-220357-fb31.jpg",
     "large": "images/large/2026-11-16/20261116-220357-fb31.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl playing guitar in her room.",
+    "emotion": "Contempt",
+    "valence": "-0.07",
+    "arousal": "0.13"
   },
   {
     "id": "20261116-223448-dc41",
@@ -1591,7 +2256,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-223448-dc41.jpg",
     "image": "images/2026-11-16/20261116-223448-dc41.jpg",
     "large": "images/large/2026-11-16/20261116-223448-dc41.jpg",
-    "doing": "laying down"
+    "doing": "laying down",
+    "description": "This is a girl lying on a bed in a room. She is looking to the side with her eyes partially closed.",
+    "emotion": "Sadness",
+    "valence": "-0.41",
+    "arousal": "-0.12"
   },
   {
     "id": "20261116-230056-5679",
@@ -1600,7 +2269,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-230056-5679.jpg",
     "image": "images/2026-11-16/20261116-230056-5679.jpg",
     "large": "images/large/2026-11-16/20261116-230056-5679.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera from inside a room. They are positioned in front of a wall with a shelf and a towel.",
+    "emotion": "Neutral",
+    "valence": "-0.16",
+    "arousal": "-0.02"
   },
   {
     "id": "20261116-231930-60f4",
@@ -1609,7 +2282,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-231930-60f4.jpg",
     "image": "images/2026-11-16/20261116-231930-60f4.jpg",
     "large": "images/large/2026-11-16/20261116-231930-60f4.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a bed with a pillow. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.43",
+    "arousal": "-0.04"
   },
   {
     "id": "20261116-234656-cd05",
@@ -1618,7 +2295,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-16/20261116-234656-cd05.jpg",
     "image": "images/2026-11-16/20261116-234656-cd05.jpg",
     "large": "images/large/2026-11-16/20261116-234656-cd05.jpg",
-    "doing": "code edits"
+    "doing": "code edits",
+    "description": "This is a girl lying on a bed in a room. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.51",
+    "arousal": "-0.07"
   },
   {
     "id": "20261117-001451-6f09",
@@ -1627,7 +2308,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-001451-6f09.jpg",
     "image": "images/2026-11-17/20261117-001451-6f09.jpg",
     "large": "images/large/2026-11-17/20261117-001451-6f09.jpg",
-    "doing": "on my phone"
+    "doing": "on my phone",
+    "description": "This is a girl lying in bed, holding a phone in her hands. She is looking down at the device while resting on a bed with pillows.",
+    "emotion": "Neutral",
+    "valence": "-0.06",
+    "arousal": "-0.11"
   },
   {
     "id": "20261117-003146-f976",
@@ -1636,7 +2321,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-003146-f976.jpg",
     "image": "images/2026-11-17/20261117-003146-f976.jpg",
     "large": "images/large/2026-11-17/20261117-003146-f976.jpg",
-    "doing": "on my phone"
+    "doing": "on my phone",
+    "description": "This is a girl lying in bed, looking at a phone. She is resting on a pillow with a blanket draped over her.",
+    "emotion": "Neutral",
+    "valence": "-0.27",
+    "arousal": "-0.05"
   },
   {
     "id": "20261117-140847-97f5",
@@ -1645,7 +2334,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-140847-97f5.jpg",
     "image": "images/2026-11-17/20261117-140847-97f5.jpg",
     "large": "images/large/2026-11-17/20261117-140847-97f5.jpg",
-    "doing": "coding"
+    "doing": "coding",
+    "description": "This is a girl sitting in a room, looking at the camera with a neutral expression. She is positioned in front of a wall with several decorative items.",
+    "emotion": "Sadness",
+    "valence": "-0.29",
+    "arousal": "-0.16"
   },
   {
     "id": "20261117-143553-3dce",
@@ -1654,7 +2347,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-143553-3dce.jpg",
     "image": "images/2026-11-17/20261117-143553-3dce.jpg",
     "large": "images/large/2026-11-17/20261117-143553-3dce.jpg",
-    "doing": "eating"
+    "doing": "eating",
+    "description": "This is a girl sitting on a couch and eating a piece of food. She is looking at the camera with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "-0.33",
+    "arousal": "-0.03"
   },
   {
     "id": "20261117-145437-84dd",
@@ -1663,7 +2360,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-145437-84dd.jpg",
     "image": "images/2026-11-17/20261117-145437-84dd.jpg",
     "large": "images/large/2026-11-17/20261117-145437-84dd.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a room, holding her hand up to her face. She is looking towards the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.37",
+    "arousal": "-0.28"
   },
   {
     "id": "20261117-151958-4cfc",
@@ -1672,7 +2373,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-151958-4cfc.jpg",
     "image": "images/2026-11-17/20261117-151958-4cfc.jpg",
     "large": "images/large/2026-11-17/20261117-151958-4cfc.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl sitting in a chair, with her eyes closed. She is in a room with a wall and a table with objects on it.",
+    "emotion": "Contempt",
+    "valence": "0.19",
+    "arousal": "-0.13"
   },
   {
     "id": "20261117-154822-d6df",
@@ -1681,7 +2386,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-154822-d6df.jpg",
     "image": "images/2026-11-17/20261117-154822-d6df.jpg",
     "large": "images/large/2026-11-17/20261117-154822-d6df.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room. They are standing with their head and shoulders in the frame, facing the camera.",
+    "emotion": "Neutral",
+    "valence": "-0.17",
+    "arousal": "-0.07"
   },
   {
     "id": "20261117-155916-68e6",
@@ -1690,7 +2399,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-155916-68e6.jpg",
     "image": "images/2026-11-17/20261117-155916-68e6.jpg",
     "large": "images/large/2026-11-17/20261117-155916-68e6.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl holding her phone up to her face, taking a photograph in a room. She is looking directly at the camera."
   },
   {
     "id": "20261117-161121-a76d",
@@ -1699,7 +2409,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-161121-a76d.jpg",
     "image": "images/2026-11-17/20261117-161121-a76d.jpg",
     "large": "images/large/2026-11-17/20261117-161121-a76d.jpg",
-    "doing": "working"
+    "doing": "working",
+    "description": "This is a girl looking at the camera in a room. She is standing in front of a wall with decorations and a light fixture.",
+    "emotion": "Neutral",
+    "valence": "-0.03",
+    "arousal": "-0.04"
   },
   {
     "id": "20261117-163307-77cc",
@@ -1708,7 +2422,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-163307-77cc.jpg",
     "image": "images/2026-11-17/20261117-163307-77cc.jpg",
     "large": "images/large/2026-11-17/20261117-163307-77cc.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a sofa. She is looking down with her eyes closed.",
+    "emotion": "Happiness",
+    "valence": "0.43",
+    "arousal": "-0.14"
   },
   {
     "id": "20261117-170220-bd71",
@@ -1717,7 +2435,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-170220-bd71.jpg",
     "image": "images/2026-11-17/20261117-170220-bd71.jpg",
     "large": "images/large/2026-11-17/20261117-170220-bd71.jpg",
-    "doing": "playing guitar"
+    "doing": "playing guitar",
+    "description": "This is a girl holding a guitar and looking at the camera in a room. She is standing with her arms around the instrument.",
+    "emotion": "Neutral",
+    "valence": "-0.26",
+    "arousal": "-0.19"
   },
   {
     "id": "20261117-174224-f506",
@@ -1726,7 +2448,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-174224-f506.jpg",
     "image": "images/2026-11-17/20261117-174224-f506.jpg",
     "large": "images/large/2026-11-17/20261117-174224-f506.jpg",
-    "doing": "editing photos"
+    "doing": "editing photos",
+    "description": "This is a girl sitting in a room, with her head resting on a pillow. She is looking towards the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.42",
+    "arousal": "-0.07"
   },
   {
     "id": "20261117-175844-3333",
@@ -1735,7 +2461,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-175844-3333.jpg",
     "image": "images/2026-11-17/20261117-175844-3333.jpg",
     "large": "images/large/2026-11-17/20261117-175844-3333.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a surface against a wall, with a pillow behind her. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.31",
+    "arousal": "-0.25"
   },
   {
     "id": "20261117-181503-1c52",
@@ -1744,7 +2474,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-181503-1c52.jpg",
     "image": "images/2026-11-17/20261117-181503-1c52.jpg",
     "large": "images/large/2026-11-17/20261117-181503-1c52.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a bed. She is looking towards the camera with her eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.28",
+    "arousal": "-0.18"
   },
   {
     "id": "20261117-184421-3434",
@@ -1753,7 +2487,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-184421-3434.jpg",
     "image": "images/2026-11-17/20261117-184421-3434.jpg",
     "large": "images/large/2026-11-17/20261117-184421-3434.jpg",
-    "doing": "soing work"
+    "doing": "soing work",
+    "description": "This is a girl looking at the camera in a room. She is standing with her hands in front of her face.",
+    "emotion": "Sadness",
+    "valence": "-0.37",
+    "arousal": "-0.06"
   },
   {
     "id": "20261117-191132-d38a",
@@ -1762,7 +2500,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-191132-d38a.jpg",
     "image": "images/2026-11-17/20261117-191132-d38a.jpg",
     "large": "images/large/2026-11-17/20261117-191132-d38a.jpg",
-    "doing": "playing gutiar"
+    "doing": "playing gutiar",
+    "description": "This is a girl playing guitar in her room. She is sitting in a chair and holding a guitar with her eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.28",
+    "arousal": "-0.23"
   },
   {
     "id": "20261117-193312-f5fd",
@@ -1771,7 +2513,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-193312-f5fd.jpg",
     "image": "images/2026-11-17/20261117-193312-f5fd.jpg",
     "large": "images/large/2026-11-17/20261117-193312-f5fd.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person looking at the camera with their eyes closed. They are lying down with their head resting on a surface.",
+    "emotion": "Sadness",
+    "valence": "-0.29",
+    "arousal": "-0.10"
   },
   {
     "id": "20261117-200725-da3a",
@@ -1780,7 +2526,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-200725-da3a.jpg",
     "image": "images/2026-11-17/20261117-200725-da3a.jpg",
     "large": "images/large/2026-11-17/20261117-200725-da3a.jpg",
-    "doing": "eating dinner"
+    "doing": "eating dinner",
+    "description": "This is a girl sitting at a table, leaning her head on her hand. She is looking slightly to the side in the room.",
+    "emotion": "Neutral",
+    "valence": "-0.07",
+    "arousal": "-0.23"
   },
   {
     "id": "20261117-201841-537c",
@@ -1789,7 +2539,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-201841-537c.jpg",
     "image": "images/2026-11-17/20261117-201841-537c.jpg",
     "large": "images/large/2026-11-17/20261117-201841-537c.jpg",
-    "doing": "watching new girl"
+    "doing": "watching new girl",
+    "description": "This is a girl sitting on a sofa in a room. She is looking downwards with her eyes closed.",
+    "emotion": "Sadness",
+    "valence": "-0.29",
+    "arousal": "-0.40"
   },
   {
     "id": "20261117-204227-893e",
@@ -1798,7 +2552,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-204227-893e.jpg",
     "image": "images/2026-11-17/20261117-204227-893e.jpg",
     "large": "images/large/2026-11-17/20261117-204227-893e.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a girl lying on a sofa. She is looking directly at the camera with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "-0.36",
+    "arousal": "-0.22"
   },
   {
     "id": "20261117-205601-c246",
@@ -1807,7 +2565,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-205601-c246.jpg",
     "image": "images/2026-11-17/20261117-205601-c246.jpg",
     "large": "images/large/2026-11-17/20261117-205601-c246.jpg",
-    "doing": "doing an assignment"
+    "doing": "doing an assignment",
+    "description": "This is a girl lying on a sofa. She is looking directly at the camera.",
+    "emotion": "Sadness",
+    "valence": "-0.34",
+    "arousal": "-0.12"
   },
   {
     "id": "20261117-212026-c1ff",
@@ -1816,7 +2578,8 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-212026-c1ff.jpg",
     "image": "images/2026-11-17/20261117-212026-c1ff.jpg",
     "large": "images/large/2026-11-17/20261117-212026-c1ff.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person sitting on a couch in a room. They have their eyes closed."
   },
   {
     "id": "20261117-213417-cb3b",
@@ -1825,7 +2588,11 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-213417-cb3b.jpg",
     "image": "images/2026-11-17/20261117-213417-cb3b.jpg",
     "large": "images/large/2026-11-17/20261117-213417-cb3b.jpg",
-    "doing": "doing work"
+    "doing": "doing work",
+    "description": "This is a person sitting on a sofa in a room. They are looking directly at the camera with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "-0.32",
+    "arousal": "-0.14"
   },
   {
     "id": "20261117-215531-91ae",
@@ -1834,6 +2601,23 @@ window.FACE_VALUE_PHOTOS = [
     "thumb": "images/thumbs/2026-11-17/20261117-215531-91ae.jpg",
     "image": "images/2026-11-17/20261117-215531-91ae.jpg",
     "large": "images/large/2026-11-17/20261117-215531-91ae.jpg",
-    "doing": "drinking water"
+    "doing": "drinking water",
+    "description": "This is a girl holding a glass of liquid in a room. She is sitting on a chair and looking down into the glass.",
+    "emotion": "Neutral",
+    "valence": "-0.19",
+    "arousal": "-0.20"
+  },
+  {
+    "id": "20261117-222122-44f9",
+    "date": "2026-11-17",
+    "time": "22:21:22",
+    "thumb": "images/thumbs/2026-11-17/20261117-222122-44f9.jpg",
+    "image": "images/2026-11-17/20261117-222122-44f9.jpg",
+    "large": "images/large/2026-11-17/20261117-222122-44f9.jpg",
+    "doing": "working on my website",
+    "description": "This is a girl sitting on a leather chair in a room. She is looking straight ahead with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.09",
+    "arousal": "-0.18"
   }
 ];
