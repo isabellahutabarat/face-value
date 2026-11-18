@@ -2944,5 +2944,18 @@ window.FACE_VALUE_PHOTOS = [
     "emotion": "Neutral",
     "valence": "0.01",
     "arousal": "-0.17"
+  },
+  {
+    "id": "20261118-151651-d267",
+    "date": "2026-11-18",
+    "time": "15:16:51",
+    "thumb": "images/thumbs/2026-11-18/20261118-151651-d267.jpg",
+    "image": "images/2026-11-18/20261118-151651-d267.jpg",
+    "large": "images/large/2026-11-18/20261118-151651-d267.jpg",
+    "doing": "doing working",
+    "description": "This is a girl looking at the camera in a room. She is standing with her hands in front of her face.",
+    "emotion": "Contempt",
+    "valence": "-0.00",
+    "arousal": "-0.04"
   }
 ];
