@@ -2618,5 +2618,70 @@
     "emotion": "Sadness",
     "valence": "-0.09",
     "arousal": "-0.18"
+  },
+  {
+    "id": "20261117-224732-5899",
+    "date": "2026-11-17",
+    "time": "22:47:32",
+    "thumb": "images/thumbs/2026-11-17/20261117-224732-5899.jpg",
+    "image": "images/2026-11-17/20261117-224732-5899.jpg",
+    "large": "images/large/2026-11-17/20261117-224732-5899.jpg",
+    "doing": "doing work",
+    "description": "This is a girl looking at the camera in a room. She is standing with her hands in front of her face.",
+    "emotion": "Neutral",
+    "valence": "-0.25",
+    "arousal": "-0.24"
+  },
+  {
+    "id": "20261117-233534-cf09",
+    "date": "2026-11-17",
+    "time": "23:35:34",
+    "thumb": "images/thumbs/2026-11-17/20261117-233534-cf09.jpg",
+    "image": "images/2026-11-17/20261117-233534-cf09.jpg",
+    "large": "images/large/2026-11-17/20261117-233534-cf09.jpg",
+    "doing": "doing work",
+    "description": "This is a person looking at the camera in a room. They are standing with their hands in front of their face.",
+    "emotion": "Neutral",
+    "valence": "-0.22",
+    "arousal": "-0.12"
+  },
+  {
+    "id": "20261117-235643-f31d",
+    "date": "2026-11-17",
+    "time": "23:56:43",
+    "thumb": "images/thumbs/2026-11-17/20261117-235643-f31d.jpg",
+    "image": "images/2026-11-17/20261117-235643-f31d.jpg",
+    "large": "images/large/2026-11-17/20261117-235643-f31d.jpg",
+    "doing": "scrolling on tiktok",
+    "description": "This is a girl lying on a bed in a room, with her head resting on a pillow. She is looking directly at the camera with her mouth slightly open.",
+    "emotion": "Neutral",
+    "valence": "0.14",
+    "arousal": "-0.13"
+  },
+  {
+    "id": "20261118-001929-1dda",
+    "date": "2026-11-18",
+    "time": "00:19:29",
+    "thumb": "images/thumbs/2026-11-18/20261118-001929-1dda.jpg",
+    "image": "images/2026-11-18/20261118-001929-1dda.jpg",
+    "large": "images/large/2026-11-18/20261118-001929-1dda.jpg",
+    "doing": "doing work",
+    "description": "This is a girl lying in bed in a room. She is looking towards the camera with a neutral expression.",
+    "emotion": "Neutral",
+    "valence": "-0.20",
+    "arousal": "-0.18"
+  },
+  {
+    "id": "20261118-003733-f1af",
+    "date": "2026-11-18",
+    "time": "00:37:33",
+    "thumb": "images/thumbs/2026-11-18/20261118-003733-f1af.jpg",
+    "image": "images/2026-11-18/20261118-003733-f1af.jpg",
+    "large": "images/large/2026-11-18/20261118-003733-f1af.jpg",
+    "doing": "editing layout",
+    "description": "This is a girl lying in bed, with her head resting on a pillow, and her hand resting on her chin.",
+    "emotion": "Sadness",
+    "valence": "-0.60",
+    "arousal": "0.01"
   }
 ]
