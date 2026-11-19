@@ -2996,5 +2996,31 @@ window.FACE_VALUE_PHOTOS = [
     "emotion": "Sadness",
     "valence": "-0.36",
     "arousal": "-0.30"
+  },
+  {
+    "id": "20261118-203630-ee30",
+    "date": "2026-11-18",
+    "time": "20:36:30",
+    "thumb": "images/thumbs/2026-11-18/20261118-203630-ee30.jpg",
+    "image": "images/2026-11-18/20261118-203630-ee30.jpg",
+    "large": "images/large/2026-11-18/20261118-203630-ee30.jpg",
+    "doing": "editing photo final drafts",
+    "description": "This is a person sitting in a room, wearing a hat and looking towards the camera. They are positioned in front of a wall with a framed picture.",
+    "emotion": "Anger",
+    "valence": "-0.42",
+    "arousal": "0.51"
+  },
+  {
+    "id": "20261118-205004-69b8",
+    "date": "2026-11-18",
+    "time": "20:50:04",
+    "thumb": "images/thumbs/2026-11-18/20261118-205004-69b8.jpg",
+    "image": "images/2026-11-18/20261118-205004-69b8.jpg",
+    "large": "images/large/2026-11-18/20261118-205004-69b8.jpg",
+    "doing": "editing photo final drafts",
+    "description": "This is a girl standing in a room with a framed picture behind her. She is looking towards the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.32",
+    "arousal": "-0.08"
   }
 ];
