@@ -2956,5 +2956,44 @@
     "emotion": "Contempt",
     "valence": "-0.00",
     "arousal": "-0.04"
+  },
+  {
+    "id": "20261118-153045-b03f",
+    "date": "2026-11-18",
+    "time": "15:30:45",
+    "thumb": "images/thumbs/2026-11-18/20261118-153045-b03f.jpg",
+    "image": "images/2026-11-18/20261118-153045-b03f.jpg",
+    "large": "images/large/2026-11-18/20261118-153045-b03f.jpg",
+    "doing": "looking at my portfolio website",
+    "description": "This is a girl sitting in a chair in a room, looking towards the camera. She is positioned in front of a window with a desk in the foreground.",
+    "emotion": "Neutral",
+    "valence": "0.16",
+    "arousal": "-0.14"
+  },
+  {
+    "id": "20261118-154222-4f8f",
+    "date": "2026-11-18",
+    "time": "15:42:22",
+    "thumb": "images/thumbs/2026-11-18/20261118-154222-4f8f.jpg",
+    "image": "images/2026-11-18/20261118-154222-4f8f.jpg",
+    "large": "images/large/2026-11-18/20261118-154222-4f8f.jpg",
+    "doing": "looking at my friend's work",
+    "description": "This is a girl sitting in a room, looking out a window and holding her hand to her face.",
+    "emotion": "Sadness",
+    "valence": "-0.36",
+    "arousal": "-0.30"
+  },
+  {
+    "id": "20261118-202538-11fd",
+    "date": "2026-11-18",
+    "time": "20:25:38",
+    "thumb": "images/thumbs/2026-11-18/20261118-202538-11fd.jpg",
+    "image": "images/2026-11-18/20261118-202538-11fd.jpg",
+    "large": "images/large/2026-11-18/20261118-202538-11fd.jpg",
+    "doing": "going on my phone",
+    "description": "This is a person with their eyes closed, wearing a hat, in a room. They are positioned in front of a framed picture on a wall.",
+    "emotion": "Sadness",
+    "valence": "-0.36",
+    "arousal": "-0.30"
   }
 ]
