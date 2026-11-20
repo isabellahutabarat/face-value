@@ -4053,5 +4053,66 @@ window.FACE_VALUE_PHOTOS = [
     "emotion": "Neutral",
     "valence": "-0.04",
     "arousal": "-0.13"
+  },
+  {
+    "id": "20261120-031303-3023",
+    "date": "2026-11-20",
+    "time": "03:13:03",
+    "thumb": "images/thumbs/2026-11-20/20261120-031303-3023.jpg",
+    "image": "images/2026-11-20/20261120-031303-3023.jpg",
+    "large": "images/large/2026-11-20/20261120-031303-3023.jpg",
+    "doing": "going on my phone",
+    "category": "phone",
+    "description": "This is a person standing in a room, wearing a head covering, and looking downwards.",
+    "emotion": "Sadness",
+    "valence": "-0.40",
+    "arousal": "-0.34"
+  },
+  {
+    "id": "20261120-033301-28a4",
+    "date": "2026-11-20",
+    "time": "03:33:01",
+    "thumb": "images/thumbs/2026-11-20/20261120-033301-28a4.jpg",
+    "image": "images/2026-11-20/20261120-033301-28a4.jpg",
+    "large": "images/large/2026-11-20/20261120-033301-28a4.jpg",
+    "doing": "writing research",
+    "category": null,
+    "description": "This is a girl sitting in a room, partially covered by a dark blanket. She is looking towards the camera with her eyes open.",
+    "emotion": "Neutral",
+    "valence": "-0.40",
+    "arousal": "-0.02"
+  },
+  {
+    "id": "20261120-035023-0900",
+    "date": "2026-11-20",
+    "time": "03:50:23",
+    "thumb": "images/thumbs/2026-11-20/20261120-035023-0900.jpg",
+    "image": "images/2026-11-20/20261120-035023-0900.jpg",
+    "large": "images/large/2026-11-20/20261120-035023-0900.jpg",
+    "doing": "writing essay",
+    "category": null,
+    "description": "This is a person looking up at a wall. They are holding a dark object in front of their face."
+  },
+  {
+    "id": "20261120-040859-aff1",
+    "date": "2026-11-20",
+    "time": "04:08:59",
+    "thumb": "images/thumbs/2026-11-20/20261120-040859-aff1.jpg",
+    "image": "images/2026-11-20/20261120-040859-aff1.jpg",
+    "large": "images/large/2026-11-20/20261120-040859-aff1.jpg",
+    "doing": "writing",
+    "category": "work",
+    "description": "This is a person looking up at a wall in a room. They are wearing a dark hooded garment."
+  },
+  {
+    "id": "20261120-042800-e00d",
+    "date": "2026-11-20",
+    "time": "04:28:00",
+    "thumb": "images/thumbs/2026-11-20/20261120-042800-e00d.jpg",
+    "image": "images/2026-11-20/20261120-042800-e00d.jpg",
+    "large": "images/large/2026-11-20/20261120-042800-e00d.jpg",
+    "doing": "writing",
+    "category": "work",
+    "description": "This is a person lying in bed with a dark hood over their head. They are looking upwards at the ceiling."
   }
 ];
