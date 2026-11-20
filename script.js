@@ -289,9 +289,13 @@
       img.src = p.large || p.image;
       img.alt = altText(p);
       info.textContent = "";
+      // One line per row: "Emotion class: value" (wraps under itself if the line is too long).
       INFO_ROWS.forEach(function (row) {
-        info.appendChild(el("dt", null, row[0]));
-        info.appendChild(el("dd", null, value(p[row[1]])));
+        var line = el("div");
+        line.appendChild(el("dt", null, row[0]));
+        line.appendChild(document.createTextNode(" "));
+        line.appendChild(el("dd", null, value(p[row[1]])));
+        info.appendChild(line);
       });
       fit();
       // Preload the neighbours so previous/next switch instantly.
@@ -313,7 +317,6 @@
       var availH = body.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
       var W = root.clientWidth;
       var col = (W - margin) / 16;                         // one column + gutter
-      root.style.setProperty("--pp-col", col + "px");
       var w;
       if (phone.matches) {
         var full = W - 2 * margin;

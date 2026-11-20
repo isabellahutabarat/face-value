@@ -448,12 +448,11 @@ h1, h2, h3 { font: inherit; }
 /* One line each, even where they run slightly past the two columns (as in Figma). */
 .photo-page__question { white-space: nowrap; }
 
-.photo-page__info {
-  display: grid;
-  grid-template-columns: minmax(var(--pp-col, 94px), max-content) 1fr;
-  margin-top: 43px;
-}
-.photo-page__info dt { color: var(--text); white-space: nowrap; }
+/* Each row on one line: label, a space, then the value. */
+.photo-page__info { margin-top: 43px; }
+.photo-page__info dt,
+.photo-page__info dd { display: inline; }
+.photo-page__info dt { color: var(--text); }
 .photo-page__info dd { color: var(--text-label); overflow-wrap: anywhere; }
 
 /* Previous/next: the Figma chevron (assets/icons/arrow-next.svg), on the page margins,
