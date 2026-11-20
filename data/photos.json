@@ -3996,5 +3996,61 @@
     "emotion": "Sadness",
     "valence": "-0.27",
     "arousal": "-0.23"
+  },
+  {
+    "id": "20261120-021317-a97e",
+    "date": "2026-11-20",
+    "time": "02:13:17",
+    "thumb": "images/thumbs/2026-11-20/20261120-021317-a97e.jpg",
+    "image": "images/2026-11-20/20261120-021317-a97e.jpg",
+    "large": "images/large/2026-11-20/20261120-021317-a97e.jpg",
+    "doing": "editing viewports",
+    "category": null,
+    "description": "This is a person lying on a bed in a room. They are looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.30",
+    "arousal": "-0.13"
+  },
+  {
+    "id": "20261120-022959-8a77",
+    "date": "2026-11-20",
+    "time": "02:29:59",
+    "thumb": "images/thumbs/2026-11-20/20261120-022959-8a77.jpg",
+    "image": "images/2026-11-20/20261120-022959-8a77.jpg",
+    "large": "images/large/2026-11-20/20261120-022959-8a77.jpg",
+    "doing": "editing site",
+    "category": null,
+    "description": "This is a person lying on a bed with a dark covering over their head. They are looking directly at the camera with a neutral expression.",
+    "emotion": "Anger",
+    "valence": "-0.20",
+    "arousal": "0.14"
+  },
+  {
+    "id": "20261120-024212-00cb",
+    "date": "2026-11-20",
+    "time": "02:42:12",
+    "thumb": "images/thumbs/2026-11-20/20261120-024212-00cb.jpg",
+    "image": "images/2026-11-20/20261120-024212-00cb.jpg",
+    "large": "images/large/2026-11-20/20261120-024212-00cb.jpg",
+    "doing": "editing layout",
+    "category": "design",
+    "description": "This is a person lying on a bed with a dark covering over their head. They are looking directly at the camera with a neutral expression.",
+    "emotion": "Sadness",
+    "valence": "-0.42",
+    "arousal": "-0.06"
+  },
+  {
+    "id": "20261120-025453-aa03",
+    "date": "2026-11-20",
+    "time": "02:54:53",
+    "thumb": "images/thumbs/2026-11-20/20261120-025453-aa03.jpg",
+    "image": "images/2026-11-20/20261120-025453-aa03.jpg",
+    "large": "images/large/2026-11-20/20261120-025453-aa03.jpg",
+    "doing": "editing",
+    "category": null,
+    "description": "This is a person lying on a bed in a room. They have their eyes closed and a hooded garment covers their head.",
+    "emotion": "Neutral",
+    "valence": "-0.04",
+    "arousal": "-0.13"
   }
 ]
