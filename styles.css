@@ -32,6 +32,9 @@
   /* 8-column grid: starts at x = 13 and runs to the right edge (13, 200, 388, 575, 762, 950, 1137, 1324).
      100% resolves against the element that uses it. */
   --col: calc((100% - var(--margin)) / 8);
+  /* Always 1/8 of the width, even where the grid has fewer columns: the home description and
+     photo keep their 8-column sizes so they shrink with the window and never overlap. */
+  --col8: calc((100% - var(--margin)) / 8);
 }
 
 *,
@@ -240,7 +243,7 @@ h1, h2, h3 { font: inherit; }
 /* ---------- Home ---------- */
 
 .intro {
-  width: calc(var(--col) * 3.36);               /* 629 px at 1512 */
+  width: calc(var(--col8) * 3.36);               /* 629 px at 1512 */
   min-height: calc(var(--index-top) - 97px);    /* Index starts at y = 422 unless the text is taller */
   margin: calc(97px - var(--header-h)) 0 0 var(--margin);
   padding-bottom: 38px;
@@ -275,7 +278,7 @@ h1, h2, h3 { font: inherit; }
   position: fixed;
   z-index: 10;
   top: 101px;
-  left: calc(var(--margin) + var(--col) * 6);   /* column 7 */
+  left: calc(var(--margin) + var(--col8) * 6);  /* column 7 of 8 */
   right: var(--margin);
 }
 
@@ -504,6 +507,30 @@ h1, h2, h3 { font: inherit; }
     margin-left: calc(var(--margin) + var(--col));
     margin-right: 0;
   }
+}
+
+/* Medium screens (around 1024): Index + 5 content columns (6-column grid).
+   --col changes with the grid so the nav ("Archive" in the last column) stays on it; the home
+   description and photo use --col8 and keep their sizes. */
+@media (min-width: 900px) and (max-width: 1199px) {
+  :root { --col: calc((100% - var(--margin)) / 6); }
+  .layout { grid-template-columns: repeat(6, 1fr); }
+  .timeline,
+  .thumbs { grid-template-columns: repeat(5, 1fr); }
+  .nav { left: calc(var(--margin) + var(--col) * 5); }
+}
+
+/* Small tablets (around 724): Index + 4 content columns (5-column grid). */
+@media (min-width: 700px) and (max-width: 899px) {
+  :root { --col: calc((100% - var(--margin)) / 5); }
+  .layout { grid-template-columns: repeat(5, 1fr); }
+  .timeline,
+  .thumbs { grid-template-columns: repeat(4, 1fr); }
+  .nav { left: calc(var(--margin) + var(--col) * 4); }
+
+  /* Home description: wider here, ending inside the 3rd column, but never wider than it
+     is at 900 px (372 px), so it doesn't grow as the window narrows. */
+  .intro { width: min(calc(var(--col) * 3 - 20px), 372px); }
 }
 
 @media (max-width: 699px) {
