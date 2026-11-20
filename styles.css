@@ -152,15 +152,34 @@ h1, h2, h3 { font: inherit; }
 .index__row,
 .index__clear { display: block; width: fit-content; max-width: 100%; }
 
-/* Home: the Index stays put while the page scrolls (as on info), at y = 422.
-   The archive Index scrolls with the page. */
+/* Home and archive: the Index stays put while the page scrolls (as on info), at y = 422.
+   Archive: the list is long, so it scrolls on its own inside the column (down to the bottom of
+   the window); the photos scroll with the page. */
 @media (min-width: 700px) {
-  .home .layout .index {
+  .home .layout .index,
+  .archive .layout .index {
     position: sticky;
     z-index: 5;
     top: var(--index-top);
     align-self: start;
   }
+
+  .archive .layout .index {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - var(--index-top));
+  }
+
+  .archive .index__list {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;          /* reaching the end of the list doesn't scroll the page */
+    scrollbar-width: none;                 /* scrolls by wheel/trackpad/touch; no bar in the column */
+    margin-left: -4px;                     /* room for the focus outline inside the scroll box */
+    padding: 0 0 13px 4px;
+  }
+  .archive .index__list::-webkit-scrollbar { display: none; }
 }
 
 /* ---------- Interaction states (all pages) ----------

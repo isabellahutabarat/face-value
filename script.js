@@ -582,6 +582,7 @@
 
     // Thumbnails, captioned with the photo's emotion classification (dash if none).
     var caps = [];
+    var thumbs = [];
     var frag = document.createDocumentFragment();
     photos.forEach(function (p, i) {
       var li = el("li");
@@ -603,6 +604,7 @@
       li.appendChild(b);
       frag.appendChild(li);
       caps.push(cap);
+      thumbs.push(b);
     });
     list.appendChild(frag);
 
@@ -648,27 +650,40 @@
     });
     main.addEventListener("focusout", function () { hover(-1); });
 
+    // Index column (fixed, scrolls on its own): keep row i in view inside it, without
+    // moving the page.
+    var listBox = index.list;
+    function revealRow(i) {
+      var r = index.rows[i].getBoundingClientRect();
+      var box = listBox.getBoundingClientRect();
+      if (r.top < box.top) listBox.scrollTop -= box.top - r.top;
+      else if (r.bottom > box.bottom) listBox.scrollTop += r.bottom - box.bottom;
+    }
+
+    // Scroll the page so photo i (image and caption) is fully visible, centred in the space
+    // under the header. Nothing moves if it is already fully visible.
+    var header = document.querySelector(".site-header");
+    function revealPhoto(i) {
+      var r = thumbs[i].getBoundingClientRect();
+      var top = header ? header.getBoundingClientRect().bottom : 0;
+      if (r.top >= top && r.bottom <= window.innerHeight) return;
+      var y = window.scrollY + r.top - top - (window.innerHeight - top - r.height) / 2;
+      window.scrollTo({ top: Math.max(0, y), behavior: reduceMotion.matches ? "auto" : "smooth" });
+    }
+
     // Photos and Index rows work the same way:
-    //   click         underline it (click the underlined one again to remove it)
-    //   double click  open the photo page (it stays underlined)
-    // A second click on the same item within DOUBLE_MS counts as a double click. Timed here
-    // rather than with the dblclick event so a double tap on a touch screen works too.
-    var DOUBLE_MS = 450;
-    var last = { i: -1, t: 0 };
+    //   click a photo or row     underline it (and its pair), moving the underline from any other
+    //   click it again           open the photo page (it stays underlined)
+    // There is no way to un-underline; clicking another photo moves the underline.
+    // Clicking an Index row also scrolls the page to that photo; clicking a photo keeps its
+    // Index row in view in the Index column.
     main.addEventListener("click", function (e) {
       var b = e.target.closest(TARGETS);
       if (!b) return;
       var i = Number(b.dataset.i);
-      var now = Date.now();
-      if (last.i === i && now - last.t < DOUBLE_MS) {
-        last.i = -1;
-        select(i);
-        page.open(i, b);
-        return;
-      }
-      last.i = i;
-      last.t = now;
-      select(i === current ? -1 : i);
+      if (i === current) { page.open(i, b); return; }
+      select(i);
+      if (b.classList.contains("index__row")) revealPhoto(i); else revealRow(i);
     });
   }
 
