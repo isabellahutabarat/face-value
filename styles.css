@@ -169,7 +169,7 @@ h1, h2, h3 { font: inherit; }
    photo page or the info text.
    - Hover or press: the text turns grey (#8b8b8b). On the archive, a photo and its Index row
      grey together (.is-hover, set in script.js).
-   - Selected / current: a 2 px green line under the text, from the text's left edge (the grid
+   - Selected (home, archive): a 2 px green line under the text, from the text's left edge (the grid
      column edge) to the end of the text. Measured from Figma: 2 px high, its bottom 2 px above
      the bottom of the 19 px row. As in Figma, the line is drawn behind the text (each item is
      its own stacking context, the line is at z-index -1), so descenders sit on top of it. */
@@ -197,12 +197,14 @@ h1, h2, h3 { font: inherit; }
 .thumb:active .thumb__cap,
 .is-hover { color: var(--text-secondary); }
 
+/* Info Index: the section in view (or just clicked) is grey; the others are black. No underline. */
+.index__row[aria-current] { color: var(--text-secondary); }
+
 .index__row,
 .time,
 .thumb__cap { position: relative; isolation: isolate; }
 
 .index__row[aria-pressed="true"]::after,
-.index__row[aria-current]::after,
 .time.is-marked::after,
 .thumb__cap.is-marked::after {
   content: "";

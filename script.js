@@ -172,7 +172,7 @@
     return {
       list: list,
       rows: rows,
-      // Info page: the one current section (underlined in green).
+      // Info page: the one current section (grey).
       setCurrent: function (i) {
         if (i === current) return;
         if (rows[current]) rows[current].removeAttribute("aria-current");
