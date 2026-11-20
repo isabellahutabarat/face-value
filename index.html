@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Face Value</title>
   <link rel="preload" href="assets/fonts/ABCDiatype-Medium-Trial.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=34">
-  <script src="data/photos.js?v=34" defer></script>
-  <script src="script.js?v=34" defer></script>
+  <link rel="stylesheet" href="styles.css?v=35">
+  <script src="data/photos.js?v=35" defer></script>
+  <script src="script.js?v=35" defer></script>
 </head>
 <body class="home" data-page="home">
   <header class="site-header">
@@ -20,9 +20,12 @@
   </header>
   <main>
     <h1 class="visually-hidden">Face Value</h1>
-    <section class="intro" aria-label="About the project">
+    <section class="intro" id="intro" aria-label="About the project">
+      <button class="intro__toggle btn-text" type="button" aria-expanded="false" aria-controls="intro-text">About</button>
+      <div class="intro__text" id="intro-text">
       <p>This website explores how facial expressions become data, and how systems of classification shape the way we interpret them. Using a series of self-portraits, this experiment examines how a single face can be categorized through different frameworks, including emotion labels, Facial Action Coding System (FACS) action units, and dimensions of valence and arousal. Each image is repeatedly interpreted and organized according to visible features, perceived emotions, and possible mental states.</p>
       <p>By becoming both the subject and the person classifying the images, I consider the distance between what a face displays, what others perceive, and what a person actually experiences. The project questions how much can be understood from an expression, and what gets lost when it is turned into information.</p>
+      </div>
     </section>
     <div class="layout">
       <nav class="index" aria-label="Index">

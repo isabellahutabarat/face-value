@@ -192,7 +192,7 @@
   // "x Clear" sits under the last item while anything is selected. `onChange` runs after
   // every change (home uses it to underline the matching times).
   function buildSelectableIndex(keys, pageName, onChange) {
-    var index = buildIndex(keys.map(function (k) { return { label: k, key: k }; }));
+    var index = buildIndex(keys.map(function (k) { return { label: k, key: k }; }), "not all");
 
     var clearItem = el("li", "index__clear-item");
     var clear = el("button", "index__clear btn-text", "x Clear");
@@ -538,10 +538,7 @@
     });
 
     // Scroll: follow the time row at the reference line (y = 450, where the times start).
-    function referenceLine() {
-      if (SMALL.matches) return viewer.getBoundingClientRect().bottom + 8;
-      return 450;
-    }
+    function referenceLine() { return 450; }
 
     function syncToScroll() {
       if (page.isOpen()) return;
@@ -577,7 +574,7 @@
     // Index rows read "n/N": the photo's place in the chronological list / the total.
     var index = buildIndex(photos.map(function (p, i) {
       return { label: (i + 1) + "/" + N, ariaLabel: (i + 1) + " of " + N + ", " + p.time + ", " + formatDate(p.date) };
-    }));
+    }), "not all");
     var page = createPhotoPage(photos);
 
     // Thumbnails, captioned with the photo's emotion classification (dash if none).
@@ -725,9 +722,9 @@
       return sec;
     });
 
-    // The info Index stays in column 1 down to 480 px; only phones get the tap-to-open list.
+    // The info Index stays in column 1 at every width (never a tap-to-open list).
     var index = buildIndex(INFO_SECTIONS.map(function (s) { return { label: s.title }; }),
-                           "(max-width: 479px)");
+                           "not all");
 
     // A click makes that section current straight away. While the scroll it starts is running
     // (until no scroll event for 150 ms), scrolling doesn't change the current section, so the
@@ -773,6 +770,32 @@
   /* ---------- Boot ---------- */
 
   startClock();
+
+  /* ---------- About (home, phones) ----------
+     "+ About" opens the description in a white box over the page. Click it again, press Escape
+     or click outside the box to close. On larger screens the toggle is hidden. */
+  function initAbout() {
+    var intro = document.getElementById("intro");
+    if (!intro) return;
+    var toggle = intro.querySelector(".intro__toggle");
+    function setOpen(open) {
+      intro.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    toggle.addEventListener("click", function () { setOpen(!intro.classList.contains("is-open")); });
+    // A click outside only closes the box; it doesn't also open a photo or follow a link.
+    document.addEventListener("click", function (e) {
+      if (!intro.classList.contains("is-open") || intro.contains(e.target)) return;
+      e.preventDefault();
+      e.stopPropagation();
+      setOpen(false);
+    }, true);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && intro.classList.contains("is-open")) { setOpen(false); toggle.focus(); }
+    });
+    onMediaChange(SMALL, function () { if (!SMALL.matches) setOpen(false); });
+  }
+  initAbout();
 
   var pageName = document.body.dataset.page;
   if (pageName === "info") {

@@ -155,35 +155,33 @@ h1, h2, h3 { font: inherit; }
 .index__row,
 .index__clear { display: block; width: fit-content; max-width: 100%; }
 
-/* Home and archive: the Index stays put while the page scrolls (as on info), at y = 422.
+/* Home and archive: the Index stays put while the page scrolls (as on info), at --index-top.
    Archive: the list is long, so it scrolls on its own inside the column (down to the bottom of
    the window); the photos scroll with the page. */
-@media (min-width: 700px) {
-  .home .layout .index,
-  .archive .layout .index {
-    position: sticky;
-    z-index: 5;
-    top: var(--index-top);
-    align-self: start;
-  }
-
-  .archive .layout .index {
-    display: flex;
-    flex-direction: column;
-    max-height: calc(100vh - var(--index-top));
-  }
-
-  .archive .index__list {
-    flex: 1 1 auto;
-    min-height: 0;
-    overflow-y: auto;
-    overscroll-behavior: contain;          /* reaching the end of the list doesn't scroll the page */
-    scrollbar-width: none;                 /* scrolls by wheel/trackpad/touch; no bar in the column */
-    margin-left: -4px;                     /* room for the focus outline inside the scroll box */
-    padding: 0 0 13px 4px;
-  }
-  .archive .index__list::-webkit-scrollbar { display: none; }
+.home .layout .index,
+.archive .layout .index {
+  position: sticky;
+  z-index: 5;
+  top: var(--index-top);
+  align-self: start;
 }
+
+.archive .layout .index {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - var(--index-top));
+}
+
+.archive .index__list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;          /* reaching the end of the list doesn't scroll the page */
+  scrollbar-width: none;                 /* scrolls by wheel/trackpad/touch; no bar in the column */
+  margin-left: -4px;                     /* room for the focus outline inside the scroll box */
+  padding: 0 0 13px 4px;
+}
+.archive .index__list::-webkit-scrollbar { display: none; }
 
 /* ---------- Interaction states (all pages) ----------
    One set of rules for everything you can point at in the header, the Index, the home times and
@@ -200,6 +198,7 @@ h1, h2, h3 { font: inherit; }
 .nav a,
 .index__row,
 .index__clear,
+.intro__toggle,
 .time,
 .thumb__cap { transition: color 0.12s ease; }
 
@@ -208,6 +207,7 @@ h1, h2, h3 { font: inherit; }
   .nav a:hover,
   .index__row:hover,
   .index__clear:hover,
+  .intro__toggle:hover,
   .time:hover,
   .thumb:hover .thumb__cap { color: var(--text-secondary); }
 }
@@ -215,6 +215,8 @@ h1, h2, h3 { font: inherit; }
 .nav a:active,
 .index__row:active,
 .index__clear:active,
+.intro__toggle:active,
+.intro__toggle[aria-expanded="true"],
 .time:active,
 .thumb:active .thumb__cap,
 .is-hover { color: var(--text-secondary); }
@@ -250,6 +252,9 @@ h1, h2, h3 { font: inherit; }
 }
 
 .intro p + p { margin-top: var(--lh); }
+
+/* "+ About" opens the description on phones; on larger screens the text is always shown. */
+.intro__toggle { display: none; }
 
 .timeline {
   grid-column: 2 / -1;
@@ -533,82 +538,86 @@ h1, h2, h3 { font: inherit; }
   .intro { width: min(calc(var(--col) * 3 - 20px), 372px); }
 }
 
+/* Phones (Figma "home main / about pop / archive" 430 and 390): a 3-column grid, the Index in
+   column 1 and the content in columns 2-3, as on larger screens. 14 px type.
+   --top is where the content starts under the header: y = 97 at 430, y = 41 at 390. */
 @media (max-width: 699px) {
-  .nav {
-    left: auto;
-    gap: 16px;
+  :root {
+    --fs: 14px;
+    --col: calc((100% - var(--margin)) / 3);
+    --top: 97px;
   }
 
-  /* Index: tap-to-open list at the top of the content. */
-  .layout { display: block; padding: 0 var(--margin); }
+  .nav { left: calc(var(--margin) + var(--col) * 2); }   /* "Archive" at column 3 */
 
-  .layout .index {
-    width: auto;
-    padding: 0;
-    margin-bottom: 24px;
-  }
+  .layout { grid-template-columns: repeat(3, 1fr); }
+  .timeline,
+  .thumbs { grid-template-columns: repeat(2, 1fr); }
+  .day { padding-right: 4px; }                   /* "November 10, 2026" fits on one line at 390 */
 
-  /* Home: header and photo stay put; everything else scrolls under them. */
-  .home .site-header {
-    position: fixed;
-    z-index: 11;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  /* White strip across the top; the photo itself is at most 362 px wide, on the right. */
-  .viewer {
-    top: var(--header-h);
-    left: 0;
-    right: 0;
-    padding: 0 var(--margin);
-    background: var(--bg);
-  }
-
-  .viewer__img,
-  .viewer__answer {
-    width: min(100%, 362px);
-    margin-left: auto;
-  }
-
-  .viewer__answer { min-height: 0; padding-bottom: 12px; }
-
-  /* Order under the photo: Index, project text, day columns. */
-  .home main {
-    display: flex;
-    flex-direction: column;
-    padding-top: calc(var(--header-h) + min(100vw - 2 * var(--margin), 362px) * 9 / 16 + 6px + 2 * var(--lh) + 12px + 16px);
-    padding-bottom: 100vh;   /* lets the last rows reach the scroll reference line */
-  }
-
-  .home .layout { display: contents; }
-  .home .index { order: -1; margin: 0 var(--margin) 24px; }
-  .home .timeline { margin: 0 var(--margin); }
-
+  /* Home: "+ About" in column 1 at --top; the photo in columns 2-3, 4 px lower.
+     The Index and the day columns start at y = 422, as on larger screens. */
   .intro {
+    position: absolute;
+    z-index: 12;                                 /* over the photo, under the header */
+    top: var(--top);
+    left: 0;
+    right: 0;
     width: auto;
     min-height: 0;
-    margin: 0 var(--margin);
-    padding-bottom: 32px;
+    margin: 0;
+    padding: 0 var(--margin);
+    pointer-events: none;                        /* only the toggle and the open box take clicks */
   }
 
-  .timeline { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
-  .home .timeline { padding-bottom: 0; }   /* main has the extra space on small screens */
-
-  .archive .layout { margin-top: 32px; }
-  .thumbs { grid-template-columns: repeat(3, 1fr); row-gap: 12px; padding-top: 0; }
-  .thumb { width: calc(100% - 8px); }
-
-  /* Info: Index stays fixed in column 1, on the same line as the archive's Index. */
-  .info-page { padding: 32px 0 80px; }
-  .info-page .index {
-    top: calc(var(--header-h) + 32px);
-    width: calc(var(--col) - 4px);
+  .intro__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    pointer-events: auto;
   }
+
+  /* The "+" is 7 x 7 px, 1 px lines, in the text colour (grey on hover and while open). */
+  .intro__toggle::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background:
+      linear-gradient(currentColor, currentColor) center / 7px 1px no-repeat,
+      linear-gradient(currentColor, currentColor) center / 1px 7px no-repeat;
+  }
+
+  .intro__text { display: none; }
+
+  /* Open: a white box across the full width behind the text, so it reads over the page. */
+  .intro.is-open {
+    padding-bottom: 17px;
+    background: var(--bg);
+    pointer-events: auto;
+  }
+  .intro.is-open .intro__text { display: block; }
+
+  .home .layout { margin-top: calc(var(--index-top) - var(--header-h)); }
+
+  .viewer {
+    top: calc(var(--top) + 4px);
+    left: calc(var(--margin) + var(--col));
+  }
+  .viewer__answer { min-height: 47px; }
+
+  /* Archive: Index and photos start at --top. */
+  .archive { --index-top: calc(var(--top) + 1px); }
+  .archive .layout { margin-top: calc(var(--index-top) - var(--header-h)); }
+  .thumbs { row-gap: 7px; padding-top: 3px; }
+
+  /* Info (Figma "info 430" / "info390"): the Index stays fixed in column 1 at y = 422; the
+     text and images run from --info-left to the right margin, starting at --top + 4. */
+  :root { --info-left: 119px; }
+  .info-page { padding: 0 0 80px; }
+  .info-page .index { width: calc(var(--info-left) - var(--margin) - 10px); }
   .info-content {
-    width: calc(100% - 2 * var(--margin) - var(--col));
-    margin: 0 0 0 calc(var(--margin) + var(--col));
+    width: auto;
+    margin: calc(var(--top) + 4px - var(--header-h)) var(--margin) 0 var(--info-left);
   }
 
   /* Photo page: full-width photo with the text under it (still centred, never scrolls). */
@@ -619,11 +628,11 @@ h1, h2, h3 { font: inherit; }
   .photo-page__info { margin-top: 12px; }
 }
 
-/* Phones: column 1 is too narrow for the info Index, so it becomes the tap-to-open list. */
-@media (max-width: 479px) {
-  .info-page { padding: 32px var(--margin) 80px; }
-  .info-page .index { position: static; width: auto; margin-bottom: 24px; }
-  .info-content { width: auto; margin: 0; }
+/* Smaller phones (390): everything starts just under the header. */
+@media (max-width: 409px) {
+  :root { --top: 41px; --info-left: 91px; }
+  .viewer__answer { min-height: 43px; }
+  .thumbs { row-gap: 4px; }
 }
 
 .visually-hidden {
