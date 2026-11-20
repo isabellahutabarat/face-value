@@ -3,37 +3,90 @@
   "use strict";
 
   /* ---------- Info page content: edit here ----------
-     One entry per section. `title` is what the Index shows. `text` is a list of paragraphs.
-     `image` is optional: { src, alt, size } where size is "large" (548 px), "medium" (415 px)
-     or "small" (334 px). Leave out `src` to draw a grey placeholder box instead. */
+     `INFO_TITLE` is the grey heading at the top. `INFO_SECTIONS` has one entry per section, in
+     page order; `title` is what the Index shows. `blocks` run top to bottom:
+       { text: [paragraph, ...] }
+       { image: src, alt, size: [w, h], caption }   size = px in Figma; the 550 px column is full width
+       { video: webm, gif, poster, alt, size, caption }   a muted loop (scripts/make_loop.py);
+         the GIF plays where WebM can't, and only the poster (first frame) shows with reduced motion
+     Wrap words in *asterisks* to set them in italics (text and captions).
+     Every block is the same distance apart (--info-gap in styles.css). */
 
-  var INFO_TEXT = [
-    "This website explores how facial expressions become data, and how systems of classification shape the way we interpret them. Using a series of self-portraits, this experiment examines how a single face can be categorized through different frameworks, including emotion labels, Facial Action Coding System (FACS) action units, and dimensions of valence and arousal. Each image is repeatedly interpreted and organized according to visible features, perceived emotions, and possible mental states.",
-    "By becoming both the subject and the person classifying the images, I consider the distance between what a face displays, what others perceive, and what a person actually experiences. The project questions how much can be understood from an expression, and what gets lost when it is turned into information."
-  ];
+  var INFO_TITLE = ["Face Value", "Isabella Hutabarat"];
 
   var INFO_SECTIONS = [
     {
-      title: "Section 1",
-      image: {   // placeholder photo
-        src: "images/large/2026-11-09/20261109-012639-609a.jpg",
-        alt: "Self-portrait, November 9, 2026 at 01:26:39",
-        size: "large"
-      },
-      text: INFO_TEXT
+      title: "Introduction",
+      blocks: [
+        { text: [
+          "I keep coming back to a few questions about AI technology and how it interacts with humans. How does recognition become information? When a machine looks at a face, what is it actually doing, and what gets lost in that translation? And who decided what it should be looking for in the first place?",
+          "That last question is what led me to the inherent classification biases that exist across today’s emerging technologies. These biases come out of AI well beyond ordinary image recognition, but are especially pertinent in facial recognition, where they show up across gender, stereotypes, and race. And even more pressing in our current world and climate is the very discourse of the biases and assumptions embedded in AI training sets and systems. Things that are framed as scientific foundations, as objective, actually operate as political interventions. AI is built on classifications and training systems that are inherently biased, so what does that mean for us and the technologies we’re building? Are we essentially shaping ourselves and our views of the world based on how we treat these advancements?"
+        ] }
+      ]
     },
     {
-      title: "Section 2",
-      image: { size: "medium" },   // grey placeholder box, no image yet
-      text: INFO_TEXT
+      title: "ImageNet Roulette",
+      blocks: [
+        { image: "images/info-imgs/main-images-heroherodownload.jpg", size: [547, 163],
+          alt: "ImageNet Roulette", caption: "ImageNet Roulette" },
+        { image: "images/info-imgs/Screen_Shot_2019_09_16_at_4.16.jpg", size: [547, 406],
+          alt: "ImageNet Roulette", caption: "ImageNet Roulette" },
+        { text: [
+          "Trevor Paglen and Kate Crawford write about this in *Excavating AI*, which looks back at the early histories of AI through ImageNet. Their project *ImageNet Roulette* turned the dataset on its own users: upload a selfie and see how the AI might classify you. Some of the labels made sense, like “skier,” “flutist,” or “mediator.” But there was also “first offender,” “non-smoker,” “orphan”? Crawford and Paglen, both in suits, got “newsreader” and “microeconomist.” One label reads “failure, loser, non-starter, unsuccessful person,” and misogynistic and racist slurs. A few days after the project went viral, ImageNet announced it would remove hundreds of these categories and around 600,000 images. But does getting rid of the biases, or the offensive terms, actually help, or does it only hide the problem? Does it erase groups of people from being recognized in the systems? It raises the question of who gets to decide what images mean, and how they relate to words.",
+          "Training systems that focus primarily on white, Eurocentric faces push marginalized groups into worse outcomes in policing, security, and crime. Hito Steyerl’s idea of “mean images” gets at the same thing: an image built from the average of its data, and mean in the unkind sense too."
+        ] }
+      ]
     },
     {
-      title: "Section 3",
-      image: {   // placeholder photo
-        src: "images/2026-11-10/20261110-120356-fa30.jpg",
-        alt: "Self-portrait, November 10, 2026 at 12:03:56",
-        size: "small"
-      }
+      title: "JAFFE Dataset",
+      blocks: [
+        { image: "images/info-imgs/images%20(22).jpg", size: [390, 172],
+          alt: "Images from the JAFFE database",
+          caption: "The Japanese Female Facial Expression (JAFFE) Database" },
+        { text: [
+          "For this project, I wanted to take that idea in a more specific direction, using myself as the dataset, with my own consent, and training AI on emotion recognition. This matters to classification bias because AI can increasingly recognize facial structures and expressions, but emotions need context. Facial recognition systems sort marginalized people into boxes without any true context, and emotion recognition does the same thing to feelings.",
+          "The JAFFE dataset is one of the sets that has been used to train emotion recognition. It has around 200 images of Japanese models, and I wanted to make a dataset of myself in response. JAFFE uses the standard list of emotions most AI is trained on, with about thirty images for each: happiness, sadness, surprise, anger, disgust, fear, and neutral.",
+          "Other systems break emotion down differently. FACS, the Facial Action Coding System, describes a face as a set of individual muscle movements instead of naming the feeling behind them. The circumplex model places emotion on two axes, valence (how positive or negative) and arousal (how high or low the energy). I use the circumplex model in my work, measuring positive and negative energy levels."
+        ] }
+      ]
+    },
+    {
+      title: "Time Clock Piece",
+      blocks: [
+        { image: "images/info-imgs/time-clock-piece-cover-.jpg", size: [550, 462],
+          alt: "Tehching Hsieh, One Year Performance 1980–1981",
+          caption: "Tehching Hsieh, One Year Performance 1980–1981" },
+        { image: "images/info-imgs/213.jpg", size: [400, 267],
+          alt: "Tehching Hsieh, One Year Performance 1980–1981, installation view at the 2017 Venice Biennale",
+          caption: "Tehching Hsieh, One Year Performance 1980–1981,\nInstallation View at 2017 Venice Biennale" },
+        { text: [
+          "Across all of these models, recognizing a face is not the same as understanding a person.",
+          "What happens when I am required to continuously turn myself into data?",
+          "In *Time Clock Piece*, Tehching Hsieh punched a time clock in his studio every hour for one full year, documenting himself each time. He forced himself into this intensive format of performance and documentation as a way of talking about life as a life sentence (see also Out of Now). This forced use of the self, and what it does to you, makes me think about my own relationship with technology. It also makes me think about how AI is force-fed to us today. It’s built into our search bars, our phones, and our tools, and we are essentially punching the clock without having agreed to it."
+        ] }
+      ]
+    },
+    {
+      title: "Evidence Locker",
+      blocks: [
+        { image: "images/info-imgs/jill-magid-evidence-locker-2004.jpg", size: [550, 187],
+          alt: "Jill Magid, Evidence Locker, 2004", caption: "Jill Magid, *Evidence Locker*, 2004" },
+        { text: [
+          "Jill Magid’s *Evidence Locker* is a portrait of her relationship with herself, the police, and the city. It is a kind of self-surveillance, and it shows things you didn’t know about yourself when you aren’t paying attention. As surveillance becomes more daunting and is implemented into our daily lives, we have to wonder how these recognition systems and language models sort each of us."
+        ] }
+      ]
+    },
+    {
+      title: "Myself as Data",
+      blocks: [
+        { text: [
+          "So I come back to the question: what does it mean when I turn myself into data? I’ve created a biometric profile of myself whenever I’m online, yet I know very little about who I actually am. Looking back at this dataset, I can see things I never noticed. I stick my tongue out when I’m focused. I play guitar almost every day for more hours than I should have readily available. I can see the times I procrastinated, watched shows, worked on school and my job, or have laid down with my laptop open and untouched. I look blankly at a screen; I look “angry,” and I look genuinely scared even though I’m probably relatively calm. I learn all of this from looking at myself as a dataset that comes from myself. But the data being pulled by these systems doesn’t tell me any of that, so what does the machine actually know about me?"
+        ] },
+        { video: "assets/face-value-loop.webm", gif: "assets/face-value-loop.gif",
+          poster: "assets/face-value-loop-poster.jpg", size: [388, 218],
+          alt: "self-portrait photos from the study, shown in sequence",
+          caption: "Isabella Hutabarat, *Face Value* images, 2026" }
+      ]
     }
   ];
 
@@ -690,36 +743,66 @@
 
   function initInfo() {
     var content = document.getElementById("info-content");
+    // "*word*" -> <em>word</em>; "\n" -> line break. Built as nodes, never as HTML.
+    function rich(parent, str) {
+      str.split("\n").forEach(function (line, li) {
+        if (li) parent.appendChild(el("br"));
+        line.split("*").forEach(function (part, pi) {
+          if (!part) return;
+          parent.appendChild(pi % 2 ? el("em", null, part) : document.createTextNode(part));
+        });
+      });
+      return parent;
+    }
+
+    var title = el("p", "info-title");
+    rich(title, INFO_TITLE.join("\n"));
+    content.appendChild(title);
+
+    var firstImage = true;
     var sections = INFO_SECTIONS.map(function (s, i) {
-      var sec = el("section", "info-section" + (s.text && s.text.length ? "" : " info-section--image-only"));
+      var sec = el("section", "info-section");
       sec.id = "section-" + (i + 1);
       sec.setAttribute("aria-labelledby", sec.id + "-title");
       var h = el("h2", "visually-hidden", s.title);
       h.id = sec.id + "-title";
       sec.appendChild(h);
 
-      if (s.image) {
-        var fig = el("figure", "info-figure info-figure--" + (s.image.size || "large"));
-        if (s.image.src) {
+      s.blocks.forEach(function (b) {
+        if (b.image || b.video) {
+          var fig = el("figure", "info-figure");
+          fig.style.width = (b.size[0] / 550 * 100) + "%";
           var im = el("img");
-          im.src = s.image.src;
-          im.alt = s.image.alt || "";
-          im.loading = i === 0 ? "eager" : "lazy";
+          im.src = b.image;
+          if (b.video) {
+            im.src = reduceMotion.matches ? b.poster : b.gif;
+            var v = el("video");
+            if (!reduceMotion.matches && v.canPlayType('video/webm; codecs="vp9"')) {
+              v.muted = true;
+              v.autoplay = v.loop = v.playsInline = true;
+              v.setAttribute("muted", "");
+              v.setAttribute("playsinline", "");
+              v.poster = b.poster;
+              v.src = b.video;
+              v.setAttribute("role", "img");
+              v.setAttribute("aria-label", b.alt);
+              im = v;
+            }
+          }
+          if (im.tagName === "IMG") im.alt = b.alt || "";
+          im.width = b.size[0];
+          im.height = b.size[1];
+          im.loading = firstImage ? "eager" : "lazy";
+          firstImage = false;
           fig.appendChild(im);
-        } else {
-          var box = el("div", "info-figure__placeholder");
-          box.setAttribute("role", "img");
-          box.setAttribute("aria-label", "Image to come");
-          fig.appendChild(box);
+          if (b.caption) fig.appendChild(rich(el("figcaption", "info-caption"), b.caption));
+          sec.appendChild(fig);
+        } else if (b.text) {
+          var t = el("div", "info-text");
+          b.text.forEach(function (para) { t.appendChild(rich(el("p"), para)); });
+          sec.appendChild(t);
         }
-        sec.appendChild(fig);
-      }
-
-      if (s.text && s.text.length) {
-        var t = el("div", "info-text");
-        s.text.forEach(function (para) { t.appendChild(el("p", null, para)); });
-        sec.appendChild(t);
-      }
+      });
       content.appendChild(sec);
       return sec;
     });

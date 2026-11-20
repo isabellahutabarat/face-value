@@ -11,12 +11,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "ABC Diatype";
+  src: url("assets/fonts/ABCDiatype-MediumItalic-Trial.woff2") format("woff2"),
+       url("assets/fonts/ABCDiatype-MediumItalic-Trial.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --bg: #ffffff;
   --text: #000000;
   --text-secondary: #8b8b8b;         /* Index label, date headings, answer text, current Index entry */
   --text-label: #191818;             /* labels on the photo page */
-  --placeholder: #eeeeee;            /* info page image placeholder */
   --mark: #00e563;                   /* green underline: selected / current (Figma, 2 px) */
   --font: "ABC Diatype", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -355,28 +363,40 @@ h1, h2, h3 { font: inherit; }
   text-align: center;
 }
 
+/* Every block (text, image + caption) and every section is --info-gap apart. */
+.info-content { --info-gap: 40px; }
+
+/* "Face Value / Isabella Hutabarat" at y = 101; the Introduction starts on the Index line (y = 424). */
+.info-title {
+  margin: 0 0 calc(var(--index-top) + 2px - 101px - 2 * var(--lh));
+  color: var(--text-secondary);
+  text-align: left;
+}
+
 .info-section { scroll-margin-top: calc(var(--header-h) + 16px); }   /* Index jumps land below the header */
-.info-section + .info-section { margin-top: 43px; }
-.info-section + .info-section--image-only { margin-top: 96px; }
+.info-section + .info-section,
+.info-section > :not(h2) + :not(h2) { margin-top: var(--info-gap); }
 
 .info-text { text-align: left; }
+.info-text p { margin: 0; }
 .info-text p + p { margin-top: var(--lh); }
 
-.info-figure { margin: 0 auto; }
-.info-figure--large  { width: calc(100% * 548 / 550); margin-bottom: 13px; }   /* 548 x 308 */
-.info-figure--medium { width: calc(100% * 415 / 550); margin-bottom: 23px; }   /* 415 x 233 */
-.info-figure--small  { width: calc(100% * 334 / 550); }                        /* 334 x 188 */
+.info-figure { margin-left: auto; margin-right: auto; margin-bottom: 0; max-width: 100%; }
 
 .info-figure img,
-.info-figure__placeholder {
+.info-figure video {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
 }
 
-.info-figure__placeholder { background: var(--placeholder); }
+.info-figure video { aspect-ratio: 388 / 218; }
+
+.info-caption {
+  margin-top: 6px;
+  color: var(--text-secondary);
+  text-align: center;
+}
 
 /* ---------- Photo page (overlay over home or archive) ---------- */
 
@@ -639,9 +659,11 @@ h1, h2, h3 { font: inherit; }
   .info-page { padding: 0 0 80px; }
   .info-page .index { width: calc(var(--info-left) - var(--margin) - 10px); }
   .info-content {
+    --info-gap: 32px;
     width: auto;
     margin: calc(var(--top) + 4px - var(--header-h)) var(--margin) 0 var(--info-left);
   }
+  .info-title { margin-bottom: var(--info-gap); }
 
 }
 
