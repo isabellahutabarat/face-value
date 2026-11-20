@@ -306,7 +306,7 @@
 
     // Fit the block in the window without ever scrolling, on a 16-column grid (same margin
     // and gutters as the 8-column grid): photo columns 4-11, text columns 12-13. Under 850 px the
-    // text goes under a full-width photo and the arrows sit at the bottom. If the window is too short, only the photo shrinks
+    // text goes under a photo that always spans margin to margin, and the arrows sit at the bottom. If the window is too short, only the photo shrinks
     // (keeping 16:9); the text keeps its size. The arrows sit level with the photo's middle.
     var phone = window.matchMedia("(max-width: 849px)");
     var GUTTER = 13;
@@ -322,9 +322,7 @@
         var full = W - 2 * margin;
         text.style.width = full + "px";
         text.style.minHeight = "";
-        img.style.width = full + "px";
-        var rest = content.offsetHeight - img.offsetHeight;   // text under the photo + gap
-        w = Math.min(full, (availH - rest) * 16 / 9);
+        w = full;                                           // always margin to margin
       } else {
         var textW = Math.max(2 * col - GUTTER, 175);
         var availW = W - 2 * 44;                            // keep clear of the arrows
@@ -384,7 +382,8 @@
       }
     }, { passive: true });
     // Nothing behind the overlay scrolls while it is open.
-    root.addEventListener("wheel", function (e) { e.preventDefault(); }, { passive: false });
+    // (Under 850 px the overlay itself may scroll up and down when its content is taller.)
+    root.addEventListener("wheel", function (e) { if (!phone.matches) e.preventDefault(); }, { passive: false });
 
     function show(i) {
       if (openIndex === -1) {
