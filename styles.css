@@ -533,13 +533,6 @@ h1, h2, h3 { font: inherit; }
 /* Index entries may break after the "/" when a column is too narrow for them. */
 @media (max-width: 1199px) {
   .day__date { overflow-wrap: anywhere; }
-
-  /* Info: text starts at column 2 instead of being centred. */
-  .info-content {
-    width: min(550px, calc(100% - 2 * var(--margin) - var(--col)));
-    margin-left: calc(var(--margin) + var(--col));
-    margin-right: 0;
-  }
 }
 
 /* Medium screens (around 1024): Index + 5 content columns (6-column grid).
