@@ -3954,5 +3954,19 @@
     "emotion": "Sadness",
     "valence": "-0.38",
     "arousal": "-0.26"
+  },
+  {
+    "id": "20261120-012024-9d5d",
+    "date": "2026-11-20",
+    "time": "01:20:24",
+    "thumb": "images/thumbs/2026-11-20/20261120-012024-9d5d.jpg",
+    "image": "images/2026-11-20/20261120-012024-9d5d.jpg",
+    "large": "images/large/2026-11-20/20261120-012024-9d5d.jpg",
+    "doing": "texting bf",
+    "category": null,
+    "description": "This is a person sitting in a room with their head resting on a pillow. They are wearing a hooded garment and looking towards the camera.",
+    "emotion": "Sadness",
+    "valence": "-0.42",
+    "arousal": "-0.12"
   }
 ]
