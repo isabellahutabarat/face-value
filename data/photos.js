@@ -3969,5 +3969,33 @@ window.FACE_VALUE_PHOTOS = [
     "emotion": "Sadness",
     "valence": "-0.42",
     "arousal": "-0.12"
+  },
+  {
+    "id": "20261120-013814-3b59",
+    "date": "2026-11-20",
+    "time": "01:38:14",
+    "thumb": "images/thumbs/2026-11-20/20261120-013814-3b59.jpg",
+    "image": "images/2026-11-20/20261120-013814-3b59.jpg",
+    "large": "images/large/2026-11-20/20261120-013814-3b59.jpg",
+    "doing": "editing website",
+    "category": null,
+    "description": "This is a person sitting on a bed in a room. They are looking directly at the camera with a neutral expression.",
+    "emotion": "Anger",
+    "valence": "-0.43",
+    "arousal": "0.12"
+  },
+  {
+    "id": "20261120-015520-cba7",
+    "date": "2026-11-20",
+    "time": "01:55:20",
+    "thumb": "images/thumbs/2026-11-20/20261120-015520-cba7.jpg",
+    "image": "images/2026-11-20/20261120-015520-cba7.jpg",
+    "large": "images/large/2026-11-20/20261120-015520-cba7.jpg",
+    "doing": "working on website",
+    "category": "design",
+    "description": "This is a person lying on a bed with their eyes closed. They are wearing a hooded garment and appear to be resting.",
+    "emotion": "Sadness",
+    "valence": "-0.27",
+    "arousal": "-0.23"
   }
 ];
