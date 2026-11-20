@@ -315,7 +315,9 @@ h1, h2, h3 { font: inherit; }
   grid-template-columns: repeat(7, 1fr);
   align-content: start;
   row-gap: 18px;                                /* 136 px row pitch: 98 image + 1 + 19 caption + 18 */
-  padding: 32px 0 120px;                        /* first row at y = 454; 120 px under the last */
+  /* First row level with the top of the "Index" letters (3 px into its 19 px line, as in Figma);
+     120 px under the last. */
+  padding: calc(var(--lh) * 3 / 19) 0 120px;
   list-style: none;
 }
 
@@ -629,7 +631,7 @@ h1, h2, h3 { font: inherit; }
   /* Archive: Index and photos start at --top. */
   .archive { --index-top: calc(var(--top) + 1px); }
   .archive .layout { margin-top: calc(var(--index-top) - var(--header-h)); }
-  .thumbs { row-gap: 7px; padding-top: 3px; }
+  .thumbs { row-gap: 7px; }
 
   /* Info (Figma "info 430" / "info390"): the Index stays fixed in column 1 at y = 422; the
      text and images run from --info-left to the right margin, starting at --top + 4. */
