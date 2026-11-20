@@ -37,6 +37,24 @@
     }
   ];
 
+  /* ---------- Emotion filter: edit here ----------
+     The home Index lists the AI emotion classifications (photos.json `emotion`) that exist in the
+     data, in the Figma order below. A value in the data that isn't listed here goes after these,
+     A to Z. */
+
+  var EMOTION_ORDER = ["Neutral", "Sadness", "Disgust", "Happiness", "Contempt", "Anger", "Surprise", "Fear"];
+
+  /* ---------- Selection (home and archive) ----------
+     `selected` holds what is underlined in green:
+       home:    the selected emotions (exactly as in photos.json); several at once.
+       archive: the id of the one selected photo, or nothing.
+     Every change fires "facevalue:selectionchange" on document, with
+     detail = { page: "home" | "archive", selected: [...] }. Also window.FaceValue.selected.
+     Photos are never hidden or reordered by it. */
+
+  var selected = new Set();
+  window.FaceValue = { selected: selected };
+
   /* ---------- Helpers ---------- */
 
   var pad = function (n) { return String(n).padStart(2, "0"); };
@@ -62,12 +80,6 @@
     return new Date(p[0], p[1] - 1, p[2]).toLocaleDateString("en-US", {
       month: "long", day: "numeric", year: "numeric"
     });
-  }
-
-  // "2026-11-09" + "17:48:51" -> "11-09-26/17:48:51"
-  function indexLabel(p) {
-    var d = p.date.split("-");
-    return d[1] + "-" + d[2] + "-" + d[0].slice(2) + "/" + p.time;
   }
 
   function altText(p) {
@@ -109,7 +121,7 @@
   }
 
   // Builds one button per entry. `collapseQuery` is the media query under which the
-  // Index becomes a tap-to-open list. Returns { rows, setCurrent(i), isListVisible() }.
+  // Index becomes a tap-to-open list. Returns { list, rows, setCurrent(i) }.
   function buildIndex(entries, collapseQuery) {
     var collapse = collapseQuery ? window.matchMedia(collapseQuery) : SMALL;
     var nav = document.querySelector(".index");
@@ -123,6 +135,7 @@
       var b = el("button", "index__row btn-text");
       b.type = "button";
       b.dataset.i = i;
+      if (entry.key != null) b.dataset.key = entry.key;
       // Allow a break after "/" when the column is too narrow for the whole entry.
       var parts = entry.label.split("/");
       parts.forEach(function (part, k) {
@@ -157,21 +170,79 @@
     syncToggle();
 
     return {
+      list: list,
       rows: rows,
+      // Info page: the one current section (underlined in green).
       setCurrent: function (i) {
         if (i === current) return;
-        if (rows[current]) { rows[current].classList.remove("is-current"); rows[current].removeAttribute("aria-current"); }
+        if (rows[current]) rows[current].removeAttribute("aria-current");
         current = i;
-        if (rows[i]) { rows[i].classList.add("is-current"); rows[i].setAttribute("aria-current", "true"); }
-      },
-      isListVisible: function () { return list.offsetParent !== null; }
+        if (rows[i]) rows[i].setAttribute("aria-current", "location");
+      }
     };
   }
 
-  function photoIndexEntries(photos) {
-    return photos.map(function (p) {
-      return { label: indexLabel(p), ariaLabel: p.time + ", " + formatDate(p.date) };
+  function announce(pageName, keys) {
+    document.dispatchEvent(new CustomEvent("facevalue:selectionchange", {
+      detail: { page: pageName, selected: keys }
+    }));
+  }
+
+  // Home: each Index item is a toggle (aria-pressed); selected ones are underlined in green.
+  // "x Clear" sits under the last item while anything is selected. `onChange` runs after
+  // every change (home uses it to underline the matching times).
+  function buildSelectableIndex(keys, pageName, onChange) {
+    var index = buildIndex(keys.map(function (k) { return { label: k, key: k }; }));
+
+    var clearItem = el("li", "index__clear-item");
+    var clear = el("button", "index__clear btn-text", "x Clear");
+    clear.type = "button";
+    clear.setAttribute("aria-label", "Clear selection");
+    clearItem.hidden = true;
+    clearItem.appendChild(clear);
+    index.list.appendChild(clearItem);
+
+    index.rows.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+
+    function changed() {
+      var keysNow = [];
+      index.rows.forEach(function (b) {
+        var on = selected.has(b.dataset.key);
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+        if (on) keysNow.push(b.dataset.key);
+      });
+      clearItem.hidden = keysNow.length === 0;
+      if (onChange) onChange();
+      announce(pageName, keysNow);
+    }
+
+    index.list.addEventListener("click", function (e) {
+      var b = e.target.closest(".index__row");
+      if (!b) return;
+      var k = b.dataset.key;
+      if (selected.has(k)) selected.delete(k); else selected.add(k);
+      changed();
     });
+
+    clear.addEventListener("click", function () {
+      selected.clear();
+      changed();
+      // The button disappears; keep keyboard focus in the Index.
+      if (index.rows[0]) index.rows[0].focus({ preventScroll: true });
+    });
+
+    return index;
+  }
+
+  // Emotion values present in the data: Figma order first, then any others A to Z.
+  function emotionKeys(photos) {
+    var present = new Set();
+    photos.forEach(function (p) {
+      if (p.emotion != null && String(p.emotion).trim() !== "") present.add(p.emotion);
+    });
+    var known = EMOTION_ORDER.filter(function (e) { return present.has(e); });
+    var extra = Array.from(present).filter(function (e) { return EMOTION_ORDER.indexOf(e) === -1; }).sort();
+    return known.concat(extra);
   }
 
   /* ---------- Photo page (overlay over home or archive) ---------- */
@@ -390,7 +461,11 @@
     var answer = document.getElementById("viewer-answer");
     if (!photos.length) return;
 
-    var index = buildIndex(photoIndexEntries(photos));
+    var times = [];   // photo index -> time button
+    // Emotion filter: the times of photos with a selected emotion are underlined.
+    buildSelectableIndex(emotionKeys(photos), "home", function () {
+      times.forEach(function (b, i) { b.classList.toggle("is-marked", selected.has(photos[i].emotion)); });
+    });
     var page = createPhotoPage(photos);
 
     // Day columns: group by date, in chronological order (photos.json is already sorted).
@@ -401,7 +476,6 @@
       last.items.push(i);
     });
 
-    var times = [];   // photo index -> time button
     days.forEach(function (day) {
       var section = el("section", "day");
       section.appendChild(el("h2", "day__date", formatDate(day.date)));
@@ -428,7 +502,6 @@
       img.src = p.image;
       img.alt = altText(p);
       answer.textContent = value(p.doing);   // exactly as written; dash if none
-      index.setCurrent(i);
     }
 
     // Initial state: earliest photo. Then preload the rest so switching doesn't flicker.
@@ -437,7 +510,7 @@
 
     var scrolling = false;
     var scrollTimer = 0;
-    var TARGETS = ".time, .index__row";
+    var TARGETS = ".time";
     var main = document.querySelector("main");
 
     // Hover: wins while the pointer actually moves over a row. A row sliding under a
@@ -458,13 +531,13 @@
       if (b) show(Number(b.dataset.i));
     });
 
-    // Click a time or an Index row: open the photo page.
+    // Click a time: open the photo page.
     main.addEventListener("click", function (e) {
       var b = e.target.closest(TARGETS);
       if (b) page.open(Number(b.dataset.i), b);
     });
 
-    // Scroll: follow the Index row at the reference line (y = 450, where the list starts).
+    // Scroll: follow the time row at the reference line (y = 450, where the times start).
     function referenceLine() {
       if (SMALL.matches) return viewer.getBoundingClientRect().bottom + 8;
       return 450;
@@ -473,21 +546,15 @@
     function syncToScroll() {
       if (page.isOpen()) return;
       var line = referenceLine() + 1;
-      var hit = -1;
-      if (index.isListVisible()) {
-        var rows = index.rows;
-        for (var k = 0; k < rows.length; k++) {
-          if (rows[k].getBoundingClientRect().top <= line) hit = k; else break;
-        }
-      } else {
-        // Index collapsed (small screens): the lowest time row that has reached the line.
-        var best = -Infinity;
-        times.forEach(function (b, i) {
-          var t = b.getBoundingClientRect().top;
-          if (t <= line && t > best) { best = t; hit = i; }
-        });
-      }
-      if (hit !== -1) show(hit);
+      // The lowest time row (in any day column) that has reached the line; the earliest
+      // photo at the top of the page.
+      var hit = 0;
+      var best = -Infinity;
+      times.forEach(function (b, i) {
+        var t = b.getBoundingClientRect().top;
+        if (t <= line && t > best) { best = t; hit = i; }
+      });
+      show(hit);
     }
 
     var ticking = false;
@@ -506,18 +573,23 @@
   function initArchive(photos) {
     var list = document.getElementById("archive");
     if (!photos.length) return;
-    var index = buildIndex(photoIndexEntries(photos));
-    var page = createPhotoPage(photos);
     var N = photos.length;
+    // Index rows read "n/N": the photo's place in the chronological list / the total.
+    var index = buildIndex(photos.map(function (p, i) {
+      return { label: (i + 1) + "/" + N, ariaLabel: (i + 1) + " of " + N + ", " + p.time + ", " + formatDate(p.date) };
+    }));
+    var page = createPhotoPage(photos);
 
-    var thumbs = [];
+    // Thumbnails, captioned with the photo's emotion classification (dash if none).
+    var caps = [];
     var frag = document.createDocumentFragment();
     photos.forEach(function (p, i) {
       var li = el("li");
       var b = el("button", "thumb btn-text");
       b.type = "button";
       b.dataset.i = i;
-      b.setAttribute("aria-label", (i + 1) + " of " + N + ", " + p.time + ", " + formatDate(p.date));
+      b.setAttribute("aria-label", (i + 1) + " of " + N + ", " + p.time + ", " + formatDate(p.date) +
+                     ", " + value(p.emotion));
       var im = el("img");
       im.src = p.thumb;
       im.alt = "";
@@ -526,52 +598,78 @@
       im.loading = "lazy";
       im.decoding = "async";
       b.appendChild(im);
-      b.appendChild(el("span", "thumb__cap", (i + 1) + "/" + N));
+      var cap = el("span", "thumb__cap", value(p.emotion));
+      b.appendChild(cap);
       li.appendChild(b);
       frag.appendChild(li);
-      thumbs.push(b);
+      caps.push(cap);
     });
     list.appendChild(frag);
 
-    var hovered = -1;
-
-    // Current photo: the hovered thumbnail, else the first photo in the top visible row
-    // (visible = below the sticky header).
-    var header = document.querySelector(".site-header");
-    function topVisible() {
-      var top = header ? header.getBoundingClientRect().bottom : 0;
-      for (var k = 0; k < thumbs.length; k++) {
-        if (thumbs[k].getBoundingClientRect().bottom > top) return k;
+    // One selected photo at a time: its Index row and its caption are underlined in green.
+    var current = -1;
+    index.rows.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+    function select(i) {
+      if (i === current) return;
+      if (current !== -1) {
+        index.rows[current].setAttribute("aria-pressed", "false");
+        caps[current].classList.remove("is-marked");
       }
-      return 0;
+      current = i;
+      selected.clear();
+      if (i !== -1) {
+        selected.add(photos[i].id);
+        index.rows[i].setAttribute("aria-pressed", "true");
+        caps[i].classList.add("is-marked");
+      }
+      announce("archive", Array.from(selected));
     }
-    function sync() { index.setCurrent(hovered !== -1 ? hovered : topVisible()); }
 
-    list.addEventListener("pointerover", function (e) {
+    // Hover (or keyboard focus) on a photo or its Index row greys both, so you can see which
+    // row belongs to which photo.
+    var hovered = -1;
+    function hover(i) {
+      if (i === hovered) return;
+      if (hovered !== -1) { index.rows[hovered].classList.remove("is-hover"); caps[hovered].classList.remove("is-hover"); }
+      hovered = i;
+      if (i !== -1) { index.rows[i].classList.add("is-hover"); caps[i].classList.add("is-hover"); }
+    }
+    var main = document.querySelector("main");
+    var TARGETS = ".thumb, .index__row";
+    main.addEventListener("pointerover", function (e) {
       if (!isMouse(e)) return;
-      var b = e.target.closest(".thumb");
-      hovered = b ? Number(b.dataset.i) : -1;
-      sync();
+      var b = e.target.closest(TARGETS);
+      hover(b ? Number(b.dataset.i) : -1);
     });
-    list.addEventListener("pointerleave", function () { hovered = -1; sync(); });
-    list.addEventListener("focusin", function (e) {
-      var b = e.target.closest(".thumb");
-      if (b) index.setCurrent(Number(b.dataset.i));
+    main.addEventListener("pointerleave", function () { hover(-1); });
+    main.addEventListener("focusin", function (e) {
+      var b = e.target.closest(TARGETS);
+      hover(b ? Number(b.dataset.i) : -1);
     });
+    main.addEventListener("focusout", function () { hover(-1); });
 
-    document.querySelector("main").addEventListener("click", function (e) {
-      var b = e.target.closest(".thumb, .index__row");
-      if (b) page.open(Number(b.dataset.i), b);
+    // Photos and Index rows work the same way:
+    //   click         underline it (click the underlined one again to remove it)
+    //   double click  open the photo page (it stays underlined)
+    // A second click on the same item within DOUBLE_MS counts as a double click. Timed here
+    // rather than with the dblclick event so a double tap on a touch screen works too.
+    var DOUBLE_MS = 450;
+    var last = { i: -1, t: 0 };
+    main.addEventListener("click", function (e) {
+      var b = e.target.closest(TARGETS);
+      if (!b) return;
+      var i = Number(b.dataset.i);
+      var now = Date.now();
+      if (last.i === i && now - last.t < DOUBLE_MS) {
+        last.i = -1;
+        select(i);
+        page.open(i, b);
+        return;
+      }
+      last.i = i;
+      last.t = now;
+      select(i === current ? -1 : i);
     });
-
-    var ticking = false;
-    window.addEventListener("scroll", function () {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(function () { ticking = false; if (hovered === -1) sync(); });
-    }, { passive: true });
-
-    sync();
   }
 
   /* ---------- Info ---------- */
@@ -616,10 +714,22 @@
     var index = buildIndex(INFO_SECTIONS.map(function (s) { return { label: s.title }; }),
                            "(max-width: 479px)");
 
+    // A click makes that section current straight away. While the scroll it starts is running
+    // (until no scroll event for 150 ms), scrolling doesn't change the current section, so the
+    // Index doesn't flick through the sections in between, and the clicked one stays current
+    // even if the page can't scroll far enough to bring it to the reading line.
+    var jumping = false;
+    var jumpTimer = 0;
+    function endJumpSoon() {
+      clearTimeout(jumpTimer);
+      jumpTimer = setTimeout(function () { jumping = false; }, 150);
+    }
     index.rows.forEach(function (b, i) {
       b.addEventListener("click", function () {
-        sections[i].scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "start" });
+        jumping = true;
+        endJumpSoon();
         index.setCurrent(i);
+        sections[i].scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "start" });
       });
     });
 
@@ -636,11 +746,12 @@
 
     var ticking = false;
     window.addEventListener("scroll", function () {
+      if (jumping) { endJumpSoon(); return; }
       if (ticking) return;
       ticking = true;
-      requestAnimationFrame(function () { ticking = false; sync(); });
+      requestAnimationFrame(function () { ticking = false; if (!jumping) sync(); });
     }, { passive: true });
-    window.addEventListener("resize", sync);
+    window.addEventListener("resize", function () { if (!jumping) sync(); });
     sync();
   }
 

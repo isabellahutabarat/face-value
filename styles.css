@@ -17,6 +17,7 @@
   --text-secondary: #8b8b8b;         /* Index label, date headings, answer text, current Index entry */
   --text-label: #191818;             /* labels on the photo page */
   --placeholder: #eeeeee;            /* info page image placeholder */
+  --mark: #00e563;                   /* green underline: selected / current (Figma, 2 px) */
   --font: "ABC Diatype", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   /* One type size everywhere: 14/19, -2%. Fluid down to 12 px, never above 14 px. */
@@ -145,9 +146,75 @@ h1, h2, h3 { font: inherit; }
 .index[data-collapsible] .index__label[aria-expanded="false"]::after { content: " +"; }
 .index[data-collapsible] .index__list { margin-top: 9px; }
 
-.index__row { display: block; }
+/* Index items are black. "x Clear" follows the last item in the same type and spacing; it is
+   hidden (its <li> has [hidden]) while nothing is selected, so the items never move.
+   Each item is only as wide as its text, so the underline and the hover area match the text. */
+.index__row,
+.index__clear { display: block; width: fit-content; max-width: 100%; }
 
-.index__row.is-current { color: var(--text-secondary); }
+/* Home: the Index stays put while the page scrolls (as on info), at y = 422.
+   The archive Index scrolls with the page. */
+@media (min-width: 700px) {
+  .home .layout .index {
+    position: sticky;
+    z-index: 5;
+    top: var(--index-top);
+    align-self: start;
+  }
+}
+
+/* ---------- Interaction states (all pages) ----------
+   One set of rules for everything you can point at in the header, the Index, the home times and
+   the archive photos. Not used for the project text, the answer under the floating photo, the
+   photo page or the info text.
+   - Hover or press: the text turns grey (#8b8b8b). On the archive, a photo and its Index row
+     grey together (.is-hover, set in script.js).
+   - Selected / current: a 2 px green line under the text, from the text's left edge (the grid
+     column edge) to the end of the text. Measured from Figma: 2 px high, its bottom 2 px above
+     the bottom of the 19 px row. As in Figma, the line is drawn behind the text (each item is
+     its own stacking context, the line is at z-index -1), so descenders sit on top of it. */
+
+.brand,
+.nav a,
+.index__row,
+.index__clear,
+.time,
+.thumb__cap { transition: color 0.12s ease; }
+
+@media (hover: hover) {
+  .brand:hover,
+  .nav a:hover,
+  .index__row:hover,
+  .index__clear:hover,
+  .time:hover,
+  .thumb:hover .thumb__cap { color: var(--text-secondary); }
+}
+.brand:active,
+.nav a:active,
+.index__row:active,
+.index__clear:active,
+.time:active,
+.thumb:active .thumb__cap,
+.is-hover { color: var(--text-secondary); }
+
+.index__row,
+.time,
+.thumb__cap { position: relative; isolation: isolate; }
+
+.index__row[aria-pressed="true"]::after,
+.index__row[aria-current]::after,
+.time.is-marked::after,
+.thumb__cap.is-marked::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  bottom: calc(var(--lh) * 2 / 19);
+  height: 2px;
+  background: var(--mark);
+  pointer-events: none;
+}
 
 /* ---------- Home ---------- */
 
@@ -169,10 +236,9 @@ h1, h2, h3 { font: inherit; }
   padding-top: 1px;                             /* dates at y = 423, times from y = 451 */
 }
 
-.home .layout {
-  /* lets the last Index row reach the scroll reference line (y = 450) */
-  padding-bottom: max(120px, calc(100vh - 450px));
-}
+/* Lets the last time row reach the scroll reference line (y = 450). On the timeline rather
+   than on .layout, so the sticky Index (bounded by .layout's content box) stays put to the end. */
+.home .timeline { padding-bottom: max(120px, calc(100vh - 450px)); }
 
 .day { min-width: 0; padding-right: 10px; }
 
@@ -212,7 +278,7 @@ h1, h2, h3 { font: inherit; }
 
 /* ---------- Archive ---------- */
 
-.archive .layout { margin-top: calc(var(--index-top) - var(--header-h)); padding-bottom: 120px; }
+.archive .layout { margin-top: calc(var(--index-top) - var(--header-h)); }
 
 .thumbs {
   grid-column: 2 / -1;
@@ -220,7 +286,7 @@ h1, h2, h3 { font: inherit; }
   grid-template-columns: repeat(7, 1fr);
   align-content: start;
   row-gap: 18px;                                /* 136 px row pitch: 98 image + 1 + 19 caption + 18 */
-  padding: 32px 0 0;                            /* first row at y = 454 */
+  padding: 32px 0 120px;                        /* first row at y = 454; 120 px under the last */
   list-style: none;
 }
 
@@ -234,7 +300,7 @@ h1, h2, h3 { font: inherit; }
   object-fit: cover;
 }
 
-.thumb__cap { display: block; margin-top: 1px; }
+.thumb__cap { display: block; width: fit-content; max-width: 100%; margin-top: 1px; }
 
 /* ---------- Info ---------- */
 
@@ -480,6 +546,7 @@ h1, h2, h3 { font: inherit; }
   }
 
   .timeline { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
+  .home .timeline { padding-bottom: 0; }   /* main has the extra space on small screens */
 
   .archive .layout { margin-top: 32px; }
   .thumbs { grid-template-columns: repeat(3, 1fr); row-gap: 12px; padding-top: 0; }
