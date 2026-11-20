@@ -305,10 +305,10 @@
     }
 
     // Fit the block in the window without ever scrolling, on a 16-column grid (same margin
-    // and gutters as the 8-column grid): photo columns 4-11, text columns 12-13. On phones the
-    // text goes under a full-width photo. If the window is too short, only the photo shrinks
+    // and gutters as the 8-column grid): photo columns 4-11, text columns 12-13. Under 850 px the
+    // text goes under a full-width photo and the arrows sit at the bottom. If the window is too short, only the photo shrinks
     // (keeping 16:9); the text keeps its size. The arrows sit level with the photo's middle.
-    var phone = window.matchMedia("(max-width: 699px)");
+    var phone = window.matchMedia("(max-width: 849px)");
     var GUTTER = 13;
     function fit() {
       if (openIndex === -1) return;
