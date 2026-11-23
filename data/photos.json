@@ -4208,19 +4208,5 @@
     "emotion": "Sadness",
     "valence": "-0.42",
     "arousal": "-0.11"
-  },
-  {
-    "id": "20261120-063734-2b46",
-    "date": "2026-11-20",
-    "time": "06:37:34",
-    "thumb": "images/thumbs/2026-11-20/20261120-063734-2b46.jpg",
-    "image": "images/2026-11-20/20261120-063734-2b46.jpg",
-    "large": "images/large/2026-11-20/20261120-063734-2b46.jpg",
-    "doing": "nothing just very tired",
-    "category": null,
-    "description": "This is a person standing in a room, wearing a hooded jacket and glasses, and looking towards the camera.",
-    "emotion": "Neutral",
-    "valence": "-0.37",
-    "arousal": "-0.10"
   }
 ]
